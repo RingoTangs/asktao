@@ -2,7 +2,7 @@
 set -e
 set -o pipefail
 
-IMAGE_NAME="ringotangs/centos58:0.1"
+IMAGE_NAME="ringotangs/at-centos58:0.1"
 
 WORKDIR="/root/centos58-docker-build"
 ROOTFS="${WORKDIR}/rootfs"
