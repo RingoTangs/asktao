@@ -91,6 +91,21 @@ if [ -n "${DB_PASSWORD:-}" ]; then
   sed -i "s/^Password=.*/Password=$(escape_sed_replacement "${DB_PASSWORD}")/" "${AAA_INI}"
 fi
 
+if grep -q '__DB_HOST__' "${AAA_INI}"; then
+  echo "ERROR: DB_HOST is required because ${AAA_INI} contains __DB_HOST__" >&2
+  exit 1
+fi
+
+if grep -q '__DB_USER__' "${AAA_INI}"; then
+  echo "ERROR: DB_USER is required because ${AAA_INI} contains __DB_USER__" >&2
+  exit 1
+fi
+
+if grep -q '__DB_PASSWORD__' "${AAA_INI}"; then
+  echo "ERROR: DB_PASSWORD is required because ${AAA_INI} contains __DB_PASSWORD__" >&2
+  exit 1
+fi
+
 chmod +x /app/runaaa /app/magic_Linux32
 cd /app
 exec ./runaaa
@@ -124,7 +139,7 @@ echo "Run with bundled aaa.ini:"
 echo "  docker run --rm --name asktao-aaa -p 8101:8101 -p 9101:9101 ${IMAGE_NAME}"
 echo
 echo "Run with a host directory mounted at /app:"
-echo "  docker run --rm --name asktao-aaa -p 8101:8101 -p 9101:9101 -e DB_HOST=47.97.104.166 -e DB_USER=asktao -e DB_PASSWORD=123456 -v /home/at-1.4/aaa:/app ${IMAGE_NAME}"
+echo "  docker run --rm --name asktao-aaa -p 8101:8101 -p 9101:9101 -e DB_HOST=your-db-host -e DB_USER=your-db-user -e DB_PASSWORD=your-db-password -v /home/at-1.4/aaa:/app ${IMAGE_NAME}"
 echo
 echo "Note: an empty /app mount is initialized from the image on container startup."
 echo "A non-empty /app mount is used as-is and will not be overwritten."
