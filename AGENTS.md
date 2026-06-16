@@ -16,6 +16,7 @@ There is no separate source tree or test directory at present; treat packaged ru
 
 - `sudo ./dockerbase/centos7.9/build-centos79.sh` builds and verifies `ringotangs/at-centos79:0.1`.
 - `sudo ./dockerbase/centos5.8/build-centos58-minimal.sh` builds and verifies `ringotangs/at-centos58:0.1`.
+- `cd 1.4_server && ./build-aaa-image.sh` builds the AskTao 1.4 AAA service image.
 - `docker run --rm -it ringotangs/at-centos79:0.1 bash` opens a shell in the CentOS 7.9 image.
 - `docker save ringotangs/at-centos79:0.1 -o at-centos79-0.1.tar` exports an image for transfer.
 
