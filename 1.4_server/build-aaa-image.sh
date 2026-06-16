@@ -38,20 +38,52 @@ cp "${SCRIPT_DIR}/magic_Linux32" "${BUILD_DIR}/magic_Linux32"
 cp "${SCRIPT_DIR}/runaaa" "${BUILD_DIR}/runaaa"
 cp -R "${SCRIPT_DIR}/aaa" "${BUILD_DIR}/aaa"
 
+cat > "${BUILD_DIR}/docker-entrypoint.sh" <<'EOF'
+#!/bin/bash
+set -euo pipefail
+
+if [ -z "$(find /app -mindepth 1 -maxdepth 1 -print -quit)" ]; then
+  echo "Initializing empty /app from image contents..."
+  cp -a /image-app/. /app/
+else
+  echo "/app is not empty; using mounted contents without overwriting."
+fi
+
+if [ ! -f /app/runaaa ]; then
+  echo "ERROR: missing required file: /app/runaaa" >&2
+  exit 1
+fi
+
+if [ ! -f /app/magic_Linux32 ]; then
+  echo "ERROR: missing required file: /app/magic_Linux32" >&2
+  exit 1
+fi
+
+if [ ! -f /app/aaa/pack_data/lib_aaa32.pak ]; then
+  echo "ERROR: missing required file: /app/aaa/pack_data/lib_aaa32.pak" >&2
+  exit 1
+fi
+
+chmod +x /app/runaaa /app/magic_Linux32
+cd /app
+exec ./runaaa
+EOF
+
 cat > "${BUILD_DIR}/Dockerfile" <<EOF
 FROM ${BASE_IMAGE}
 
 WORKDIR /app
 
-COPY magic_Linux32 ./magic_Linux32
-COPY runaaa ./runaaa
-COPY aaa ./aaa
+COPY magic_Linux32 /image-app/magic_Linux32
+COPY runaaa /image-app/runaaa
+COPY aaa /image-app/aaa
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
-RUN chmod +x ./magic_Linux32 ./runaaa \\
-  && test -f ./aaa/aaa.ini \\
-  && test -f ./aaa/pack_data/lib_aaa32.pak
+RUN chmod +x /image-app/magic_Linux32 /image-app/runaaa /usr/local/bin/docker-entrypoint.sh \\
+  && test -f /image-app/aaa/aaa.ini \\
+  && test -f /image-app/aaa/pack_data/lib_aaa32.pak
 
-ENTRYPOINT ["./runaaa"]
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 EOF
 
 docker build -t "${IMAGE_NAME}" "${BUILD_DIR}"
@@ -62,8 +94,8 @@ echo
 echo "Run with bundled aaa.ini:"
 echo "  docker run --rm --name asktao-aaa ${IMAGE_NAME}"
 echo
-echo "Run with host 1.4_server mounted at /app:"
-echo "  docker run --rm --name asktao-aaa -v \"${SCRIPT_DIR}:/app\" ${IMAGE_NAME}"
+echo "Run with a host directory mounted at /app:"
+echo "  docker run --rm --name asktao-aaa -v /home/at-1.4/aaa:/app ${IMAGE_NAME}"
 echo
-echo "Note: the mounted host path must contain the complete 1.4_server directory contents."
-echo "An empty host directory will hide the files packaged in the image and startup will fail."
+echo "Note: an empty /app mount is initialized from the image on container startup."
+echo "A non-empty /app mount is used as-is and will not be overwritten."
