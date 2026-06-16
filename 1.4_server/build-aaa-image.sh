@@ -139,7 +139,7 @@ echo "Run with bundled aaa.ini:"
 echo "  docker run --rm --name at-1.4-aaa -p 8101:8101 -p 9101:9101 ${IMAGE_NAME}"
 echo
 echo "Run with a host directory mounted at /app:"
-echo "  docker run --rm --name at-1.4-aaa -p 8101:8101 -p 9101:9101 -e DB_HOST=your-db-host -e DB_USER=your-db-user -e DB_PASSWORD=your-db-password -v /home/at-1.4/aaa:/app ${IMAGE_NAME}"
+echo "  docker run --rm --name at-1.4-aaa -p 8101:8101 -p 9101:9101 -e DB_HOST=your-db-host -e DB_USER=your-db-user -e DB_PASSWORD=your-db-password -v /data/at-1.4/aaa:/app ${IMAGE_NAME}"
 echo
 echo "Note: an empty /app mount is initialized from the image on container startup."
 echo "A non-empty /app mount is used as-is and will not be overwritten."
