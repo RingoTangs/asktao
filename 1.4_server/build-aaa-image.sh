@@ -69,6 +69,28 @@ if [ ! -f /app/aaa/pack_data/lib_aaa32.pak ]; then
   exit 1
 fi
 
+escape_sed_replacement() {
+  printf '%s' "$1" | sed 's/[\/&]/\\&/g'
+}
+
+AAA_INI="/app/aaa/aaa.ini"
+if [ ! -f "${AAA_INI}" ]; then
+  echo "ERROR: missing required file: ${AAA_INI}" >&2
+  exit 1
+fi
+
+if [ -n "${DB_HOST:-}" ]; then
+  sed -i "s/^Host=.*/Host=$(escape_sed_replacement "${DB_HOST}")/" "${AAA_INI}"
+fi
+
+if [ -n "${DB_USER:-}" ]; then
+  sed -i "s/^User=.*/User=$(escape_sed_replacement "${DB_USER}")/" "${AAA_INI}"
+fi
+
+if [ -n "${DB_PASSWORD:-}" ]; then
+  sed -i "s/^Password=.*/Password=$(escape_sed_replacement "${DB_PASSWORD}")/" "${AAA_INI}"
+fi
+
 chmod +x /app/runaaa /app/magic_Linux32
 cd /app
 exec ./runaaa
@@ -102,7 +124,8 @@ echo "Run with bundled aaa.ini:"
 echo "  docker run --rm --name asktao-aaa -p 8101:8101 -p 9101:9101 ${IMAGE_NAME}"
 echo
 echo "Run with a host directory mounted at /app:"
-echo "  docker run --rm --name asktao-aaa -p 8101:8101 -p 9101:9101 -v /home/at-1.4/aaa:/app ${IMAGE_NAME}"
+echo "  docker run --rm --name asktao-aaa -p 8101:8101 -p 9101:9101 -e DB_HOST=47.97.104.166 -e DB_USER=asktao -e DB_PASSWORD=123456 -v /home/at-1.4/aaa:/app ${IMAGE_NAME}"
 echo
 echo "Note: an empty /app mount is initialized from the image on container startup."
 echo "A non-empty /app mount is used as-is and will not be overwritten."
+echo "DB_HOST, DB_USER, and DB_PASSWORD replace Host/User/Password in /app/aaa/aaa.ini when set."
