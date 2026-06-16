@@ -4,7 +4,7 @@
 
 This repository contains the AskTao (问道) game server runtime and Docker base-image tooling.
 
-- `1.4_server/` contains runnable server scripts and runtime assets.
+- `1.4_server/` contains the AskTao 1.4 server program, including runnable scripts and runtime assets.
 - `1.4_server/{aaa,ccs,dba,gs}/` contain service-specific `.ini` files and `pack_data/*.pak` bundles.
 - `1.4_server/magic_Linux32` is a 32-bit Linux executable used by the `run*` launch scripts.
 - `dockerbase/centos5.8/` and `dockerbase/centos7.9/` contain build scripts and image export/load/push notes.
