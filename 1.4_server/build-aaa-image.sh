@@ -43,7 +43,7 @@ cp "${SCRIPT_DIR}/magic_Linux32" "${BUILD_DIR}/magic_Linux32"
 cp "${SCRIPT_DIR}/runaaa" "${BUILD_DIR}/runaaa"
 cp -R "${SCRIPT_DIR}/aaa" "${BUILD_DIR}/aaa"
 
-cat > "${BUILD_DIR}/docker-entrypoint.sh" <<'EOF'
+cat > "${BUILD_DIR}/asktao-aaa-entrypoint.sh" <<'EOF'
 #!/bin/bash
 set -euo pipefail
 
@@ -82,13 +82,13 @@ WORKDIR /app
 COPY magic_Linux32 /image-app/magic_Linux32
 COPY runaaa /image-app/runaaa
 COPY aaa /image-app/aaa
-COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+COPY asktao-aaa-entrypoint.sh /usr/local/bin/asktao-aaa-entrypoint.sh
 
-RUN chmod +x /image-app/magic_Linux32 /image-app/runaaa /usr/local/bin/docker-entrypoint.sh \\
+RUN chmod +x /image-app/magic_Linux32 /image-app/runaaa /usr/local/bin/asktao-aaa-entrypoint.sh \\
   && test -f /image-app/aaa/aaa.ini \\
   && test -f /image-app/aaa/pack_data/lib_aaa32.pak
 
-ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/asktao-aaa-entrypoint.sh"]
 EOF
 
 docker build -t "${IMAGE_NAME}" "${BUILD_DIR}"
