@@ -1,4 +1,10 @@
 {
   "files.encoding": "utf8",
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "files.associations": {
+    "*.ini": "ini"
+  },
+  "[ini]": {
+    "files.encoding": "gbk"
+  }
 }
