@@ -88,6 +88,8 @@ RUN chmod +x /image-app/magic_Linux32 /image-app/runaaa /usr/local/bin/asktao-aa
   && test -f /image-app/aaa/aaa.ini \\
   && test -f /image-app/aaa/pack_data/lib_aaa32.pak
 
+EXPOSE 8101 9101
+
 ENTRYPOINT ["/usr/local/bin/asktao-aaa-entrypoint.sh"]
 EOF
 
@@ -97,10 +99,10 @@ echo
 echo "Build complete: ${IMAGE_NAME}"
 echo
 echo "Run with bundled aaa.ini:"
-echo "  docker run --rm --name asktao-aaa ${IMAGE_NAME}"
+echo "  docker run --rm --name asktao-aaa -p 8101:8101 -p 9101:9101 ${IMAGE_NAME}"
 echo
 echo "Run with a host directory mounted at /app:"
-echo "  docker run --rm --name asktao-aaa -v /home/at-1.4/aaa:/app ${IMAGE_NAME}"
+echo "  docker run --rm --name asktao-aaa -p 8101:8101 -p 9101:9101 -v /home/at-1.4/aaa:/app ${IMAGE_NAME}"
 echo
 echo "Note: an empty /app mount is initialized from the image on container startup."
 echo "A non-empty /app mount is used as-is and will not be overwritten."
