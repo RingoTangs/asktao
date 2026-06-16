@@ -1,4 +1,6 @@
 #!/bin/bash
+# Build the AskTao 1.4 AAA Docker image.
+# Expected build host: CentOS 7.9 with Docker daemon access.
 set -euo pipefail
 
 IMAGE_NAME="ringotangs/at-1.4-aaa:0.1"
@@ -33,6 +35,9 @@ require_file "${SCRIPT_DIR}/aaa/pack_data/lib_aaa32.pak"
 echo "Building image: ${IMAGE_NAME}"
 echo "Base image: ${BASE_IMAGE}"
 echo "Source dir: ${SCRIPT_DIR}"
+if [ -f /etc/centos-release ]; then
+  echo "Build host: $(cat /etc/centos-release)"
+fi
 
 cp "${SCRIPT_DIR}/magic_Linux32" "${BUILD_DIR}/magic_Linux32"
 cp "${SCRIPT_DIR}/runaaa" "${BUILD_DIR}/runaaa"
