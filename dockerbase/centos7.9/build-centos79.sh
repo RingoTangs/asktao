@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -euo pipefail
 
 IMAGE_NAME="ringotangs/at-centos79:0.1"
