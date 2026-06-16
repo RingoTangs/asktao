@@ -47,7 +47,7 @@ cd 1.4_server
 直接使用镜像内置文件运行：
 
 ```sh
-docker run -d \
+docker run -itd \
   --name at-1.4-aaa \
   -p 8101:8101 \
   -p 9101:9101 \
@@ -62,7 +62,7 @@ docker run -d \
 ```sh
 mkdir -p /data/at-1.4/aaa
 
-docker run -d \
+docker run -itd \
   --name at-1.4-aaa \
   -p 8101:8101 \
   -p 9101:9101 \
