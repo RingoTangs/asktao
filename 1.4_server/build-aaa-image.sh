@@ -41,7 +41,7 @@ cp -R "${SCRIPT_DIR}/aaa" "${BUILD_DIR}/aaa"
 cat > "${BUILD_DIR}/Dockerfile" <<EOF
 FROM ${BASE_IMAGE}
 
-WORKDIR /opt/asktao/1.4_server
+WORKDIR /app
 
 COPY magic_Linux32 ./magic_Linux32
 COPY runaaa ./runaaa
@@ -62,5 +62,8 @@ echo
 echo "Run with bundled aaa.ini:"
 echo "  docker run --rm --name asktao-aaa ${IMAGE_NAME}"
 echo
-echo "Run with external GBK aaa.ini:"
-echo "  docker run --rm --name asktao-aaa -v \"${SCRIPT_DIR}/aaa/aaa.ini:/opt/asktao/1.4_server/aaa/aaa.ini:ro\" ${IMAGE_NAME}"
+echo "Run with host 1.4_server mounted at /app:"
+echo "  docker run --rm --name asktao-aaa -v \"${SCRIPT_DIR}:/app\" ${IMAGE_NAME}"
+echo
+echo "Note: the mounted host path must contain the complete 1.4_server directory contents."
+echo "An empty host directory will hide the files packaged in the image and startup will fail."
