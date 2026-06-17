@@ -102,6 +102,11 @@ command -v python >/dev/null 2>&1 || {
   exit 1
 }
 
+python -c 'import codecs; codecs.lookup("gbk")' >/dev/null 2>&1 || {
+  echo "ERROR: python gbk codec not found; it is required to update game_server.ini" >&2
+  exit 1
+}
+
 python - <<'PY'
 # -*- coding: utf-8 -*-
 import os
@@ -199,6 +204,7 @@ COPY asktao-gs-entrypoint.sh /usr/local/bin/asktao-gs-entrypoint.sh
 
 RUN chmod +x /image-app/magic_Linux32 /image-app/rungs /usr/local/bin/asktao-gs-entrypoint.sh \\
   && command -v python >/dev/null 2>&1 \\
+  && python -c 'import codecs; codecs.lookup("gbk")' \\
   && test -f /image-app/gs/game_server.ini \\
   && test -f /image-app/gs/pack_data/etc.pak \\
   && test -f /image-app/gs/pack_data/lib_gs32.pak \\
