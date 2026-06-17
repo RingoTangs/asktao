@@ -37,25 +37,6 @@ docker run -itd \
 docker logs -f at-1.4-aaa
 ```
 
-## 运行 CCS
-
-```sh
-docker rm -f at-1.4-ccs 2>/dev/null || true
-
-docker run -itd \
-  --name at-1.4-ccs \
-  -p 8110:8110 \
-  -p 9110:9110 \
-  -e DB_HOST=47.97.104.166 \
-  -e DB_USER=asktao \
-  -e DB_PASSWORD=123456 \
-  -e AAA_ADDR=47.97.104.166 \
-  -v /data/at-1.4/ccs:/app \
-  ringotangs/at-1.4-ccs:0.1
-
-docker logs -f at-1.4-ccs
-```
-
 ## 运行 DBA
 
 ```sh
@@ -73,6 +54,25 @@ docker run -itd \
   ringotangs/at-1.4-dba:0.1
 
 docker logs -f at-1.4-dba
+```
+
+## 运行 CCS
+
+```sh
+docker rm -f at-1.4-ccs 2>/dev/null || true
+
+docker run -itd \
+  --name at-1.4-ccs \
+  -p 8110:8110 \
+  -p 9110:9110 \
+  -e DB_HOST=47.97.104.166 \
+  -e DB_USER=asktao \
+  -e DB_PASSWORD=123456 \
+  -e AAA_ADDR=47.97.104.166 \
+  -v /data/at-1.4/ccs:/app \
+  ringotangs/at-1.4-ccs:0.1
+
+docker logs -f at-1.4-ccs
 ```
 
 ## 查看状态
