@@ -1,6 +1,6 @@
 # AskTao 1.4 服务端 Docker 使用说明
 
-本文档说明如何把 `1.4_server` 里的问道 1.4 服务端程序打包、上传、构建成 Docker 镜像，并运行 AAA、DBA、CCS、GS 容器。第一次操作建议先照着 `TEST.md` 的顺序执行：先 AAA，再 DBA，再 CCS，最后 GS。
+本文档说明如何把 `1.4_server` 里的问道 1.4 服务端程序打包、上传、构建成 Docker 镜像，并运行 AAA、DBA、CCS、GS 容器。第一次操作建议按顺序启动：先 AAA，再 DBA，再 CCS，最后 GS。
 
 ## 目录说明
 
@@ -9,7 +9,6 @@
 - `magic_Linux32`：服务运行需要的 32 位 Linux 程序。
 - `build-*-image.sh`：构建对应服务镜像。
 - `package-*.sh`：把构建镜像需要的文件打成 zip，方便上传服务器。
-- `TEST.md`：带真实测试参数的容器启动命令。
 
 ## 服务和镜像
 
@@ -133,7 +132,7 @@ docker run -itd \
 
 `DB_HOST`、`DB_USER`、`DB_PASSWORD` 会写入 AAA、DBA、CCS 的数据库配置。`AAA_ADDR` 会写入 DBA、CCS、GS 的 AAA 地址。`GS_NAME` 会写入 GS 的线路名称，支持中文；GS 脚本会按 GBK 读写 `game_server.ini`。
 
-README 里的连接信息使用占位符。真实 IP、数据库账号和密码请放在自己的部署记录或 `TEST.md` 中，不要写入公开说明文档。
+README 里的连接信息使用占位符。真实 IP、数据库账号和密码请放在自己的部署记录中，不要写入公开说明文档。
 
 ## 常用管理命令
 
