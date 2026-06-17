@@ -122,17 +122,35 @@ placeholder_to_env = (
     ("__AAA_ADDR__", "AAA_ADDR"),
 )
 
-with open(path, "rb") as fh:
-    text = fh.read().decode("gbk")
+def read_gbk(path):
+    fh = open(path, "rb")
+    try:
+        data = fh.read()
+    finally:
+        fh.close()
+    return data.decode("gbk")
+
+def write_gbk(path, text):
+    fh = open(path, "wb")
+    try:
+        fh.write(text.encode("gbk"))
+    finally:
+        fh.close()
+
+def get_env_text(name):
+    value = os.environ.get(name)
+    if not value:
+        return None
+    if isinstance(value, text_type):
+        return value
+    return value.decode("utf-8")
+
+text = read_gbk(path)
 
 lines = text.splitlines(True)
 for env_name, key in env_to_key:
-    value = os.environ.get(env_name)
+    value = get_env_text(env_name)
     if value:
-        if isinstance(value, bytes):
-            value = value.decode("utf-8")
-        else:
-            value = text_type(value)
         prefix = key + "="
         spaced_prefix = key + " ="
         replaced = False
@@ -161,8 +179,7 @@ for placeholder, env_name in placeholder_to_env:
         sys.stderr.write("ERROR: %s is required because %s contains %s\n" % (env_name, path, placeholder))
         sys.exit(1)
 
-with open(path, "wb") as fh:
-    fh.write(text.encode("gbk"))
+write_gbk(path, text)
 PY
 
 chmod +x /app/rungs /app/magic_Linux32
