@@ -82,9 +82,9 @@ docker run -itd \
   --name at-1.4-aaa \
   -p 8101:8101 \
   -p 9101:9101 \
-  -e DB_HOST=47.97.104.166 \
-  -e DB_USER=asktao \
-  -e DB_PASSWORD=123456 \
+  -e DB_HOST=your-db-host \
+  -e DB_USER=your-db-user \
+  -e DB_PASSWORD=your-db-password \
   -v /data/at-1.4/aaa:/app \
   ringotangs/at-1.4-aaa:0.1
 ```
@@ -96,10 +96,10 @@ docker run -itd \
   --name at-1.4-dba \
   -p 8120:8120 \
   -p 9120:9120 \
-  -e DB_HOST=47.97.104.166 \
-  -e DB_USER=asktao \
-  -e DB_PASSWORD=123456 \
-  -e AAA_ADDR=47.97.104.166 \
+  -e DB_HOST=your-db-host \
+  -e DB_USER=your-db-user \
+  -e DB_PASSWORD=your-db-password \
+  -e AAA_ADDR=your-aaa-host \
   -v /data/at-1.4/dba:/app \
   ringotangs/at-1.4-dba:0.1
 ```
@@ -111,10 +111,10 @@ docker run -itd \
   --name at-1.4-ccs \
   -p 8110:8110 \
   -p 9110:9110 \
-  -e DB_HOST=47.97.104.166 \
-  -e DB_USER=asktao \
-  -e DB_PASSWORD=123456 \
-  -e AAA_ADDR=47.97.104.166 \
+  -e DB_HOST=your-db-host \
+  -e DB_USER=your-db-user \
+  -e DB_PASSWORD=your-db-password \
+  -e AAA_ADDR=your-aaa-host \
   -v /data/at-1.4/ccs:/app \
   ringotangs/at-1.4-ccs:0.1
 ```
@@ -126,12 +126,14 @@ docker run -itd \
   --name at-1.4-gs1 \
   -p 8160:8160 \
   -e GS_NAME=试剑内测一线 \
-  -e AAA_ADDR=47.97.104.166 \
+  -e AAA_ADDR=your-aaa-host \
   -v /data/at-1.4/gs1:/app \
   ringotangs/at-1.4-gs:0.1
 ```
 
 `DB_HOST`、`DB_USER`、`DB_PASSWORD` 会写入 AAA、DBA、CCS 的数据库配置。`AAA_ADDR` 会写入 DBA、CCS、GS 的 AAA 地址。`GS_NAME` 会写入 GS 的线路名称，支持中文；GS 脚本会按 GBK 读写 `game_server.ini`。
+
+README 里的连接信息使用占位符。真实 IP、数据库账号和密码请放在自己的部署记录或 `TEST.md` 中，不要写入公开说明文档。
 
 ## 常用管理命令
 
