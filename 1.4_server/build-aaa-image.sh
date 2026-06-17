@@ -30,6 +30,7 @@ command -v docker >/dev/null 2>&1 || {
 require_file "${SCRIPT_DIR}/magic_Linux32"
 require_file "${SCRIPT_DIR}/runaaa"
 require_file "${SCRIPT_DIR}/aaa/aaa.ini"
+require_file "${SCRIPT_DIR}/aaa/pack_data/etc.pak"
 require_file "${SCRIPT_DIR}/aaa/pack_data/lib_aaa32.pak"
 
 echo "Building image: ${IMAGE_NAME}"
@@ -70,7 +71,7 @@ if [ ! -f /app/aaa/pack_data/lib_aaa32.pak ]; then
 fi
 
 escape_sed_replacement() {
-  printf '%s' "$1" | sed 's/[\/&]/\\&/g'
+  printf '%s' "$1" | sed 's/[\\\/&]/\\&/g'
 }
 
 AAA_INI="/app/aaa/aaa.ini"
