@@ -2,4 +2,4 @@
 
 ulimit -n 2560
 ulimit -c unlimited
-./magic_Linux32 /r ./ /e /gs/pack_data/lib_gs32.pak/gs/start_gs.o /b /gs/pack_data/lib_gs32.pak -m gs/gsmem.cfg /D _RELEASE /D INIT_SOCKET_SCANNER_TEMP /D TRADITIONAL --enable-socket-daemon 0 --stack-size 1024
+./magic_Linux32 /r ./ /e /gs/pack_data/lib_gs32.pak/gs/start_gs.o /b /gs/pack_data/lib_gs32.pak /D _RELEASE /D INIT_SOCKET_SCANNER_TEMP /D TRADITIONAL --enable-socket-daemon 0 --stack-size 1024
