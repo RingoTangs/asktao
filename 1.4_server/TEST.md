@@ -18,7 +18,7 @@ GS_NAME=试剑内测一线
 mkdir -p /data/at-1.4/aaa
 mkdir -p /data/at-1.4/dba
 mkdir -p /data/at-1.4/ccs
-mkdir -p /data/at-1.4/gs
+mkdir -p /data/at-1.4/gs1
 ```
 
 ## 运行 AAA
@@ -87,7 +87,7 @@ docker run -itd \
   -p 8160:8160 \
   -e GS_NAME=试剑内测一线 \
   -e AAA_ADDR=47.97.104.166 \
-  -v /data/at-1.4/gs:/app \
+  -v /data/at-1.4/gs1:/app \
   ringotangs/at-1.4-gs:0.1
 
 docker logs -f at-1.4-gs1
