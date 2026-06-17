@@ -116,12 +116,10 @@ path = "/app/gs/game_server.ini"
 env_to_key = (
     ("GS_NAME", "Name"),
     ("AAA_ADDR", "AAA_Addr"),
-    ("AAA_PORT", "AAA_Port"),
 )
 placeholder_to_env = (
     ("__GS_NAME__", "GS_NAME"),
     ("__AAA_ADDR__", "AAA_ADDR"),
-    ("__AAA_PORT__", "AAA_PORT"),
 )
 
 with open(path, "rb") as fh:
@@ -198,13 +196,13 @@ echo
 echo "Build complete: ${IMAGE_NAME}"
 echo
 echo "Run with bundled game_server.ini:"
-echo "  docker run -it --rm --name at-1.4-gs -e GS_NAME=your-gs-name -e AAA_ADDR=your-aaa-host -e AAA_PORT=8101 ${IMAGE_NAME}"
+echo "  docker run -it --rm --name at-1.4-gs -e GS_NAME=your-gs-name -e AAA_ADDR=your-aaa-host ${IMAGE_NAME}"
 echo
 echo "Run with a host directory mounted at /app:"
-echo "  docker run -it --rm --name at-1.4-gs -e GS_NAME=your-gs-name -e AAA_ADDR=your-aaa-host -e AAA_PORT=8101 -v /data/at-1.4/gs:/app ${IMAGE_NAME}"
+echo "  docker run -it --rm --name at-1.4-gs -e GS_NAME=your-gs-name -e AAA_ADDR=your-aaa-host -v /data/at-1.4/gs:/app ${IMAGE_NAME}"
 echo
 echo "Note: missing /app service files are initialized from the image on container startup."
 echo "Existing files in /app are not overwritten, except when RESET_CONFIG=1 restores game_server.ini."
-echo "GS_NAME, AAA_ADDR, and AAA_PORT replace game_server.ini placeholders when set."
+echo "GS_NAME and AAA_ADDR replace game_server.ini placeholders when set."
 echo "game_server.ini is read and written as GBK, so GS_NAME may contain Chinese text."
 echo "Those values are written to /app/gs/game_server.ini and persist when /app is a host mount."
