@@ -189,8 +189,6 @@ RUN chmod +x /image-app/magic_Linux32 /image-app/rungs /usr/local/bin/asktao-gs-
   && test -f /image-app/gs/pack_data/lib_gs32.pak \\
   && test -f /image-app/gs/pack_data/server_maps.pak
 
-EXPOSE 9527
-
 ENTRYPOINT ["/usr/local/bin/asktao-gs-entrypoint.sh"]
 EOF
 
@@ -200,10 +198,10 @@ echo
 echo "Build complete: ${IMAGE_NAME}"
 echo
 echo "Run with bundled game_server.ini:"
-echo "  docker run -it --rm --name at-1.4-gs -p 9527:9527 -e GS_NAME=your-gs-name -e AAA_ADDR=your-aaa-host -e AAA_PORT=8101 ${IMAGE_NAME}"
+echo "  docker run -it --rm --name at-1.4-gs -e GS_NAME=your-gs-name -e AAA_ADDR=your-aaa-host -e AAA_PORT=8101 ${IMAGE_NAME}"
 echo
 echo "Run with a host directory mounted at /app:"
-echo "  docker run -it --rm --name at-1.4-gs -p 9527:9527 -e GS_NAME=your-gs-name -e AAA_ADDR=your-aaa-host -e AAA_PORT=8101 -v /data/at-1.4/gs:/app ${IMAGE_NAME}"
+echo "  docker run -it --rm --name at-1.4-gs -e GS_NAME=your-gs-name -e AAA_ADDR=your-aaa-host -e AAA_PORT=8101 -v /data/at-1.4/gs:/app ${IMAGE_NAME}"
 echo
 echo "Note: missing /app service files are initialized from the image on container startup."
 echo "Existing files in /app are not overwritten, except when RESET_CONFIG=1 restores game_server.ini."
