@@ -56,7 +56,25 @@ if [ ! -f /app/rungs ] \
   || [ ! -f /app/gs/pack_data/lib_gs32.pak ] \
   || [ ! -f /app/gs/pack_data/server_maps.pak ]; then
   echo "Initializing missing /app files from image contents..."
-  cp -an /image-app/. /app/
+  mkdir -p /app/gs/pack_data
+  if [ ! -f /app/rungs ]; then
+    cp -a /image-app/rungs /app/rungs
+  fi
+  if [ ! -f /app/magic_Linux32 ]; then
+    cp -a /image-app/magic_Linux32 /app/magic_Linux32
+  fi
+  if [ ! -f /app/gs/game_server.ini ]; then
+    cp -a /image-app/gs/game_server.ini /app/gs/game_server.ini
+  fi
+  if [ ! -f /app/gs/pack_data/etc.pak ]; then
+    cp -a /image-app/gs/pack_data/etc.pak /app/gs/pack_data/etc.pak
+  fi
+  if [ ! -f /app/gs/pack_data/lib_gs32.pak ]; then
+    cp -a /image-app/gs/pack_data/lib_gs32.pak /app/gs/pack_data/lib_gs32.pak
+  fi
+  if [ ! -f /app/gs/pack_data/server_maps.pak ]; then
+    cp -a /image-app/gs/pack_data/server_maps.pak /app/gs/pack_data/server_maps.pak
+  fi
 else
   echo "/app has required files; using mounted contents without copying."
 fi
