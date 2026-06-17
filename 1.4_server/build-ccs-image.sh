@@ -48,11 +48,30 @@ cat > "${BUILD_DIR}/asktao-ccs-entrypoint.sh" <<'EOF'
 #!/bin/bash
 set -euo pipefail
 
-if [ -z "$(find /app -mindepth 1 -maxdepth 1 -print -quit)" ]; then
-  echo "Initializing empty /app from image contents..."
-  cp -a /image-app/. /app/
+if [ ! -f /app/runccs ] \
+  || [ ! -f /app/magic_Linux32 ] \
+  || [ ! -f /app/ccs/ccs.ini ] \
+  || [ ! -f /app/ccs/pack_data/etc.pak ] \
+  || [ ! -f /app/ccs/pack_data/lib_ccs32.pak ]; then
+  echo "Initializing missing /app files from image contents..."
+  cp -an /image-app/. /app/
 else
-  echo "/app is not empty; using mounted contents without overwriting."
+  echo "/app has required files; using mounted contents without copying."
+fi
+
+escape_sed_replacement() {
+  printf '%s' "$1" | sed 's/[\\\/&]/\\&/g'
+}
+
+CCS_INI="/app/ccs/ccs.ini"
+if [ "${RESET_CONFIG:-}" = "1" ]; then
+  echo "RESET_CONFIG=1: restoring ${CCS_INI} from image template..."
+  cp -a /image-app/ccs/ccs.ini "${CCS_INI}"
+fi
+
+if [ ! -f "${CCS_INI}" ]; then
+  echo "ERROR: missing required file: ${CCS_INI}" >&2
+  exit 1
 fi
 
 if [ ! -f /app/runccs ]; then
@@ -72,16 +91,6 @@ fi
 
 if [ ! -f /app/ccs/pack_data/lib_ccs32.pak ]; then
   echo "ERROR: missing required file: /app/ccs/pack_data/lib_ccs32.pak" >&2
-  exit 1
-fi
-
-escape_sed_replacement() {
-  printf '%s' "$1" | sed 's/[\\\/&]/\\&/g'
-}
-
-CCS_INI="/app/ccs/ccs.ini"
-if [ ! -f "${CCS_INI}" ]; then
-  echo "ERROR: missing required file: ${CCS_INI}" >&2
   exit 1
 fi
 
@@ -157,7 +166,7 @@ echo
 echo "Run with a host directory mounted at /app:"
 echo "  docker run -it --rm --name at-1.4-ccs -p 8110:8110 -p 9110:9110 -e DB_HOST=your-db-host -e DB_USER=your-db-user -e DB_PASSWORD=your-db-password -e AAA_ADDR=your-aaa-host -v /data/at-1.4/ccs:/app ${IMAGE_NAME}"
 echo
-echo "Note: an empty /app mount is initialized from the image on container startup."
-echo "A non-empty /app mount is used as-is and will not be overwritten."
+echo "Note: missing /app service files are initialized from the image on container startup."
+echo "Existing files in /app are not overwritten, except when RESET_CONFIG=1 restores ccs.ini."
 echo "DB_HOST, DB_USER, DB_PASSWORD, and AAA_ADDR replace ccs.ini placeholders when set."
 echo "Those values are written to /app/ccs/ccs.ini and persist when /app is a host mount."

@@ -48,11 +48,30 @@ cat > "${BUILD_DIR}/asktao-aaa-entrypoint.sh" <<'EOF'
 #!/bin/bash
 set -euo pipefail
 
-if [ -z "$(find /app -mindepth 1 -maxdepth 1 -print -quit)" ]; then
-  echo "Initializing empty /app from image contents..."
-  cp -a /image-app/. /app/
+if [ ! -f /app/runaaa ] \
+  || [ ! -f /app/magic_Linux32 ] \
+  || [ ! -f /app/aaa/aaa.ini ] \
+  || [ ! -f /app/aaa/pack_data/etc.pak ] \
+  || [ ! -f /app/aaa/pack_data/lib_aaa32.pak ]; then
+  echo "Initializing missing /app files from image contents..."
+  cp -an /image-app/. /app/
 else
-  echo "/app is not empty; using mounted contents without overwriting."
+  echo "/app has required files; using mounted contents without copying."
+fi
+
+escape_sed_replacement() {
+  printf '%s' "$1" | sed 's/[\\\/&]/\\&/g'
+}
+
+AAA_INI="/app/aaa/aaa.ini"
+if [ "${RESET_CONFIG:-}" = "1" ]; then
+  echo "RESET_CONFIG=1: restoring ${AAA_INI} from image template..."
+  cp -a /image-app/aaa/aaa.ini "${AAA_INI}"
+fi
+
+if [ ! -f "${AAA_INI}" ]; then
+  echo "ERROR: missing required file: ${AAA_INI}" >&2
+  exit 1
 fi
 
 if [ ! -f /app/runaaa ]; then
@@ -72,16 +91,6 @@ fi
 
 if [ ! -f /app/aaa/pack_data/lib_aaa32.pak ]; then
   echo "ERROR: missing required file: /app/aaa/pack_data/lib_aaa32.pak" >&2
-  exit 1
-fi
-
-escape_sed_replacement() {
-  printf '%s' "$1" | sed 's/[\\\/&]/\\&/g'
-}
-
-AAA_INI="/app/aaa/aaa.ini"
-if [ ! -f "${AAA_INI}" ]; then
-  echo "ERROR: missing required file: ${AAA_INI}" >&2
   exit 1
 fi
 
@@ -148,7 +157,7 @@ echo
 echo "Run with a host directory mounted at /app:"
 echo "  docker run -it --rm --name at-1.4-aaa -p 8101:8101 -p 9101:9101 -e DB_HOST=your-db-host -e DB_USER=your-db-user -e DB_PASSWORD=your-db-password -v /data/at-1.4/aaa:/app ${IMAGE_NAME}"
 echo
-echo "Note: an empty /app mount is initialized from the image on container startup."
-echo "A non-empty /app mount is used as-is and will not be overwritten."
+echo "Note: missing /app service files are initialized from the image on container startup."
+echo "Existing files in /app are not overwritten, except when RESET_CONFIG=1 restores aaa.ini."
 echo "DB_HOST, DB_USER, and DB_PASSWORD replace Host/User/Password in /app/aaa/aaa.ini when set."
 echo "Those values are written to /app/aaa/aaa.ini and persist when /app is a host mount."

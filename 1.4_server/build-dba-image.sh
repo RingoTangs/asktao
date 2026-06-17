@@ -48,11 +48,30 @@ cat > "${BUILD_DIR}/asktao-dba-entrypoint.sh" <<'EOF'
 #!/bin/bash
 set -euo pipefail
 
-if [ -z "$(find /app -mindepth 1 -maxdepth 1 -print -quit)" ]; then
-  echo "Initializing empty /app from image contents..."
-  cp -a /image-app/. /app/
+if [ ! -f /app/rundba ] \
+  || [ ! -f /app/magic_Linux32 ] \
+  || [ ! -f /app/dba/dba.ini ] \
+  || [ ! -f /app/dba/pack_data/etc.pak ] \
+  || [ ! -f /app/dba/pack_data/lib_dba32.pak ]; then
+  echo "Initializing missing /app files from image contents..."
+  cp -an /image-app/. /app/
 else
-  echo "/app is not empty; using mounted contents without overwriting."
+  echo "/app has required files; using mounted contents without copying."
+fi
+
+escape_sed_replacement() {
+  printf '%s' "$1" | sed 's/[\\\/&]/\\&/g'
+}
+
+DBA_INI="/app/dba/dba.ini"
+if [ "${RESET_CONFIG:-}" = "1" ]; then
+  echo "RESET_CONFIG=1: restoring ${DBA_INI} from image template..."
+  cp -a /image-app/dba/dba.ini "${DBA_INI}"
+fi
+
+if [ ! -f "${DBA_INI}" ]; then
+  echo "ERROR: missing required file: ${DBA_INI}" >&2
+  exit 1
 fi
 
 if [ ! -f /app/rundba ]; then
@@ -72,16 +91,6 @@ fi
 
 if [ ! -f /app/dba/pack_data/lib_dba32.pak ]; then
   echo "ERROR: missing required file: /app/dba/pack_data/lib_dba32.pak" >&2
-  exit 1
-fi
-
-escape_sed_replacement() {
-  printf '%s' "$1" | sed 's/[\\\/&]/\\&/g'
-}
-
-DBA_INI="/app/dba/dba.ini"
-if [ ! -f "${DBA_INI}" ]; then
-  echo "ERROR: missing required file: ${DBA_INI}" >&2
   exit 1
 fi
 
@@ -157,7 +166,7 @@ echo
 echo "Run with a host directory mounted at /app:"
 echo "  docker run -it --rm --name at-1.4-dba -p 8120:8120 -p 9120:9120 -e DB_HOST=your-db-host -e DB_USER=your-db-user -e DB_PASSWORD=your-db-password -e AAA_ADDR=your-aaa-host -v /data/at-1.4/dba:/app ${IMAGE_NAME}"
 echo
-echo "Note: an empty /app mount is initialized from the image on container startup."
-echo "A non-empty /app mount is used as-is and will not be overwritten."
+echo "Note: missing /app service files are initialized from the image on container startup."
+echo "Existing files in /app are not overwritten, except when RESET_CONFIG=1 restores dba.ini."
 echo "DB_HOST, DB_USER, DB_PASSWORD, and AAA_ADDR replace dba.ini placeholders when set."
 echo "Those values are written to /app/dba/dba.ini and persist when /app is a host mount."
