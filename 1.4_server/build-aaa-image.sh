@@ -65,6 +65,11 @@ if [ ! -f /app/magic_Linux32 ]; then
   exit 1
 fi
 
+if [ ! -f /app/aaa/pack_data/etc.pak ]; then
+  echo "ERROR: missing required file: /app/aaa/pack_data/etc.pak" >&2
+  exit 1
+fi
+
 if [ ! -f /app/aaa/pack_data/lib_aaa32.pak ]; then
   echo "ERROR: missing required file: /app/aaa/pack_data/lib_aaa32.pak" >&2
   exit 1
@@ -124,6 +129,7 @@ COPY asktao-aaa-entrypoint.sh /usr/local/bin/asktao-aaa-entrypoint.sh
 
 RUN chmod +x /image-app/magic_Linux32 /image-app/runaaa /usr/local/bin/asktao-aaa-entrypoint.sh \\
   && test -f /image-app/aaa/aaa.ini \\
+  && test -f /image-app/aaa/pack_data/etc.pak \\
   && test -f /image-app/aaa/pack_data/lib_aaa32.pak
 
 EXPOSE 8101 9101
@@ -145,3 +151,4 @@ echo
 echo "Note: an empty /app mount is initialized from the image on container startup."
 echo "A non-empty /app mount is used as-is and will not be overwritten."
 echo "DB_HOST, DB_USER, and DB_PASSWORD replace Host/User/Password in /app/aaa/aaa.ini when set."
+echo "Those values are written to /app/aaa/aaa.ini and persist when /app is a host mount."

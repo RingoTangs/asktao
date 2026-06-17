@@ -160,3 +160,4 @@ echo
 echo "Note: an empty /app mount is initialized from the image on container startup."
 echo "A non-empty /app mount is used as-is and will not be overwritten."
 echo "DB_HOST, DB_USER, DB_PASSWORD, and AAA_ADDR replace dba.ini placeholders when set."
+echo "Those values are written to /app/dba/dba.ini and persist when /app is a host mount."
