@@ -27,6 +27,14 @@ docker run -d \
   mysql:5.5.62
 ```
 
+测试环境示例：如果 root 密码使用 `123456`，也就是 `root/123456`，则把上面的环境变量改为：
+
+```sh
+-e MYSQL_ROOT_PASSWORD=123456
+```
+
+`123456` 只适合本机或内网测试，正式部署请换成更强的密码。
+
 查看容器是否启动成功：
 
 ```sh
@@ -59,6 +67,13 @@ GRANT ALL PRIVILEGES ON *.* TO 'asktao'@'localhost' WITH GRANT OPTION;
 GRANT ALL PRIVILEGES ON *.* TO 'asktao'@'%' WITH GRANT OPTION;
 
 FLUSH PRIVILEGES;
+```
+
+测试环境示例：如果数据库用户使用 `asktao/123456`，则密码设置语句可以写成：
+
+```sql
+SET PASSWORD FOR 'asktao'@'localhost' = PASSWORD('123456');
+SET PASSWORD FOR 'asktao'@'%' = PASSWORD('123456');
 ```
 
 说明：
