@@ -2,9 +2,13 @@
   "files.encoding": "utf8",
   "files.eol": "\n",
   "files.associations": {
-    "*.ini": "ini"
+    "*.ini": "ini",
+    "*.list": "list"
   },
   "[ini]": {
+    "files.encoding": "gbk"
+  },
+  "[list]": {
     "files.encoding": "gbk"
   }
 }
