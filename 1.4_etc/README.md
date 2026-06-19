@@ -4,7 +4,7 @@
 
 - `grant.list`：权限配置文件，GBK 编码。
 - `grantd.o`：权限守护模块对象，来自 `/gs/daemons/grantd.c`，负责解析 `grant.list`。
-- `grant copy.list`：权限配置备份文件。
+- `grant.original.list`：原始权限配置备份文件。
 
 ## grant.list 格式
 
