@@ -1,8 +1,8 @@
 # AskTao 1.4 权限配置说明
 
-本目录保存 GM/后台操作权限相关文件。
+本目录保存 GM/后台操作权限相关文件，路径为 `1.4_etc/grant/`。
 
-- `grant.list`：权限配置文件，GBK 编码。
+- `grant.list`：当前修改后的权限配置文件，GBK 编码。
 - `grantd.o`：权限守护模块对象，来自 `/gs/daemons/grantd.c`，负责解析 `grant.list`。
 - `grant.original.list`：原始权限配置备份文件。
 
@@ -28,6 +28,18 @@ admin_operation_name    (GA), (GB), (GC)
 ```
 
 `grantd.o` 中可以看到 `grant.list`、`$%s=%s`、`(%s)`、`Bad privilege %s of operation %s in grant.list.` 等字符串，说明权限代号会从 `grant.list` 中读取并校验。
+
+## 当前配置状态
+
+当前 `grant.list` 已将 64 条 `admin_` 操作统一授权给下面这些权限组：
+
+```text
+(GA), (GB), (GC), (GD), (G1), (G2), (GA1)
+```
+
+也就是说，拥有 `GA`、`GA1`、`GB`、`GC`、`GD`、`G1`、`G2` 这些权限组的角色，可以执行 `grant.list` 中列出的全部 GM/后台操作。
+
+当前配置没有给 `G3-G9` 授权。如果需要让 `G3-G9` 也能执行这些操作，需要把它们显式加入每条操作的授权列表。
 
 ## 权限等级
 
