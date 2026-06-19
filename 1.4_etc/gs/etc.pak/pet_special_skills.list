@@ -1,0 +1,134 @@
+#宠物特殊法术技能列表（辅助技能、研发技能）
+#0.1%的机率玩家可以得到有一个技能的宠物。
+#0.05%的机率玩家可以得到有二个技能的宠物。
+#0.01%的机率玩家可以得到有三个技能的宠物。
+#技能的种类：每种宠物都会从自己特有的技能中，随机选取一个技能。
+#技能的等级：特殊技能的等级与攻击类技能不同，所有技能等级始终为1级。
+
+#key_name,      第一项技能,         第二项技能,         第三项技能
+桃精,           bamiao-zhuzhang
+柳鬼,           bamiao-zhuzhang
+白猿,           fanzhuan-qiankun
+鹰,             tiansheng-shenli
+鹰<北海沙滩>,   tiansheng-shenli
+蝙蝠,           fangwei-dujian,      mantian-xuewu
+蟒<轩辕坟一层>, shiwan-huoji,        siwang-chanmian
+蟒<轩辕坟二层>, shiwan-huoji,        siwang-chanmian
+蟒<轩辕坟三层>, shiwan-huoji,        siwang-chanmian
+僵尸,           fanzhuan-qiankun,    sheming-yiji
+鬼火萤,         bamiao-zhuzhang,     shensheng-zhiguang
+火光鼠,         shiwan-huoji,    youshui-zhishe,      ruyi-quan
+紫燕,           bianchang-moji,        sheming-yiji,           siwang-chanmian
+乌龙,           bianchang-moji,      shenlong-zhao,           sheming-yiji
+花妖,           bamiao-zhuzhang,     mantian-xuewu,           qiankun-zhao
+炎龙,           shiwan-huoji,        shenlong-zhao,           mantian-xuewu
+鱼人,           fangwei-dujian,      youshui-zhishe,          siwang-chanmian
+冰龙,           fangwei-dujian,      shenlong-zhao,           youshui-zhishe
+地裂兽,         bianchang-moji,      siwang-chanmian,         sheming-yiji
+青龙,           bamiao-zhuzhang,      shenlong-zhao,           shensheng-zhiguang
+金头陀,         fanzhuan-qiankun,    sheming-yiji,            siwang-chanmian
+黄龙,           tiansheng-shenli,    shenlong-zhao,           sheming-yiji
+火鸦,           shiwan-huoji,        mantian-xuewu,           shensheng-zhiguang
+屈魂,           bamiao-zhuzhang,     siwang-chanmian,         ruyi-quan
+怨鬼,           fangwei-dujian,      youshui-zhishe,          qiankun-zhao
+粉衣仙子,       fanzhuan-qiankun,    sheming-yiji,            shenlong-zhao
+风怪,           bianchang-moji,      shensheng-zhiguang,      siwang-chanmian
+青衣仙子,       bamiao-zhuzhang,     shensheng-zhiguang,      mantian-xuewu
+雨兽,           fangwei-dujian,      qiankun-zhao,            mantian-xuewu
+黄衣仙子,       tiansheng-shenli,    shensheng-zhiguang,      sheming-yiji
+雷怪,           tiansheng-shenli,    shensheng-zhiguang,      shenlong-zhao
+红衣仙子,       shiwan-huoji,        youshui-zhishe,          siwang-chanmian
+电精,           shiwan-huoji,        ruyi-quan,               mantian-xuewu
+紫衣仙子,       bianchang-moji,      shensheng-zhiguang,      ruyi-quan
+雪女,           fangwei-dujian,      ruyi-quan,               shensheng-zhiguang
+蓝衣仙子,       fangwei-dujian,      youshui-zhishe,          mantian-xuewu
+云兽,           fanzhuan-qiankun,    mantian-xuewu,           qiankun-zhao
+白衣仙子,       fanzhuan-qiankun,    sheming-yiji,            siwang-chanmian
+虹妖,           shensheng-zhiguang,  qiankun-zhao,            siwang-chanmian
+石牛妖,         bianchang-moji,      youshui-zhishe,          mantian-xuewu
+骷髅战将,       bamiao-zhuzhang,     shensheng-zhiguang,      siwang-chanmian
+蓝毛巨兽,       fangwei-dujian,      youshui-zhishe,          sheming-yiji
+螳螂怪,         fanzhuan-qiankun,    shensheng-zhiguang,      ruyi-quan
+三头巨犬,       fanzhuan-qiankun,    youshui-zhishe,          qiankun-zhao
+嗜血巨人,       tiansheng-shenli,    youshui-zhishe,          sheming-yiji
+炼魔,           shiwan-huoji,        shensheng-zhiguang,      mantian-xuewu
+寒冰怪,         fangwei-dujian,      shensheng-zhiguang,      siwang-chanmian
+虾兵,           fangwei-dujian,      shenlong-zhao,           shensheng-zhiguang
+蟹将,           mantian-xuewu,       shenlong-zhao,           sheming-yiji
+九纹豹,         tiansheng-shenli,    sheming-yiji,            siwang-chanmian
+金翅鸢,         tiansheng-shenli,    shensheng-zhiguang,      qiankun-zhao
+八翼兽,         bianchang-moji,      shensheng-zhiguang,      qiankun-zhao
+金甲力士,       bianchang-moji,      sheming-yiji,            siwang-chanmian
+青鸾,           shiwan-huoji,        shensheng-zhiguang,      ruyi-quan
+火凤,           shiwan-huoji,        shensheng-zhiguang,      qiankun-zhao
+冰玉麒麟,       bamiao-zhuzhang,     mantian-xuewu,           youshui-zhishe
+天马,           bamiao-zhuzhang,     mantian-xuewu,           ruyi-quan
+蚌女,           fangwei-dujian,      mantian-xuewu,           qiankun-zhao
+冰晶龙鳞兽,     fangwei-dujian,      mantian-xuewu,      fanzhuan-qiankun
+海龟,           fangwei-dujian,      youshui-zhishe
+老虎,           fanzhuan-qiankun,    sheming-yiji
+老虎<十里坡>,   fanzhuan-qiankun,    sheming-yiji
+狼,             fanzhuan-qiankun,    siwang-chanmian
+狼<十里坡>,     fanzhuan-qiankun,    siwang-chanmian
+巨蜥,          shiwan-huoji,        youshui-zhishe,          sheming-yiji
+石魔,          fanzhuan-qiankun,    ruyi-quan,               siwang-chanmian
+九尾狐,         youshui-zhishe,     fanzhuan-qiankun,         qiankun-zhao
+疆良,         fanzhuan-qiankun,   siwang-chanmian,          ruyi-quan
+伶俐鼠,         fanzhuan-qiankun,   ruyi-quan
+笨笨牛,         siwang-chanmian,    shenlong-zhao
+威威虎,         fanzhuan-qiankun,   qiankun-zhao
+跳跳兔,         sheming-yiji,       qiankun-zhao
+酷酷龙,         fanzhuan-qiankun,   shenlong-zhao
+花花蛇,         sheming-yiji,       shenlong-zhao
+溜溜马,         shensheng-zhiguang, shenlong-zhao
+咩咩羊,         shensheng-zhiguang, ruyi-quan
+帅帅猴,         siwang-chanmian,    qiankun-zhao
+蛋蛋鸡,         siwang-chanmian,    ruyi-quan
+招财猪,         sheming-yiji,       ruyi-quan
+乖乖狗,         shensheng-zhiguang, qiankun-zhao
+东山神灵,         mantian-xuewu,      shensheng-zhiguang,       shenlong-zhao
+玄武,         fanzhuan-qiankun,   mantian-xuewu,            shenlong-zhao
+朱雀,         shensheng-zhiguang, youshui-zhishe,           ruyi-quan
+雪狐,         bamiao-zhuzhang,     shensheng-zhiguang,      ruyi-quan
+剑魂,         mantian-xuewu,       shenlong-zhao,           siwang-chanmian
+古鹿,         tiansheng-shenli,    fanzhuan-qiankun,        ruyi-quan
+仙阳剑,         tiansheng-shenli,    mantian-xuewu,           shenlong-zhao
+仙葫芦,         tiansheng-shenli,    youshui-zhishe,          qiankun-zhao
+云豹,         tiansheng-shenli,    shensheng-zhiguang,      ruyi-quan
+无极熊,         tiansheng-shenli,    siwang-chanmian,         qiankun-zhao
+云鹿,         bamiao-zhuzhang,     fanzhuan-qiankun,        ruyi-quan
+圣檀剑,         bamiao-zhuzhang,     mantian-xuewu,           shenlong-zhao
+翡翠葫芦,         bamiao-zhuzhang,     youshui-zhishe,          qiankun-zhao
+玉豹,         bamiao-zhuzhang,     shensheng-zhiguang,      ruyi-quan
+棕茸熊,         bamiao-zhuzhang,     siwang-chanmian,         qiankun-zhao
+灵鹿,         fangwei-dujian,      fanzhuan-qiankun,        ruyi-quan
+水韵剑,         fangwei-dujian,      mantian-xuewu,           shenlong-zhao
+灵葫芦,         fangwei-dujian,      youshui-zhishe,          qiankun-zhao
+雪豹,         fangwei-dujian,      shensheng-zhiguang,      ruyi-quan
+北极熊,         fangwei-dujian,      siwang-chanmian,         qiankun-zhao
+幻鹿,         shiwan-huoji,        fanzhuan-qiankun,        ruyi-quan
+翠灵剑 ,        shiwan-huoji,        mantian-xuewu,          shenlong-zhao
+赤焰葫芦,         shiwan-huoji,        youshui-zhishe,          qiankun-zhao
+水晶豹,         shiwan-huoji,        shensheng-zhiguang,      ruyi-quan
+赤锦熊,         shiwan-huoji,        siwang-chanmian,         qiankun-zhao
+雅鹿,         bianchang-moji,      fanzhuan-qiankun,        ruyi-quan
+岳麓剑,         bianchang-moji,      mantian-xuewu,           shenlong-zhao
+紫藤葫芦,         bianchang-moji,      youshui-zhishe,          qiankun-zhao
+凌岩豹,         bianchang-moji,      shensheng-zhiguang,      ruyi-quan
+太极熊,         bianchang-moji,      siwang-chanmian,         qiankun-zhao
+貔貅,         siwang-chanmian,     shenlong-zhao
+蒲牢,         shensheng-zhiguang,  ruyi-quan
+霸下,         mantian-xuewu,       qiankun-zhao
+狰兽, 	    mantian-xuewu, 	     shensheng-zhiguang, 	 qiankun-zhao
+蝶仙, 	    shiwan-huoji, 	     fanzhuan-qiankun,  	 ruyi-quan
+狴犴, 	    fanzhuan-qiankun, 	 shenlong-zhao
+睚眦, 	    mantian-xuewu, 	ruyi-quan
+嘲风, 	    shensheng-zhiguang,    ruyi-quan
+鳌鱼, 	    youshui-zhishe,   qiankun-zhao
+饕餮, 	    mantian-xuewu, 	qiankun-zhao
+囚牛, 	    siwang-chanmian, 	shenlong-zhao
+金刚星,         tiansheng-shenli,    mantian-xuewu,     shenlong-zhao
+木魂星,         bamiao-zhuzhang,     shensheng-zhiguang,   qiankun-zhao
+水柔星,         fangwei-dujian,     fanzhuan-qiankun,       ruyi-quan
+火烈星,         shiwan-huoji,      youshui-zhishe,       shenlong-zhao
+土暴星,         bianchang-moji,     siwang-chanmian,    qiankun-zhao

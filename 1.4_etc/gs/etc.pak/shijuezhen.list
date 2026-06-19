@@ -1,0 +1,678 @@
+#FORM2
+
+[µÿ¡“’Û’Û¡È]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : 4
+life_effect      : 400
+speed_effect     : 100
+phy_effect       : 160
+mag_effect       : 100
+tao_effect       : 40
+skills           : ({ "B4" })
+comrade          : ({ "µÿ¡“’Û’Û¡È", 9 })
+
+[µÿ¡“’Û’Û÷˜]
+name             : µÿ¡“’Û÷˜
+zhenzhu          : 1
+icon             : 6244
+portrait         : 6244
+polar            : 4
+life_effect      : 2000
+speed_effect     : 300
+phy_effect       : 500
+mag_effect       : 350
+phy_absorb       : 20
+resist_fire      : 40
+tao_effect       : 40
+resist_forgotten : 40
+resist_poison    : 40
+resist_frozen    : 40
+resist_sleep     : 40
+resist_confusion : 40
+skills           : ({ "B5", "C2" })
+comrade          : ({ "µÿ¡“’Û’Û÷˜", 2, "µÿ¡“’Û–°π÷", 7 })
+monster_tactics  : "tactics_diliezhen_zhuguai"
+sf_die           : "sf_die_diliezhen_zhuguai"
+skill_suc        : 1
+
+[µÿ¡“’Û–°π÷]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : 4
+life_effect      : 1000
+speed_effect     : 200
+phy_effect       : 300
+tao_effect       : 40
+resist_forgotten : 20
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 20
+skills           : ({ "D4", "B4" })
+monster_tactics  : "tactics_magic_always"
+
+[∑Á∫’Û’Û¡È]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : 1
+life_effect      : 400
+speed_effect     : 100
+phy_effect       : 160
+mag_effect       : 160
+tao_effect       : 40
+skills           : ({ "B4" })
+comrade          : ({ "∑Á∫’Û’Û¡È", 9 })
+
+[∑Á∫’Û’Û÷˜]
+name             : ∑Á∫’Û÷˜
+zhenzhu          : 1
+icon             : 6245
+portrait         : 6245
+polar            : 1
+life_effect      : 2000
+speed_effect     : 200
+phy_effect       : 500
+mag_effect       : 300
+phy_absorb       : 20
+mag_absorb       : 0
+resist_metal     : 40
+penetrate        : 60
+tao_effect       : 40
+resist_forgotten : 60
+resist_poison    : 60
+resist_frozen    : 60
+resist_sleep     : 60
+resist_confusion : 60
+skills           : ({ "B4" })
+comrade          : ({ "∑Á∫’Û–°π÷", 9 })
+monster_tactics  : "tactics_fenghouzhen_zhuguai"
+sf_damage        : "sf_damage_fenghouzhen_zhenzhu"
+
+[∑Á∫’Û–°π÷]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : -1
+life_effect      : 400
+speed_effect     : 50
+phy_effect       : 160
+mag_effect       : 100
+phy_absorb       : 20
+mag_absorb       : 0
+tao_effect       : 40
+resist_forgotten : 20
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 20
+skills           : ({ "B3" })
+
+[∫Æ±˘’Û’Û¡È]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : 3
+life_effect      : 400
+speed_effect     : 100
+phy_effect       : 160
+mag_effect       : 100
+phy_absorb       : -30
+mag_absorb       : -30
+tao_effect       : 40
+skills           : ({ "B4" })
+comrade          : ({ "∫Æ±˘’Û’Û¡È", 9 })
+
+[∫Æ±˘’Û’Û÷˜]
+name             : ∫Æ±˘’Û÷˜
+zhenzhu          : 1
+icon             : 6246
+portrait         : 6246
+polar            : 3
+life_effect      : 1000
+speed_effect     : 80
+phy_effect       : 200
+mag_effect       : 200
+phy_absorb       : 20
+mag_absorb       : 0
+resist_water     : 40
+tao_effect       : 100
+resist_forgotten : 40
+resist_poison    : 40
+resist_frozen    : 40
+resist_sleep     : 40
+resist_confusion : 40
+skills           : ({ "B4", "B5", "C4", "D5" })
+comrade          : ({ "∫Æ±˘’Û’Û÷˜", 5 })
+monster_tactics  : "tactics_hanbingzhen_zhuguai"
+combat_trigger   : "combat_trigger_hanbingzhen"
+
+[∫Ï…∞’Û’Û¡È]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : 5
+life_effect      : 400
+speed_effect     : 100
+phy_effect       : 250
+mag_effect       : 100
+tao_effect       : 40
+skills           : ({ "B4" })
+comrade          : ({ "∫Ï…∞’Û’Û¡È", 9 })
+
+[∫Ï…∞’Û’Û÷˜]
+name             : ∫Ï…∞’Û÷˜
+zhenzhu          : 1
+icon             : 6252
+portrait         : 6252
+polar            : 5
+life_effect      : 600
+speed_effect     : 150
+phy_effect       : 300
+mag_effect       : 200
+phy_absorb       : 20
+mag_absorb       : 0
+resist_earth     : 40
+tao_effect       : 40
+resist_forgotten : 50
+resist_poison    : 0
+resist_frozen    : 50
+resist_sleep     : 0
+resist_confusion : 50
+skills           : ({ "B4", "B5", "C4", "D5" })
+comrade          : ({ "∫Ï…∞’Û–°π÷", 9 })
+
+[∫Ï…∞’Û–°π÷]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : -1
+life_effect      : 500
+speed_effect     : 50
+phy_effect       : 200
+phy_absorb       : 20
+mag_absorb       : 0
+double_hit       : 12
+double_hit_rate  : 100
+tao_effect       : 40
+resist_forgotten : 20
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 20
+
+[∫ÏÀÆ’Û’Û¡È]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : 3
+life_effect      : 400
+speed_effect     : 50
+phy_effect       : 160
+mag_effect       : 100
+phy_absorb       : -30
+mag_absorb       : -30
+tao_effect       : 40
+skills           : ({ "B4" })
+comrade          : ({ "∫ÏÀÆ’Û’Û¡È", 9 })
+
+[∫ÏÀÆ’Û’Û÷˜]
+name             : ∫ÏÀÆ’Û÷˜
+zhenzhu          : 1
+icon             : 6251
+portrait         : 6251
+polar            : 3
+life_effect      : 800
+speed_effect     : 100
+phy_effect       : 200
+mag_effect       : 200
+phy_absorb       : 20
+mag_absorb       : 0
+resist_water     : 40
+tao_effect       : 100
+resist_forgotten : 40
+resist_poison    : 40
+resist_frozen    : 40
+resist_sleep     : 40
+resist_confusion : 40
+skills           : ({ "B4", "B5", "C4", "D5" })
+comrade          : ({ "∫ÏÀÆ’Û’Û÷˜", 4, "∫ÏÀÆ’Û–°π÷", 5 })
+monster_tactics  : "tactics_hongshuizhen_zhuguai"
+
+[∫ÏÀÆ’Û–°π÷]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : 3
+life_effect      : 400
+speed_effect     : 50
+phy_effect       : 100
+mag_effect       : 100
+phy_absorb       : 0
+mag_absorb       : 0
+tao_effect       : 40
+resist_forgotten : 20
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 20
+sp_skills        : ({ "¬˛ÃÏ—™ŒË" })
+monster_tactics  : "tactics_magic_always"
+skill_suc        : 1
+
+[ªØ—™’Û’Û¡È]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : 2
+life_effect      : 600
+speed_effect     : 100
+phy_effect       : 160
+mag_effect       : 100
+tao_effect       : 40
+skills           : ({ "B4" })
+comrade          : ({ "ªØ—™’Û’Û¡È", 9 })
+
+[ªØ—™’Û’Û÷˜]
+name             : ªØ—™’Û÷˜
+zhenzhu          : 1
+icon             : 6248
+portrait         : 6248
+polar            : 2
+life_effect      : 700
+phy_effect       : 500
+phy_absorb       : 20
+mag_absorb       : 0
+resist_wood      : 40
+penetrate        : 60
+tao_effect       : 40
+speed_effect     : 150
+resist_forgotten : 50
+resist_poison    : 0
+resist_frozen    : 50
+resist_sleep     : 0
+resist_confusion : 50
+skills           : ({ "C4" })
+comrade          : ({ "ªØ—™’Û’Û÷˜", 9 })
+monster_tactics  : "tactics_magic_always"
+skill_suc        : 1
+
+[Ωπ‚’Û’Û¡È]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : 1
+life_effect      : 400
+speed_effect     : 100
+phy_effect       : 160
+mag_effect       : 200
+phy_absorb       : -30
+tao_effect       : 40
+skills           : ({ "B4" })
+comrade          : ({ "Ωπ‚’Û’Û¡È", 9 })
+
+[Ωπ‚’Û’Û÷˜]
+name             : Ωπ‚’Û÷˜
+zhenzhu          : 1
+icon             : 6247
+portrait         : 6247
+polar            : 1
+life_effect      : 1600
+speed_effect     : 200
+phy_effect       : 200
+mag_effect       : 200
+phy_absorb       : 20
+mag_absorb       : 0
+resist_metal     : 40
+tao_effect       : 40
+resist_forgotten : 40
+resist_poison    : 40
+resist_frozen    : 40
+resist_sleep     : 40
+resist_confusion : 40
+skills           : ({ "B4", "B5", "C4", "D5" })
+monster_tactics  : "tactics_jinguangzhen_zhuguai"
+combat_trigger   : "combat_trigger_jinguangzhen"
+
+[Ω’Ê»À]
+name             : Ω’Ê»À
+zhenzhu          : 1
+icon             : 6247
+portrait         : 6247
+polar            : 1
+life_effect      : 1600
+speed_effect     : 100
+phy_effect       : 200
+mag_effect       : 200
+phy_absorb       : 20
+mag_absorb       : 0
+resist_metal     : 40
+tao_effect       : 40
+resist_forgotten : 40
+resist_poison    : 40
+resist_frozen    : 40
+resist_sleep     : 40
+resist_confusion : 40
+skills           : ({ "B4" })
+comrade          : ({ "Ω’Ê»À", 9 })
+
+[¡“—Ê’Û’Û¡È]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : 4
+life_effect      : 400
+speed_effect     : 300
+phy_effect       : 160
+mag_effect       : 100
+tao_effect       : 40
+skills           : ({ "B4" })
+comrade          : ({ "¡“—Ê’Û’Û¡È", 9 })
+
+[¡“—Ê’Û’Û÷˜]
+name             : ¡“—Ê’Û÷˜
+zhenzhu          : 1
+icon             : 6249
+portrait         : 6249
+polar            : 4
+life_effect      : 2000
+speed_effect     : 300
+phy_effect       : 200
+mag_effect       : 200
+phy_absorb       : 20
+mag_absorb       : 0
+resist_fire      : 40
+tao_effect       : 40
+resist_forgotten : 60
+resist_poison    : 0
+resist_frozen    : 0
+resist_sleep     : 0
+resist_confusion : 60
+skills           : ({ "B4", "B5", "D5" })
+monster_tactics  : "tactics_magic_always"
+sf_damage        : "sf_damage_lieyanzhen_zhenzhu"
+combat_trigger   : "combat_trigger_lieyanzhen"
+
+[¡“—Ê’Û–°π÷]
+name             : ’Û¡È
+icon             : 6153
+portrait         : 6153
+polar            : -1
+life_effect      : 300
+speed_effect     : 30
+phy_effect       : 200
+mag_effect       : 200
+phy_absorb       : 30
+mag_absorb       : 0
+tao_effect       : 40
+resist_forgotten : 40
+resist_poison    : 40
+resist_frozen    : 40
+resist_sleep     : 40
+resist_confusion : 40
+skills           : ({ "B4" })
+
+[¬‰∆«’Û’Û¡È]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : 2
+life_effect      : 600
+speed_effect     : 100
+phy_effect       : 160
+mag_effect       : 100
+tao_effect       : 40
+skills           : ({ "B4" })
+comrade          : ({ "¬‰∆«’Û’Û¡È", 9 })
+
+[¬‰∆«’Û’Û÷˜]
+name             : ¬‰∆«’Û÷˜
+zhenzhu          : 1
+icon             : 6250
+portrait         : 6250
+polar            : 2
+life_effect      : 1000
+speed_effect     : 50
+phy_effect       : 200
+mag_effect       : 200
+phy_absorb       : 20
+mag_absorb       : 0
+resist_wood      : 40
+tao_effect       : 100
+resist_forgotten : 40
+resist_poison    : 40
+resist_frozen    : 40
+resist_sleep     : 40
+resist_confusion : 40
+skills           : ({ "B4", "B5", "C4", "D5" })
+comrade          : ({ "¬‰∆«’Û’Û÷˜", 4, "¬‰∆«’Û–°π÷", 5 })
+monster_tactics  : "tactics_luopozhen_zhuguai"
+combat_trigger   : "combat_trigger_luopozhen"
+
+[¬‰∆«’Û–°π÷]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : -1
+life_effect      : 400
+speed_effect     : 500
+phy_effect       : 100
+sp_skills        : ({ "…·√¸“ªª˜" })
+monster_tactics  : "tactics_magic_always"
+
+[ÃÏ„⁄’Û’Û¡È]
+name             : ’Û¡È
+icon             : 6242
+portrait         : 6242
+polar            : 5
+life_effect      : 400
+speed_effect     : 100
+phy_effect       : 250
+mag_effect       : 100
+tao_effect       : 40
+skills           : ({ "B4" })
+comrade          : ({ "ÃÏ„⁄’Û’Û¡È", 9 })
+
+[ÃÏ„⁄’Û’Û÷˜]
+name             : ÃÏ„⁄’Û÷˜
+zhenzhu          : 1
+icon             : 6243
+portrait         : 6243
+polar            : 5
+life_effect      : 1500
+speed_effect     : 80
+phy_effect       : 200
+mag_effect       : 200
+phy_absorb       : 20
+mag_absorb       : 0
+resist_earth     : 40
+tao_effect       : 40
+resist_forgotten : 40
+resist_poison    : 40
+resist_frozen    : 40
+resist_sleep     : 40
+resist_confusion : 40
+skills           : ({ "B4", "B5", "C4", "D5" })
+comrade          : ({ "∂“¡È", 1, "’¡È", 1, "ø≤¡È", 1, "¿Î¡È", 1, "Ùﬁ¡È", 1, "øÒ¡È", 1, "±¨¡È", 1, "∞¡¡È", 1, "æµ¡È", 1 })
+monster_tactics  : "tactics_tianquezhen_zhuguai"
+
+[∂“¡È]
+name             : ∂“¡È
+icon             : 6215
+portrait         : 6215
+polar            : 1
+resist_metal     : 100
+life_effect      : 400
+mag_effect       : 100
+phy_effect       : 160
+phy_absorb       : -30
+speed_effect     : 30
+tao_effect       : 40
+resist_forgotten : 20
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 20
+skills           : ({ "B4" })
+
+[’¡È]
+name             : ’¡È
+icon             : 6215
+portrait         : 6215
+polar            : 2
+resist_wood      : 100
+life_effect      : 400
+mag_effect       : 100
+phy_effect       : 160
+phy_absorb       : -30
+speed_effect     : 30
+tao_effect       : 40
+resist_forgotten : 20
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 20
+skills           : ({ "B4" })
+
+[ø≤¡È]
+name             : ø≤¡È
+icon             : 6215
+portrait         : 6215
+polar            : 3
+resist_water     : 100
+life_effect      : 400
+mag_effect       : 100
+phy_effect       : 160
+phy_absorb       : -30
+speed_effect     : 30
+tao_effect       : 40
+resist_forgotten : 20
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 20
+skills           : ({ "B4" })
+
+[¿Î¡È]
+name             : ¿Î¡È
+icon             : 6215
+portrait         : 6215
+polar            : 4
+resist_fire      : 100
+life_effect      : 400
+mag_effect       : 100
+phy_effect       : 160
+phy_absorb       : -30
+speed_effect     : 30
+tao_effect       : 40
+resist_forgotten : 20
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 20
+skills           : ({ "B4" })
+
+[Ùﬁ¡È]
+name             : Ùﬁ¡È
+icon             : 6215
+portrait         : 6215
+polar            : 5
+resist_earth     : 100
+life_effect      : 400
+mag_effect       : 100
+phy_effect       : 160
+phy_absorb       : -30
+speed_effect     : 30
+tao_effect       : 40
+resist_forgotten : 20
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 20
+skills           : ({ "B4" })
+
+[øÒ¡È]
+name             : øÒ¡È
+icon             : 6214
+portrait         : 6214
+polar            : 1
+resist_metal     : 100
+phy_absorb       : 0
+double_hit       : 5
+double_hit_rate  : 100
+life_effect      : 400
+mag_effect       : 100
+phy_effect       : 160
+phy_absorb       : -30
+speed_effect     : 30
+tao_effect       : 40
+resist_forgotten : 20
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 20
+
+[±¨¡È]
+name             : ±¨¡È
+icon             : 6214
+portrait         : 6214
+polar            : 4
+resist_fire      : 100
+phy_absorb       : 0
+counter_attack   : 12
+counter_attack_rate : 100
+life_effect      : 400
+mag_effect       : 100
+phy_effect       : 160
+phy_absorb       : -30
+speed_effect     : 30
+tao_effect       : 40
+resist_forgotten : 20
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 20
+
+[∞¡¡È]
+name             : ∞¡¡È
+icon             : 6214
+portrait         : 6214
+polar            : 5
+resist_earth     : 100
+phy_absorb       : 0
+stunt_rate       : 100
+life_effect      : 400
+mag_effect       : 100
+phy_effect       : 160
+phy_absorb       : -30
+speed_effect     : 30
+tao_effect       : 40
+resist_forgotten : 20
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 20
+
+[æµ¡È]
+name             : æµ¡È
+icon             : 6214
+portrait         : 6214
+polar            : 2
+resist_wood      : 100
+phy_absorb       : 0
+damage_sel       : 100
+damage_sel_rate  : 100
+life_effect      : 400
+mag_effect       : 100
+phy_effect       : 160
+phy_absorb       : -30
+speed_effect     : 30
+tao_effect       : 40
+resist_forgotten : 20
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 20

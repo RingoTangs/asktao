@@ -1,0 +1,39 @@
+#FORM2
+
+#字段说明
+#party_number：参加帮派攻城战的帮派个数
+#start_time：帮派攻城战开始的时间
+#interval：帮派攻城战持续的时间
+#scan_map: 回收特殊帮派地图时，扫描时间
+#limit_login_time: 限制上线人数的时间
+#max_login_user: 攻城战中最大上线人数
+#broadcast_after_party_war: 帮战结束后的广播时间
+#time_open_to_start: 攻城战开启到开始的时间间隔
+#attack_interval: 两次攻击的时间间隔
+#max_combat_number: 每个NPC可以同时开展的战斗
+#max_np_life：NPC的最大血量
+#bonus_construct: 奖励胜利方帮派建设度的点数
+
+[city_war_config]
+join_number:               4
+start_time:                "周0-14:00:00"
+interval:                  7200
+scan_map:                  120
+limit_login_time:          3600
+max_login_user:            500
+broadcast_after_party_war: 60
+time_open_to_start:        59400
+attack_interval:           30
+max_combat_number:         20
+bonus_attacker_construct:  10000
+bonus_defenser_construct:  30000
+ack_enter_waitan  : ({ 17, 238, 3 })
+ack_enter_zongtan : ({ 18, 238, 3 })
+def_enter_zongtan : ({ 121, 67, 7 })
+coordinate_tuteng : ({ 93, 89, 7 })
+tax_dealer : ({ "杂货店老板@杂货店", "药店老板@药店", "无名武器店老板@无名武器店", "无名药铺老板@无名药铺", "无名杂货店老板@无名杂货店", "无名布庄老板@无名布庄" })
+
+[npc_life]
+帮派守护图腾: 350
+帮派守护石像: 350
+城门: 350

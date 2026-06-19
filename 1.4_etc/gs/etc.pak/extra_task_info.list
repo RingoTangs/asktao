@@ -1,0 +1,581 @@
+#FORM2
+
+# 任务的难度，建议人数，建议等级，任务奖励等信息
+# 该信息仅用于客户端任务界面的显示
+# 此处用的任务名是子任务名，因为每个子任务的额外信息是不相同的
+# task_type 表示任务类型，目前都是1表示当前任务
+
+[为民除暴]
+difficulty     : 2
+suggest_level  : "10~40级"
+suggest_person : "3~5人"
+bonus_info     : "金钱、人物道行、潜能、宠物武学，每轮任务结束时有几率获得特殊奖励。"
+task_type      : 1
+
+[降妖任务]
+difficulty     : 2
+suggest_level  : "41~80级"
+suggest_person : "3~5人"
+bonus_info     : "金钱、人物道行、潜能、宠物武学等，每轮任务结束时有几率获得特殊奖励。"
+task_type      : 1
+
+[伏魔任务]
+difficulty     : 2
+suggest_level  : "81~129级"
+suggest_person : "3~5人"
+bonus_info     : "金钱、人物道行、潜能、宠物武学等，每轮任务结束时有几率获得特殊奖励。"
+task_type      : 1
+
+[仙界通缉]
+difficulty     : 3
+suggest_level  : "130级以上"
+suggest_person : "3~5人"
+bonus_info     : "金钱、人物道行、潜能、宠物武学等，每轮任务结束时有几率获得特殊奖励。"
+task_type      : 1
+
+[八阵图]
+difficulty     : 3
+suggest_level  : "50~110级"
+suggest_person : "1~5人"
+bonus_info     : "人物经验、宠物经验，有几率获得女娲石等特殊奖励。"
+task_type      : 1
+
+[修行任务]
+difficulty     : 3
+suggest_level  : "60~129级"
+suggest_person : "4~5人"
+bonus_info     : "人物经验、宠物经验，每轮任务结束时有几率获得特殊奖励。"
+task_type      : 1
+
+[十绝阵]
+difficulty     : 4
+suggest_level  : "100~140级"
+suggest_person : "4~5人"
+bonus_info     : "人物经验（道行）、宠物经验（武学）"
+task_type      : 1
+
+[寻仙任务]
+difficulty     : 4
+suggest_level  : "130级以上"
+suggest_person : "4~5人"
+bonus_info     : "人物经验、宠物经验，每轮任务结束时有几率获得特殊奖励。"
+task_type      : 1
+
+[师门任务]
+difficulty     : 0
+suggest_level  : ""
+suggest_person : ""
+bonus_info     : "金钱、人物经验。"
+task_type      : 1
+
+[巡逻任务]
+difficulty     : 2
+suggest_level  : "20级以上"
+suggest_person : "1~3人"
+bonus_info     : "金钱、人物经验。"
+task_type      : 1
+
+[千奇百怪]
+difficulty     : 2
+suggest_level  : "35级以上"
+suggest_person : "3~5人"
+bonus_info     : "金钱、人物经验。"
+task_type      : 1
+
+[讨公道]
+difficulty     : 2
+suggest_level  : "35级以上"
+suggest_person : "1~3人"
+bonus_info     : "金钱、人物经验。"
+task_type      : 1
+
+[夜行人]
+difficulty     : 2
+suggest_level  : "40级以上"
+suggest_person : "1~3人"
+bonus_info     : "金钱、人物经验。"
+task_type      : 1
+
+[追杀叛徒]
+difficulty     : 2
+suggest_level  : "40级以上"
+suggest_person : "1~3人"
+bonus_info     : "金钱、人物经验。"
+task_type      : 1
+
+[挑战道童]
+difficulty     : 3
+suggest_level  : "50级以上"
+suggest_person : "3~5人"
+bonus_info     : "人物经验、宠物经验，每轮任务结束时可获得大量人物道行和宠物武学。"
+task_type      : 1
+
+[帮派任务]
+difficulty     : 0
+suggest_level  : ""
+suggest_person : ""
+bonus_info     : "帮贡、帮派活力值、帮派功德值、人物潜能、宠物武学，每轮任务结束时有几率获得女娲石等特殊奖励。"
+task_type      : 1
+
+[除蛇灭鼠]
+difficulty     : 2
+suggest_level  : "10级以上"
+suggest_person : "1~3人"
+bonus_info     : "帮贡、帮派活力值、帮派功德值、人物潜能、宠物武学，每轮任务结束时有几率获得女娲石等特殊奖励。"
+task_type      : 1
+
+[夺宝任务]
+difficulty     : 2
+suggest_level  : "10级以上"
+suggest_person : "1~3人"
+bonus_info     : "帮贡、帮派活力值、帮派功德值、人物潜能、宠物武学，每轮任务结束时有几率获得女娲石等特殊奖励。"
+task_type      : 1
+
+[杀怪任务]
+difficulty     : 1
+suggest_level  : "10级以上"
+suggest_person : "1~3人"
+bonus_info     : "帮贡、帮派活力值、帮派功德值、人物潜能、宠物武学，每轮任务结束时有几率获得女娲石等特殊奖励。"
+task_type      : 1
+
+[帮派材料]
+difficulty     : 2
+suggest_level  : "10级以上"
+suggest_person : "1~3人"
+bonus_info     : "帮贡、帮派活力值、帮派功德值、人物潜能、宠物武学，每轮任务结束时有几率获得女娲石等特殊奖励。"
+task_type      : 1
+
+[屠龙任务]
+difficulty     : 2
+suggest_level  : "10级以上"
+suggest_person : "1~3人"
+bonus_info     : "帮贡、帮派活力值、帮派功德值、人物潜能、宠物武学，每轮任务结束时有几率获得女娲石等特殊奖励。"
+task_type      : 1
+
+[治理水患]
+difficulty     : 2
+suggest_level  : "10级以上"
+suggest_person : "1~3人"
+bonus_info     : "帮贡、帮派活力值、帮派功德值、人物潜能、宠物武学，每轮任务结束时有几率获得女娲石等特殊奖励。"
+task_type      : 1
+
+[冤魂作祟]
+difficulty     : 2
+suggest_level  : "10级以上"
+suggest_person : "1~3人"
+bonus_info     : "帮贡、帮派活力值、帮派功德值、人物潜能、宠物武学，每轮任务结束时有几率获得女娲石等特殊奖励。"
+task_type      : 1
+
+[30环连环任务]
+difficulty     : 0
+suggest_level  : ""
+suggest_person : ""
+bonus_info     : "金钱奖励。"
+task_type      : 1
+
+[60环连环任务]
+difficulty     : 0
+suggest_level  : ""
+suggest_person : ""
+bonus_info     : "金钱、每轮任务结束时有几率获得女娲石等特殊奖励。"
+task_type      : 1
+
+[90环连环任务]
+difficulty     : 0
+suggest_level  : ""
+suggest_person : ""
+bonus_info     : "金钱、每轮任务结束时有几率获得女娲石等特殊奖励。"
+task_type      : 1
+
+[消灭怪物]
+difficulty     : 1
+suggest_level  : "60级以上"
+suggest_person : "1~5人"
+bonus_info     : "金钱、每轮任务结束时有几率获得女娲石等特殊奖励。"
+task_type      : 1
+
+[妖魔道-勇擒鱼怪]
+difficulty     : 2
+suggest_level  : "20~30级"
+suggest_person : "单人"
+bonus_info     : "30级改3白色装备1件，金钱200,000文、普通灵石或晶石2块。"
+task_type      : 1
+
+[妖魔道-真假神兽]
+difficulty     : 3
+suggest_level  : "30~40级"
+suggest_person : "2~5人"
+bonus_info     : "40级改3白色装备1件、金钱400,000文、五色灵石或五色晶石一块、炼化药品1颗。"
+task_type      : 1
+
+[妖魔道-试炼之道]
+difficulty     : 2
+suggest_level  : "40~50级"
+suggest_person : "1~5人"
+bonus_info     : "50级改4白色装备1件、金钱600,000文、首饰材料2块、炼化药品1颗。"
+task_type      : 1
+
+[妖魔道-力擒恶匪]
+difficulty     : 2
+suggest_level  : "50~60级"
+suggest_person : "1~5人"
+bonus_info     : "60级改4白色装备1件、金钱1,000,000文、首饰材料3块、炼化药品1颗。"
+task_type      : 1
+
+[妖魔道-探寻真相]
+difficulty     : 4
+suggest_level  : "60~70级"
+suggest_person : "组满5人"
+bonus_info     : "70级金色装备1件、金钱1,500,000文、首饰材料4块。"
+task_type      : 1
+
+[妖魔道-妖魔当道]
+difficulty     : 4
+suggest_level  : "70~80级"
+suggest_person : "组满5人"
+bonus_info     : "80级金色装备1件、金钱2,000,000文、首饰材料5块、300,000点潜能、16级内丹1颗。"
+task_type      : 1
+
+[妖魔道-除魔卫道]
+difficulty     : 4
+suggest_level  : "80~100级"
+suggest_person : "组满5人"
+bonus_info     : "90级金色装备1件、金钱5,000,000文、20级手镯2个、20级项链1个、20级玉佩1个、女娲石1个。"
+task_type      : 1
+
+[仙魔录-初现疑云]
+difficulty     : 3
+suggest_level  : "65~75级"
+suggest_person : "组满5人"
+bonus_info     : "经验150000、70级三改蓝（金）装备一件、江湖游侠称号。"
+task_type      : 1
+
+[仙魔录-迷局难解]
+difficulty     : 3
+suggest_level  : "68~78级"
+suggest_person : "组满5人"
+bonus_info     : "经验250000、70级三改蓝（金）装备一件、智贤羽士称号。"
+task_type      : 1
+
+[仙魔录-初知真情]
+difficulty     : 3
+suggest_level  : "71~81级"
+suggest_person : "组满5人"
+bonus_info     : "经验350000、70级三改蓝（金）装备一件、屠龙法师称号。"
+task_type      : 1
+
+[仙魔录-猪精伏诛]
+difficulty     : 4
+suggest_level  : "74~84级"
+suggest_person : "组满5人"
+bonus_info     : "经验450000、80级三改蓝（金）装备一件、辟邪仙师称号。"
+task_type      : 1
+
+[仙魔录-真假难辨]
+difficulty     : 4
+suggest_level  : "77~87级"
+suggest_person : "组满5人"
+bonus_info     : "经验550000、80级三改蓝（金）装备一件、九灵散人称号。"
+task_type      : 1
+
+[仙魔录-获知详情]
+difficulty     : 4
+suggest_level  : "80~90级"
+suggest_person : "组满5人"
+bonus_info     : "经验700000、80级三改蓝（金）装备一件、伏魔真人称号。"
+task_type      : 1
+
+[仙魔录-封印得解]
+difficulty     : 4
+suggest_level  : "83~93级"
+suggest_person : "组满5人"
+bonus_info     : "经验950000、90级三改蓝（金）装备一件、天道圣者称号。"
+task_type      : 1
+
+[仙魔录-重镇心魔]
+difficulty     : 4
+suggest_level  : "86~96级"
+suggest_person : "组满5人"
+bonus_info     : "经验1100000、90级三改蓝（金）装备一件、妙应真君称号。"
+task_type      : 1
+
+[仙魔录-混迹魔军]
+difficulty     : 4
+suggest_level  : "89~99级"
+suggest_person : "组满5人"
+bonus_info     : "经验1250000、90级三改蓝（金）装备一件、金身尊者称号。"
+task_type      : 1
+
+[仙魔录-大祸得消]
+difficulty     : 4
+suggest_level  : "92~102级"
+suggest_person : "组满5人"
+bonus_info     : "经验1400000、90级四改蓝（金）装备一件、无量天尊称号。"
+task_type      : 1
+
+[伏魔记-突然事起]
+difficulty     : 4
+suggest_level  : "101~120级"
+suggest_person : "组满5人"
+bonus_info     : "经验1,600,000，100级的3改蓝（金）装备一件。"
+task_type      : 1
+
+[伏魔记-再起风云]
+difficulty     : 4
+suggest_level  : "102~120级"
+suggest_person : "组满5人"
+bonus_info     : "经验1,700,000，100级的3改蓝（金）装备一件。"
+task_type      : 1
+
+[伏魔记-误入圈套]
+difficulty     : 4
+suggest_level  : "103~120级"
+suggest_person : "组满5人"
+bonus_info     : "经验1,750,000，100级的3改蓝（金）装备一件。"
+task_type      : 1
+
+[伏魔记-幡然悔悟]
+difficulty     : 4
+suggest_level  : "104~120级"
+suggest_person : "组满5人"
+bonus_info     : "经验1,800,000，100级的3改蓝（金）装备一件。"
+task_type      : 1
+
+[伏魔记-解救仙山]
+difficulty     : 5
+suggest_level  : "105~120级"
+suggest_person : "组满5人"
+bonus_info     : "经验1,850,000，100级的3改蓝（金）装备一件。"
+task_type      : 1
+
+[金系拜师任务]
+difficulty     : 5
+suggest_level  : "100~105级"
+suggest_person : "组满5人"
+bonus_info     : "获得五龙山云霄洞第一代弟子的称谓，并获得学习门派五阶技能的资格。"
+task_type      : 1
+
+[木系拜师任务]
+difficulty     : 5
+suggest_level  : "100~105级"
+suggest_person : "组满5人"
+bonus_info     : "获得终南山玉柱洞第一代弟子的称谓，并获得学习门派五阶技能的资格。"
+task_type      : 1
+
+[水系拜师任务]
+difficulty     : 5
+suggest_level  : "100~105级"
+suggest_person : "组满5人"
+bonus_info     : "获得凤凰山斗阙宫第一代弟子的称谓，并获得学习门派五阶技能的资格。"
+task_type      : 1
+
+[火系拜师任务]
+difficulty     : 5
+suggest_level  : "100~105级"
+suggest_person : "组满5人"
+bonus_info     : "获得乾元山金光洞第一代弟子的称谓，并获得学习门派五阶技能的资格。"
+task_type      : 1
+
+[土系拜师任务]
+difficulty     : 5
+suggest_level  : "100~105级"
+suggest_person : "组满5人"
+bonus_info     : "获得骷髅山白骨洞第一代弟子的称谓，并获得学习门派五阶技能的资格。"
+task_type      : 1
+
+[矫燥劫]
+difficulty     : 5
+suggest_level  : "82~84级"
+suggest_person : "组满5人"
+bonus_info     : "经验:2626000，一定的金钱奖励，一件改5的黄色90级武器。"
+task_type      : 1
+
+[欺诈劫]
+difficulty     : 5
+suggest_level  : "87~89级"
+suggest_person : "组满5人"
+bonus_info     : "经验：3566000，一定的金钱奖励，一件改5的黄色90级鞋子。"
+task_type      : 1
+
+[贪念劫]
+difficulty     : 5
+suggest_level  : "92~94级"
+suggest_person : "组满5人"
+bonus_info     : "经验：4663000，一定的金钱奖励，一件改5的黄色100级武器（相性随机）。"
+task_type      : 1
+
+[名利劫]
+difficulty     : 5
+suggest_level  : "97~99级"
+suggest_person : "组满5人"
+bonus_info     : "经验：5934000，一定的金钱奖励，一件改5的黄色100级鞋子。"
+task_type      : 1
+
+[私欲劫]
+difficulty     : 5
+suggest_level  : "102~104级"
+suggest_person : "组满5人"
+bonus_info     : "经验：7389000，一定的金钱奖励，一件改5的黄色110级武器（相性随机）。"
+task_type      : 1
+
+[上仁无为]
+difficulty     : 5
+suggest_level  : "107~109级"
+suggest_person : "组满5人"
+bonus_info     : "经验：9041000，一定的金钱奖励，一件改5的黄色110级鞋子。"
+task_type      : 1
+
+[轻诺寡信]
+difficulty     : 5
+suggest_level  : "112~114级"
+suggest_person : "组满5人"
+bonus_info     : "经验：10901000，一定的金钱奖励，一件改5的黄色110级帽子，男女随机。"
+task_type      : 1
+
+[慈以至勇]
+difficulty     : 5
+suggest_level  : "117~119级"
+suggest_person : "组满5人"
+bonus_info     : "经验：12982000，一定的金钱奖励，一件改5的黄色110级帽子，男女随机。"
+task_type      : 1
+
+[以哀泣亡]
+difficulty     : 5
+suggest_level  : "122~124级"
+suggest_person : "组满5人"
+bonus_info     : "经验：14600000，一定的金钱奖励，一件改5的黄色110级衣服，男女随机"
+task_type      : 1
+
+[静笃虚极]
+difficulty     : 5
+suggest_level  : "127~129级"
+suggest_person : "组满5人"
+bonus_info     : "经验：25149000，一定的金钱奖励，一件改5的黄色110级衣服，男女随机。"
+task_type      : 1
+
+[tianjie1]
+difficulty     : 5
+suggest_level  : "132~134级"
+suggest_person : "组满5人"
+bonus_info     : "经验:13000000；称号:一劫散仙；130级改5绿色装备1件。"
+task_type      : 1
+
+[tianjie2]
+difficulty     : 5
+suggest_level  : "137~139级"
+suggest_person : "组满5人"
+bonus_info     : "经验:19000000；称号:二劫散仙；140级改5绿色装备1件。"
+task_type      : 1
+
+[tianjie3]
+difficulty     : 5
+suggest_level  : "142~144级"
+suggest_person : "组满5人"
+bonus_info     : "经验:25000000；称号:三劫散仙；140级改5绿色装备1件。"
+task_type      : 1
+
+[tianjie4]
+difficulty     : 5
+suggest_level  : "147~149级"
+suggest_person : "组满5人"
+bonus_info     : "经验:33000000；称号:四劫散仙；150级改5绿色装备1件。"
+task_type      : 1
+
+[tianjie5]
+difficulty     : 5
+suggest_level  : "152~154级"
+suggest_person : "组满5人"
+bonus_info     : "经验:41000000；称号:五劫散仙；150级改5绿色装备1件。"
+task_type      : 1
+
+[tianjie6]
+difficulty     : 5
+suggest_level  : "157~159级"
+suggest_person : "组满5人"
+bonus_info     : "经验:50000000；称号:六劫散仙；160级改5绿色装备1件。"
+task_type      : 1
+
+[tianjie7]
+difficulty     : 5
+suggest_level  : "162~164级"
+suggest_person : "组满5人"
+bonus_info     : "经验:60000000；称号:七劫散仙；160级改5绿色装备1件。"
+task_type      : 1
+
+[tianjie8]
+difficulty     : 5
+suggest_level  : "167~169级"
+suggest_person : "组满5人"
+bonus_info     : "经验:71000000；称号:八劫散仙；170级改5绿色装备1件。"
+task_type      : 1
+
+[tianjie9]
+difficulty     : 5
+suggest_level  : "172~174级"
+suggest_person : "组满5人"
+bonus_info     : "经验:84000000；称号:九劫散仙；170级改5绿色装备1件。"
+task_type      : 1
+
+[tianjie10]
+difficulty     : 5
+suggest_level  : "177~179级"
+suggest_person : "组满5人"
+bonus_info     : "经验:97000000；称号:十劫散仙；180级改5绿色装备1件。"
+task_type      : 1
+
+[夜游百鬼地]
+difficulty     : 3
+suggest_level  : "40级以上"
+suggest_person : "3~5人"
+bonus_info     : ""
+task_type      : 1
+
+[护送幼龙]
+difficulty     : 3
+suggest_level  : "40级以上"
+suggest_person : "3~5人"
+bonus_info     : ""
+task_type      : 1
+
+[礼物快递]
+difficulty     : 3
+suggest_level  : "40级以上"
+suggest_person : "3~5人"
+bonus_info     : ""
+task_type      : 1
+
+[端午节任务]
+difficulty     : 3
+suggest_level  : "40级以上"
+suggest_person : "3~5人"
+bonus_info     : ""
+task_type      : 1
+
+[拯救驯鹿行动]
+difficulty     : 3
+suggest_level  : "40级以上"
+suggest_person : "3~5人"
+bonus_info     : ""
+task_type      : 1
+
+[欢欢喜喜过大年]
+difficulty     : 3
+suggest_level  : "40级以上"
+suggest_person : "3~5人"
+bonus_info     : ""
+task_type      : 1
+
+[指引任务]
+difficulty     : 0
+suggest_level  : ""
+suggest_person : ""
+bonus_info     : "主要为大量的经验奖励。"
+task_type      : 1
+
+[门派试炼]
+difficulty     : 0
+suggest_level  : ""
+suggest_person : ""
+bonus_info     : "人物经验、宠物经验，每轮任务结束时可获得大量人物道行和宠物武学。"
+task_type      : 1
+

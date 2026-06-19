@@ -1,0 +1,933 @@
+#FORM2
+#ÊÕ·Ñ³èÎïÅäÖÃ±í
+#[Ãû×Ö + ÌìÉú¼¼ÄÜµÄ¸öÊı]
+
+[¾ÅÎ²ºü0]
+name$: ({ ¾ÅÎ²ºü, ¾ÅÎ²ºü })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ 25, 25 })
+speed_effect: ({ 45, 45 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 35, 35 })
+
+[¾ÅÎ²ºü1]
+name$: ({ ¾ÅÎ²ºü, ¾ÅÎ²ºü })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ 25, 25 })
+speed_effect: ({ 45, 45 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 35, 35 })
+special_skill$: ({ 1, ·­×ªÇ¬À¤, 1, ÓÎËµÖ®Éà, 1, Ç¬À¤ÕÖ, 1})
+
+[¾ÅÎ²ºü2]
+name$: ({ ¾ÅÎ²ºü, ¾ÅÎ²ºü })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ 25, 25 })
+speed_effect: ({ 45, 45 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 35, 35 })
+special_skill$: ({ 2, ·­×ªÇ¬À¤, 1, ÓÎËµÖ®Éà, 1, Ç¬À¤ÕÖ, 1})
+
+[¾ÅÎ²ºü3]
+name$: ({ ¾ÅÎ²ºü, ¾ÅÎ²ºü })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ 25, 25 })
+speed_effect: ({ 45, 45 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 35, 35 })
+special_skill$: ({ 3, ·­×ªÇ¬À¤, 1, ÓÎËµÖ®Éà, 1, Ç¬À¤ÕÖ, 1})
+
+[½®Á¼0]
+name$: ({ ½®Á¼, ½®Á¼ })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ -35, -35 })
+speed_effect: ({ 30, 30 })
+phy_effect: ({ 100, 100 })
+mag_effect: ({ -40, -40 })
+
+[½®Á¼1]
+name$: ({ ½®Á¼, ½®Á¼ })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ -35, -35 })
+speed_effect: ({ 30, 30 })
+phy_effect: ({ 100, 100 })
+mag_effect: ({ -40, -40 })
+special_skill$: ({ 1, ·­×ªÇ¬À¤, 1, ËÀÍö²øÃà, 1, ÈçÒâÈ¦, 1})
+
+[½®Á¼2]
+name$: ({ ½®Á¼, ½®Á¼ })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ -35, -35 })
+speed_effect: ({ 30, 30 })
+phy_effect: ({ 100, 100 })
+mag_effect: ({ -40, -40 })
+special_skill$: ({ 2, ·­×ªÇ¬À¤, 1, ËÀÍö²øÃà, 1, ÈçÒâÈ¦, 1})
+
+[½®Á¼3]
+name$: ({ ½®Á¼, ½®Á¼ })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ -35, -35 })
+speed_effect: ({ 30, 30 })
+phy_effect: ({ 100, 100 })
+mag_effect: ({ -40, -40 })
+special_skill$: ({3, ·­×ªÇ¬À¤, 1, ËÀÍö²øÃà, 1, ÈçÒâÈ¦, 1})
+
+[ÁæÀşÊó0]
+name$: ({ ÁæÀşÊó, ÁæÀşÊó })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 10, 10 })
+speed_effect: ({ 40, 40 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 30, 30 })
+
+[ÁæÀşÊó1]
+name$: ({ ÁæÀşÊó, ÁæÀşÊó })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 10, 10 })
+speed_effect: ({ 40, 40 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 30, 30 })
+special_skill$: ({ 1, ·­×ªÇ¬À¤, 1, ÈçÒâÈ¦, 1})
+
+[ÁæÀşÊó2]
+name$: ({ ÁæÀşÊó, ÁæÀşÊó })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 10, 10 })
+speed_effect: ({ 40, 40 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 30, 30 })
+special_skill$: ({ 2, ·­×ªÇ¬À¤, 1, ÈçÒâÈ¦, 1})
+
+[±¿±¿Å£0]
+name$: ({ ±¿±¿Å£, ±¿±¿Å£ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 0, 0 })
+phy_effect: ({ 70, 70 })
+mag_effect: ({ -30, -30 })
+
+[±¿±¿Å£1]
+name$: ({ ±¿±¿Å£, ±¿±¿Å£ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 0, 0 })
+phy_effect: ({ 70, 70 })
+mag_effect: ({ -30, -30 })
+special_skill$: ({ 1, ËÀÍö²øÃà, 1, ÉñÁúÕÖ, 1})
+
+[±¿±¿Å£2]
+name$: ({ ±¿±¿Å£, ±¿±¿Å£ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 0, 0 })
+phy_effect: ({ 70, 70 })
+mag_effect: ({ -30, -30 })
+special_skill$: ({ 2, ËÀÍö²øÃà, 1, ÉñÁúÕÖ, 1})
+
+[ÍşÍş»¢0]
+name$: ({ ÍşÍş»¢, ÍşÍş»¢ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 50, 50 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 10, 10 })
+phy_effect: ({ 80, 80 })
+mag_effect: ({ -30, -30 })
+
+[ÍşÍş»¢1]
+name$: ({ ÍşÍş»¢, ÍşÍş»¢ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 50, 50 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 10, 10 })
+phy_effect: ({ 80, 80 })
+mag_effect: ({ -30, -30 })
+special_skill$: ({ 1, ·­×ªÇ¬À¤, 1, Ç¬À¤ÕÖ, 1})
+
+[ÍşÍş»¢2]
+name$: ({ ÍşÍş»¢, ÍşÍş»¢ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 50, 50 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 10, 10 })
+phy_effect: ({ 80, 80 })
+mag_effect: ({ -30, -30 })
+special_skill$: ({ 2, ·­×ªÇ¬À¤, 1, Ç¬À¤ÕÖ, 1})
+
+[ÌøÌøÍÃ0]
+name$: ({ ÌøÌøÍÃ, ÌøÌøÍÃ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 30, 30 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 30, 30 })
+
+[ÌøÌøÍÃ1]
+name$: ({ ÌøÌøÍÃ, ÌøÌøÍÃ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 30, 30 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 30, 30 })
+special_skill$: ({ 1, ÉáÃüÒ»»÷, 1, Ç¬À¤ÕÖ, 1})
+
+[ÌøÌøÍÃ2]
+name$: ({ ÌøÌøÍÃ, ÌøÌøÍÃ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 30, 30 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 30, 30 })
+special_skill$: ({ 2, ÉáÃüÒ»»÷, 1, Ç¬À¤ÕÖ, 1})
+
+[¿á¿áÁú0]
+name$: ({ ¿á¿áÁú, ¿á¿áÁú })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 15, 15 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 45, 45 })
+
+[¿á¿áÁú1]
+name$: ({ ¿á¿áÁú, ¿á¿áÁú })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 15, 15 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 45, 45 })
+special_skill$: ({ 1, ·­×ªÇ¬À¤, 1, ÉñÁúÕÖ, 1})
+
+[¿á¿áÁú2]
+name$: ({ ¿á¿áÁú, ¿á¿áÁú })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 15, 15 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 45, 45 })
+special_skill$: ({ 2, ·­×ªÇ¬À¤, 1, ÉñÁúÕÖ, 1})
+
+[»¨»¨Éß0]
+name$: ({ »¨»¨Éß, »¨»¨Éß })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 25, 25 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 35, 35 })
+
+[»¨»¨Éß1]
+name$: ({ »¨»¨Éß, »¨»¨Éß })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 25, 25 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 35, 35 })
+special_skill$: ({ 1, ÉáÃüÒ»»÷, 1, ÉñÁúÕÖ, 1})
+
+[»¨»¨Éß2]
+name$: ({ »¨»¨Éß, »¨»¨Éß })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 25, 25 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 35, 35 })
+special_skill$: ({ 2, ÉáÃüÒ»»÷, 1, ÉñÁúÕÖ, 1})
+
+[ÁïÁïÂí0]
+name$: ({ ÁïÁïÂí, ÁïÁïÂí })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 25, 25 })
+phy_effect: ({ 50, 50 })
+mag_effect: ({ -30, -30 })
+
+[ÁïÁïÂí1]
+name$: ({ ÁïÁïÂí, ÁïÁïÂí })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 25, 25 })
+phy_effect: ({ 50, 50 })
+mag_effect: ({ -30, -30 })
+special_skill$: ({ 1, ÉñÊ¥Ö®¹â, 1, ÉñÁúÕÖ, 1})
+
+[ÁïÁïÂí2]
+name$: ({ ÁïÁïÂí, ÁïÁïÂí })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 25, 25 })
+phy_effect: ({ 50, 50 })
+mag_effect: ({ -30, -30 })
+special_skill$: ({ 2, ÉñÊ¥Ö®¹â, 1, ÉñÁúÕÖ, 1})
+
+[ßãßãÑò0]
+name$: ({ ßãßãÑò, ßãßãÑò })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 15, 15 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 35, 35 })
+
+[ßãßãÑò1]
+name$: ({ ßãßãÑò, ßãßãÑò })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 15, 15 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 35, 35 })
+special_skill$: ({ 1, ÉñÊ¥Ö®¹â, 1, ÈçÒâÈ¦, 1})
+
+[ßãßãÑò2]
+name$: ({ ßãßãÑò, ßãßãÑò })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 15, 15 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 35, 35 })
+special_skill$: ({ 2, ÉñÊ¥Ö®¹â, 1, ÈçÒâÈ¦, 1})
+
+[Ë§Ë§ºï0]
+name$: ({ Ë§Ë§ºï, Ë§Ë§ºï })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ 50, 50 })
+mag_effect: ({ -30, -30 })
+
+[Ë§Ë§ºï1]
+name$: ({ Ë§Ë§ºï, Ë§Ë§ºï })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ 50, 50 })
+mag_effect: ({ -30, -30 })
+special_skill$: ({ 1, ËÀÍö²øÃà, 1, Ç¬À¤ÕÖ, 1})
+
+[Ë§Ë§ºï2]
+name$: ({ Ë§Ë§ºï, Ë§Ë§ºï })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ 50, 50 })
+mag_effect: ({ -30, -30 })
+special_skill$: ({ 2, ËÀÍö²øÃà, 1, Ç¬À¤ÕÖ, 1})
+
+[µ°µ°¼¦0]
+name$: ({ µ°µ°¼¦, µ°µ°¼¦ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 10, 10 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 30, 30 })
+
+[µ°µ°¼¦1]
+name$: ({ µ°µ°¼¦, µ°µ°¼¦ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 10, 10 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 30, 30 })
+special_skill$: ({ 1, ËÀÍö²øÃà, 1, ÈçÒâÈ¦, 1})
+
+[µ°µ°¼¦2]
+name$: ({ µ°µ°¼¦, µ°µ°¼¦ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 10, 10 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 30, 30 })
+special_skill$: ({ 2, ËÀÍö²øÃà, 1, ÈçÒâÈ¦, 1})
+
+[ÕĞ²ÆÖí0]
+name$: ({ ÕĞ²ÆÖí, ÕĞ²ÆÖí })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 75, 75 })
+mana_effect: ({ 35, 35 })
+speed_effect: ({ 5, 5 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 25, 25 })
+
+[ÕĞ²ÆÖí1]
+name$: ({ ÕĞ²ÆÖí, ÕĞ²ÆÖí })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 75, 75 })
+mana_effect: ({ 35, 35 })
+speed_effect: ({ 5, 5 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 25, 25 })
+special_skill$: ({ 1, ÉáÃüÒ»»÷, 1, ÈçÒâÈ¦, 1})
+
+[ÕĞ²ÆÖí2]
+name$: ({ ÕĞ²ÆÖí, ÕĞ²ÆÖí })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 75, 75 })
+mana_effect: ({ 35, 35 })
+speed_effect: ({ 5, 5 })
+phy_effect: ({ -40, -40 })
+mag_effect: ({ 25, 25 })
+special_skill$: ({ 2, ÉáÃüÒ»»÷, 1, ÈçÒâÈ¦, 1})
+
+[¹Ô¹Ô¹·0]
+name$: ({ ¹Ô¹Ô¹·, ¹Ô¹Ô¹· })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ 60, 60 })
+mag_effect: ({ -30, -30 })
+
+[¹Ô¹Ô¹·1]
+name$: ({ ¹Ô¹Ô¹·, ¹Ô¹Ô¹· })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ 60, 60 })
+mag_effect: ({ -30, -30 })
+special_skill$: ({ 1, ÉñÊ¥Ö®¹â, 1, Ç¬À¤ÕÖ, 1})
+
+[¹Ô¹Ô¹·2]
+name$: ({ ¹Ô¹Ô¹·, ¹Ô¹Ô¹· })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ 60, 60 })
+mag_effect: ({ -30, -30 })
+special_skill$: ({ 2, ÉñÊ¥Ö®¹â, 1, Ç¬À¤ÕÖ, 1})
+
+[¶«É½ÉñÁé0]
+name$: ({ ¶«É½ÉñÁé, ¶«É½ÉñÁé })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 40, 40 })
+
+[¶«É½ÉñÁé1]
+name$: ({ ¶«É½ÉñÁé, ¶«É½ÉñÁé })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 40, 40 })
+special_skill$: ({ 1, ÂşÌìÑªÎè, 1, ÉñÊ¥Ö®¹â, 1, ÉñÁúÕÖ, 1 })
+
+[¶«É½ÉñÁé2]
+name$: ({ ¶«É½ÉñÁé, ¶«É½ÉñÁé })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 40, 40 })
+special_skill$: ({ 2, ÂşÌìÑªÎè, 1, ÉñÊ¥Ö®¹â, 1, ÉñÁúÕÖ, 1 })
+
+[¶«É½ÉñÁé3]
+name$: ({ ¶«É½ÉñÁé, ¶«É½ÉñÁé })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 40, 40 })
+special_skill$: ({ 3, ÂşÌìÑªÎè, 1, ÉñÊ¥Ö®¹â, 1, ÉñÁúÕÖ, 1 })
+
+[¶«É½ÉñÁé0]
+name$: ({ ¶«É½ÉñÁé, ¶«É½ÉñÁé })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 40, 40 })
+
+[¶«É½ÉñÁé1]
+name$: ({ ¶«É½ÉñÁé, ¶«É½ÉñÁé })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 40, 40 })
+special_skill$: ({ 1, ÂşÌìÑªÎè, 1, ÉñÊ¥Ö®¹â, 1, ÉñÁúÕÖ, 1 })
+
+[¶«É½ÉñÁé2]
+name$: ({ ¶«É½ÉñÁé, ¶«É½ÉñÁé })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 40, 40 })
+special_skill$: ({ 2, ÂşÌìÑªÎè, 1, ÉñÊ¥Ö®¹â, 1, ÉñÁúÕÖ, 1 })
+
+[¶«É½ÉñÁé3]
+name$: ({ ¶«É½ÉñÁé, ¶«É½ÉñÁé })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 35, 35 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 40, 40 })
+special_skill$: ({ 3, ÂşÌìÑªÎè, 1, ÉñÊ¥Ö®¹â, 1, ÉñÁúÕÖ, 1 })
+
+[ĞşÎä0]
+name$: ({ ĞşÎä, ĞşÎä })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 80, 80 })
+mana_effect: ({ 30, 30 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 30, 30 })
+
+[ĞşÎä1]
+name$: ({ ĞşÎä, ĞşÎä })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 80, 80 })
+mana_effect: ({ 30, 30 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 30, 30 })
+special_skill$: ({ 1, ·­×ªÇ¬À¤, 1, ÂşÌìÑªÎè, 1, ÉñÁúÕÖ, 1})
+
+[ĞşÎä2]
+name$: ({ ĞşÎä, ĞşÎä })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 80, 80 })
+mana_effect: ({ 30, 30 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 30, 30 })
+special_skill$: ({ 2, ·­×ªÇ¬À¤, 1, ÂşÌìÑªÎè, 1, ÉñÁúÕÖ, 1})
+
+[ĞşÎä3]
+name$: ({ ĞşÎä, ĞşÎä })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 80, 80 })
+mana_effect: ({ 30, 30 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 30, 30 })
+special_skill$: ({ 3, ·­×ªÇ¬À¤, 1, ÂşÌìÑªÎè, 1, ÉñÁúÕÖ, 1})
+
+[ÖìÈ¸0]
+name$: ({ ÖìÈ¸, ÖìÈ¸ })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 40, 40 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 45, 45 })
+
+[ÖìÈ¸1]
+name$: ({ ÖìÈ¸, ÖìÈ¸ })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 40, 40 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 45, 45 })
+special_skill$: ({ 1, ÉñÊ¥Ö®¹â, 1, ÓÎËµÖ®Éà, 1, ÈçÒâÈ¦, 1})
+
+[ÖìÈ¸2]
+name$: ({ ÖìÈ¸, ÖìÈ¸ })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 40, 40 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 45, 45 })
+special_skill$: ({ 2, ÉñÊ¥Ö®¹â, 1, ÓÎËµÖ®Éà, 1, ÈçÒâÈ¦, 1})
+
+[ÖìÈ¸3]
+name$: ({ ÖìÈ¸, ÖìÈ¸ })
+rank$: ÉñÊŞ
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 40, 40 })
+phy_effect: ({ -50, -50 })
+mag_effect: ({ 45, 45 })
+special_skill$: ({ 3, ÉñÊ¥Ö®¹â, 1, ÓÎËµÖ®Éà, 1, ÈçÒâÈ¦, 1})
+
+[õùõ÷0]
+name$: ({ õùõ÷, õùõ÷ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 0, 0 })
+phy_effect: ({ 90, 90 })
+mag_effect: ({ -35, -35 })
+
+[õùõ÷1]
+name$: ({ õùõ÷, õùõ÷ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 0, 0 })
+phy_effect: ({ 90, 90 })
+mag_effect: ({ -35, -35 })
+special_skill$: ({ 1, ËÀÍö²øÃà, 1, ÉñÁúÕÖ, 1 })
+
+[õùõ÷2]
+name$: ({ õùõ÷, õùõ÷ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 55, 55 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 0, 0 })
+phy_effect: ({ 90, 90 })
+mag_effect: ({ -35, -35 })
+special_skill$: ({ 2, ËÀÍö²øÃà, 1, ÉñÁúÕÖ, 1 })
+
+[ÆÑÀÎ0]
+name$: ({ ÆÑÀÎ, ÆÑÀÎ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 35, 35 })
+
+[ÆÑÀÎ1]
+name$: ({ ÆÑÀÎ, ÆÑÀÎ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 35, 35 })
+special_skill$: ({ 1, ÉñÊ¥Ö®¹â, 1, ÈçÒâÈ¦, 1 })
+
+[ÆÑÀÎ2]
+name$: ({ ÆÑÀÎ, ÆÑÀÎ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 35, 35 })
+special_skill$: ({ 2, ÉñÊ¥Ö®¹â, 1, ÈçÒâÈ¦, 1 })
+
+[°ÔÏÂ0]
+name$: ({ °ÔÏÂ, °ÔÏÂ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 30, 30 })
+speed_effect: ({ 25, 25 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 30, 30 })
+
+[°ÔÏÂ1]
+name$: ({ °ÔÏÂ, °ÔÏÂ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 30, 30 })
+speed_effect: ({ 25, 25 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 30, 30 })
+special_skill$: ({ 1, ÂşÌìÑªÎè, 1, Ç¬À¤ÕÖ, 1 })
+
+[°ÔÏÂ2]
+name$: ({ °ÔÏÂ, °ÔÏÂ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 30, 30 })
+speed_effect: ({ 25, 25 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 30, 30 })
+special_skill$: ({ 2, ÂşÌìÑªÎè, 1, Ç¬À¤ÕÖ, 1 })
+
+[áùáí0]
+name$: ({ áùáí, áùáí })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 0, 0 })
+phy_effect: ({ 85, 85 })
+mag_effect: ({ -35, -35 })
+
+[áùáí1]
+name$: ({ áùáí, áùáí })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 0, 0 })
+phy_effect: ({ 85, 85 })
+mag_effect: ({ -35, -35 })
+special_skill$: ({ 1, ·­×ªÇ¬À¤, 1, ÉñÁúÕÖ, 1 })
+
+[áùáí2]
+name$: ({ áùáí, áùáí })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 0, 0 })
+phy_effect: ({ 85, 85 })
+mag_effect: ({ -35, -35 })
+special_skill$: ({ 2, ·­×ªÇ¬À¤, 1, ÉñÁúÕÖ, 1 })
+
+[íıíö0]
+name$: ({ íıíö, íıíö })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 40, 40 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 25, 25 })
+
+[íıíö1]
+name$: ({ íıíö, íıíö })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 40, 40 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 25, 25 })
+special_skill$: ({ 1, ÂşÌìÑªÎè, 1, ÈçÒâÈ¦, 1 })
+
+[íıíö2]
+name$: ({ íıíö, íıíö })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 60, 60 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 40, 40 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 25, 25 })
+special_skill$: ({ 2, ÂşÌìÑªÎè, 1, ÈçÒâÈ¦, 1 })
+
+[³°·ç0]
+name$: ({ ³°·ç, ³°·ç })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 40, 40 })
+
+[³°·ç1]
+name$: ({ ³°·ç, ³°·ç })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 40, 40 })
+special_skill$: ({ 1, ÉñÊ¥Ö®¹â, 1, ÈçÒâÈ¦, 1 })
+
+[³°·ç2]
+name$: ({ ³°·ç, ³°·ç })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ 20, 20 })
+speed_effect: ({ 20, 20 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 40, 40 })
+special_skill$: ({ 2, ÉñÊ¥Ö®¹â, 1, ÈçÒâÈ¦, 1 })
+
+[÷¡Óã0]
+name$: ({ ÷¡Óã, ÷¡Óã })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ 30, 30 })
+speed_effect: ({ 25, 25 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 20, 20 })
+
+[÷¡Óã1]
+name$: ({ ÷¡Óã, ÷¡Óã })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ 30, 30 })
+speed_effect: ({ 25, 25 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 20, 20 })
+special_skill$: ({ 1, ÓÎËµÖ®Éà, 1, Ç¬À¤ÕÖ, 1 })
+
+[÷¡Óã2]
+name$: ({ ÷¡Óã, ÷¡Óã })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ 30, 30 })
+speed_effect: ({ 25, 25 })
+phy_effect: ({ -45, -45 })
+mag_effect: ({ 20, 20 })
+special_skill$: ({ 2, ÓÎËµÖ®Éà, 1, Ç¬À¤ÕÖ, 1 })
+
+[÷Ò÷Ñ0]
+name$: ({ ÷Ò÷Ñ, ÷Ò÷Ñ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 10, 10 })
+phy_effect: ({ 70, 70 })
+mag_effect: ({ -35, -35 })
+
+[÷Ò÷Ñ1]
+name$: ({ ÷Ò÷Ñ, ÷Ò÷Ñ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 10, 10 })
+phy_effect: ({ 70, 70 })
+mag_effect: ({ -35, -35 })
+special_skill$: ({ 1, ÂşÌìÑªÎè, 1, Ç¬À¤ÕÖ, 1 })
+
+[÷Ò÷Ñ2]
+name$: ({ ÷Ò÷Ñ, ÷Ò÷Ñ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 65, 65 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 10, 10 })
+phy_effect: ({ 70, 70 })
+mag_effect: ({ -35, -35 })
+special_skill$: ({ 2, ÂşÌìÑªÎè, 1, Ç¬À¤ÕÖ, 1 })
+
+[ÇôÅ£0]
+name$: ({ ÇôÅ£, ÇôÅ£ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 0, 0 })
+phy_effect: ({ 75, 75 })
+mag_effect: ({ -35, -35 })
+
+[ÇôÅ£1]
+name$: ({ ÇôÅ£, ÇôÅ£ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 0, 0 })
+phy_effect: ({ 75, 75 })
+mag_effect: ({ -35, -35 })
+special_skill$: ({ 1, ËÀÍö²øÃà, 1, ÉñÁúÕÖ, 1 })
+
+[ÇôÅ£2]
+name$: ({ ÇôÅ£, ÇôÅ£ })
+rank$: ±äÒì
+level: 1
+life_effect: ({ 70, 70 })
+mana_effect: ({ -10, -10 })
+speed_effect: ({ 0, 0 })
+phy_effect: ({ 75, 75 })
+mag_effect: ({ -35, -35 })
+special_skill$: ({ 2, ËÀÍö²øÃà, 1, ÉñÁúÕÖ, 1 })

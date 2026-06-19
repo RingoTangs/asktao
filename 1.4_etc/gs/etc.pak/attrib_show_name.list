@@ -1,0 +1,44 @@
+#FORM2
+
+[attrib_name]
+power                    : 伤害 %d 增加
+phy_power                : 伤害 %d 增加
+mag_power                : 伤害 %d 增加
+def                      : 防御 %d 增加
+max_life                 : 气血 %d 增加
+max_mana                 : 法力 %d 增加
+speed                    : 速度 %d 增加
+str                      : 力量 %d 增加
+con                      : 体质 %d 增加
+wiz                      : 灵力 %d 增加
+dex                      : 敏捷 %d 增加
+all_attrib               : 所有属性 %d 增加
+accurate                 : 准确 %d%% 增加
+double_hit_rate          : 连击率 %d%% 增加
+counter_attack_rate      : 反击率 %d%% 增加
+stunt_rate               : 必杀率 %d%% 增加
+damage_sel_rate          : 反震率 %d%% 增加
+double_hit               : 连击 %d 增加
+counter_attack           : 反击 %d 增加
+damage_sel               : 反震度 %d 增加
+metal                    : 金相性 %d 增加
+wood                     : 木相性 %d 增加
+water                    : 水相性 %d 增加
+fire                     : 火相性 %d 增加
+earth                    : 土相性 %d 增加
+resist_metal             : 抗金 %d%% 增加
+resist_wood              : 抗木 %d%% 增加
+resist_water             : 抗水 %d%% 增加
+resist_fire              : 抗火 %d%% 增加
+resist_earth             : 抗土 %d%% 增加
+resist_poison            : 抗毒 %d%% 增加
+resist_frozen            : 抗冰冻 %d%% 增加
+resist_sleep             : 抗昏睡 %d%% 增加
+resist_forgotten         : 抗遗忘 %d%% 增加
+resist_confusion         : 抗混乱 %d%% 增加
+all_polar                : 所有相性 %d 增加
+all_resist_polar         : 所有抗性 %d 增加
+all_resist_except        : 抗所有异常 %d%% 增加
+all_skill                : 所有技能上升 %d 级
+ignore_all_resist_polar  : 忽视所有抗性 %d 增加
+ignore_all_resist_except : 忽视所有抗异常 %d 增加

@@ -1,0 +1,7 @@
+#名字     file_id                          icon,  属性,                    等级,   量词, 光效,          价格,  附加技能,          概率计算公式,                                                       法宝技能,                                      描述
+key_name, file_id,                         icon, attrib,                  level, unit, light_effect, value, attach_skill,     probability,                                                      skill_desc,                                   desc
+定海珠,   "skill_artifact/dinghaizhu",     1577, "ITEM_CLIENT_NOT_ERASE", 1,     个,   8015,         50000, "dinghaizhu",     "exp(法宝等级 1.8) * 0.3 * ( 友好度 + 1 ) * 当前灵气 / 最大灵气", 有一定几率免除当前回合任何伤害,               珠有二十四颗，攒成一串，谓之"定海珠"。此珠后来兴于释门，化为二十四诸天
+番天印,   "skill_artifact/fantianyin",     1574, "ITEM_CLIENT_NOT_ERASE", 1,     只,   8013,         50000, "fantianyin",     "exp(法宝等级 1.8) * 0.3 * ( 友好度 + 1 ) * 当前灵气 / 最大灵气", 有一定几率出现法术连击,                       玉虚至宝番天印，晃一晃地动山摇，颠一颠山呼海啸
+混元金斗, "skill_artifact/hunyuan-jindou", 1578, "ITEM_CLIENT_NOT_ERASE", 1,     个,   8016,         50000, "hunyuan-jindou", "exp(法宝等级 1.8) * 0.3 * ( 友好度 + 1 ) * 当前灵气 / 最大灵气", 有一定几率出现物理攻击力提升2.5倍,            内按三才，包藏天地之妙，因果不知，劫数不显，神通不明
+阴阳镜,   "skill_artifact/yinyangjing",    1576, "ITEM_CLIENT_NOT_ERASE", 1,     面,   8014,         50000, "yinyangjing",    "exp(法宝等级 1.8) * 0.3 * ( 友好度 + 1 ) * 当前灵气 / 最大灵气", 有一定几率将本回合对方对自己的攻击选择为他人, 此镜半边白半边红，白的一晃是死路，红的一晃是生门
+

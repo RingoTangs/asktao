@@ -1,0 +1,93 @@
+#FORM2
+
+#bangpai_shouwei.list
+#Created by llch 8/1/2006
+#帮派守卫配置文件
+
+#帮派等级说明：
+#初级帮派: 1
+#中级帮派: 2
+#高级帮派: 3
+#顶级帮派: 4
+
+#字段说明
+#[x] x为帮派等级
+#interval: 帮派守卫的持续时间（秒）
+#broadcast_interval: 广播时间（秒）
+#cost_money: 开启帮派守卫需要耗费的帮派资金
+#cost_construct: 开启帮派守卫需要耗费的帮派建设度
+#req_money: 开启帮派守卫需要的最少帮派资金
+#req_construct: 开启帮派守卫需要的最少帮派建设度
+#init_monster_amount: 活动开始初始刷新的怪物数量
+#total_monster_amount: 整个活动中间刷新的怪物总数量
+
+[1]
+interval: 3600
+broadcast_interval: 600
+req_construct: 20000
+req_money: 200000
+cost_construct: 500
+cost_money: 30000
+init_monster_amount: 10
+total_monster_amount: 20
+
+[2]
+interval: 3600
+broadcast_interval: 600
+req_construct: 103000
+req_money: 650000
+cost_construct: 1500
+cost_money: 100000
+init_monster_amount: 15
+total_monster_amount: 30
+
+[3]
+interval: 3600
+broadcast_interval: 600
+req_construct: 506000
+req_money: 1300000
+cost_construct: 3000
+cost_money: 200000
+init_monster_amount: 20
+total_monster_amount: 50
+
+[4]
+interval: 3600
+broadcast_interval: 600
+req_construct: 1012000
+req_money: 3600000
+cost_construct: 6000
+cost_money: 500000
+init_monster_amount: 25
+total_monster_amount: 70
+
+[monster_list]
+monster$: ({ 山贼, 6201 })
+monster$: ({ 山贼, 6202 })
+monster$: ({ 山贼, 6231 })
+monster$: ({ 山贼, 6230 })
+monster$: ({ 山贼, 6213 })
+
+[monster_attrib]
+life_effect:            500
+resist_sleep:           40
+resist_forgotten:       50
+resist_frozen:          50
+resist_confusion:       50
+resist_poison:          40
+phy_absorb:             0
+mag_absorb:             0
+phy_effect:             50
+mag_effect:             100
+speed_effect:           40
+double_hit_rate:        30
+double_hit:             5
+counter_attack_rate:    30
+counter_attack:         12
+
+[monster_polar]
+polar$: POLAR_METAL
+polar$: POLAR_WOOD
+polar$: POLAR_WATER
+polar$: POLAR_FIRE
+polar$: POLAR_EARTH

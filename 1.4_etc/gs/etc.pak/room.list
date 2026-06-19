@@ -1,0 +1,1944 @@
+#FORM2
+#################################################################################
+# [地图名]
+#
+# alias  : 该地图对应的文件名
+# map_id : 该地图的图档编号
+# npc_guide_index: 该地图NPC精灵索引
+# compact_map_index: 该地图小地图的索引
+#
+# exits$ : ({ 连通地图, 传送点X坐标, 传送点Y坐标,
+#             传送点图标（方向为箭头，切换房间时使用；CIRCLE为圆形）,
+#             传送后X坐标, 传送后Y坐标, 传送后人物朝向,
+#             区域名称（跨区域移动时务必填写） })
+#
+# npc$   : ({ NPC文件名, X坐标, Y坐标, NPC朝向, 优先级, 名字 })
+# 优先级: NPC精灵显示时的优先级，数字越大，显示越靠后
+# 名字:   NPC的中文名
+#
+# monster_list : ({ 怪物文件名 })
+#
+# template     : ({ 支持模版名 })
+#
+# family       : FAMILY_YUZHUDONG 门派遇敌
+#
+# p_touch_monster : 该地图是否可以遇敌（1 可以；0 不可以）
+# p_auto_touch : 该地图是否可以使用自动遇敌功能（1 可以；0 不可以）
+#
+#################################################################################
+
+[揽仙镇]
+big_map : 1
+alias   : ({ "lanxianzhen" })
+map_id  : 1000
+compact_map_index: 0
+exits$  : ({ "永合杂货铺", 223, 99,  NORTHEAST, 15, 27, NORTHEAST })
+exits$  : ({ "揽仙客栈", 264, 169, NORTHEAST, 16, 29, NORTHEAST })
+exits$  : ({ "天下钱庄", 254, 125, NORTHEAST, 18, 28, NORTHEAST })
+exits$  : ({ "万全药铺", 195, 183, NORTHWEST, 18, 23, NORTHWEST })
+exits$  : ({ "威扬武器店", 177, 121, NORTHEAST, 15, 23, NORTHEAST })
+exits$  : ({ "天锦布庄", 118, 127, NORTHEAST, 14, 20, NORTHEAST })
+exits$  : ({ "官道南", 200, 8,   CIRCLE, 124, 229, NORTH,     "官道" })
+exits$  : ({ "揽仙镇外", 328, 250, CIRCLE, 18,  148, SOUTHEAST, "揽仙镇外" })
+npc$    : ({ "THIS_PLACE/duowen-daoren",   81,  182, SOUTHWEST, 0, 多闻道人})
+npc$    : ({ "THIS_PLACE/huangsaner",      212, 179, SOUTHEAST, 2048, 黄仨儿 })
+npc$    : ({ "THIS_PLACE/lianhua-guniang", 318, 230, SOUTHWEST, 10240, 莲花姑娘 })
+npc$    : ({ "THIS_PLACE/leshanshi",       347, 67,  SOUTHEAST, 11264, 乐善施 })
+npc$    : ({ "THIS_PLACE/qingjing-sanren", 369, 101, SOUTHWEST, 12288, 清净散人 })
+npc$    : ({ "THIS_PLACE/yiyezhiqiu",      383, 69,  SOUTHWEST, 14336, 一叶知秋 })
+npc$    : ({ "misc/huodong-dashi",         74,  116, SOUTHEAST, 13312, 问道活动大使 })
+npc$    : ({ "THIS_PLACE/xingyundashi",    242, 50,  SOUTHWEST, 15360, 幸运大使 })
+#npc$    : ({ "THIS_PLACE/huojudashi",      217, 142, SOUTHWEST, -1, 火炬大使 })
+npc$    : ({ "THIS_PLACE/miaomiao-daoren", 60,  177, SOUTHEAST, 512, 渺渺道人 })
+npc$    : ({ "THIS_PLACE/huayang-zhenren", 35,  17,  SOUTHEAST, 1024, 华阳真人 })
+npc$    : ({ "THIS_PLACE/baozai-junliangguan", 255, 50,  SOUTHWEST, 11264, 爆仔军粮官 })
+npc$    :  ({"THIS_PLACE/xunluwang", 137, 17, SOUTHWEST, 50000, 驯鹿王 })
+template: ({ "idle_template" })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[揽仙客栈]
+big_map : 0
+alias   : ({ "lanxian-kezhan" })
+map_id  : 1006
+compact_map_index: 0
+exits$  : ({ "揽仙镇", 13, 30, SOUTHWEST, 262, 170, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/kezhan-laoban", 11, 23, SOUTHEAST, 3072, 赵老板 })
+npc$    : ({ "THIS_PLACE/xiaoerge",      30, 18, SOUTHEAST, 4096, 小二哥 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[天锦布庄]
+big_map : 0
+alias   : ({ "tianjin-buzhuang" })
+map_id  : 1001
+compact_map_index: 0
+exits$  : ({ "揽仙镇", 11, 21, SOUTHWEST, 115, 128, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/budian-laoban",   26,  17, SOUTHWEST, 9216, 卜老板 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[天下钱庄]
+big_map : 0
+alias   : ({ "tianxia-qianzhuang" })
+map_id  : 1004
+compact_map_index: 0
+exits$  : ({ "揽仙镇", 14, 30, SOUTHWEST, 251, 126, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/qianzhuang-laoban", 14, 18, SOUTHEAST, 8192, 钱老板 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[万全药铺]
+big_map : 0
+alias   : ({ "wanquan-yaopu" })
+map_id  : 1003
+compact_map_index: 0
+exits$  : ({ "揽仙镇", 22, 26, SOUTHEAST, 198, 185, SOUTHEAST })
+npc$    : ({ "THIS_PLACE/yaodian-laoban", 27, 19, SOUTHWEST, 6144, 王老板 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[威扬武器店]
+big_map : 0
+alias   : ({ "weiyang-wuqidian" })
+map_id  : 1002
+compact_map_index: 0
+exits$  : ({ "揽仙镇", 12, 25, SOUTHWEST, 174, 122, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/wuqidian-laoban", 28, 16, SOUTHWEST, 5120, 张老板 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[永合杂货铺]
+big_map : 0
+alias   : ({ "yonghe-zahuopu" })
+map_id  : 1005
+compact_map_index: 0
+exits$  : ({ "揽仙镇", 13, 28, SOUTHWEST, 221, 100, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/zahuodian-laoban", 24, 12, SOUTHWEST, 7168, 贾老板 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[揽仙镇外]
+big_map : 1
+alias   : ({ "lanxianzhenwai" })
+map_id  : 2000
+compact_map_index: 0
+exits$  : ({ "揽仙镇", 1,   131, CIRCLE, 321, 242, NORTHWEST, "揽仙镇" })
+exits$  : ({ "卧龙坡", 147, 60,  CIRCLE, 6,   124, EAST,      "卧龙坡" })
+npc$    : ({ "THIS_PLACE/shenshouyiren", 68, 13, SOUTHWEST, -1, 神兽异人 })
+npc$    : ({ "misc/yerufeng", 29, 114, SOUTHEAST, 0, 叶如风 })
+monster_list : ({ "qingwa", "songshu" })
+template     : ({ "standard_template", "thief_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[卧龙坡]
+big_map : 1
+alias   : ({ "wolongpo" })
+map_id  : 3000
+compact_map_index: 0
+exits$  : ({ "揽仙镇外", 2, 124, CIRCLE, 142, 60, WEST, "揽仙镇外" })
+npc$    : ({ "misc/xuanwu", 78, 33, SOUTHEAST, 0, 玄武 })
+npc$    : ({ "misc/shenlong-zhenren", 145, 15, NORTHEAST, 1024, 神龙真人 })
+npc$    : ({ "THIS_PLACE/mengmianren",  103, 38, SOUTHEAST, 2048, 蒙面人 })
+npc$    : ({ "misc/xunlu-bangfei", 82, 172, SOUTHWEST, 4000, 驯鹿绑匪 })
+monster_list : ({ "tuzi", "she" })
+template     : ({ "standard_template", "thief_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[官道北]
+big_map : 1
+alias   : ({ "guandaobei" })
+map_id  : 24000
+compact_map_index: 0
+exits$  : ({ "天墉城", 14,  4,   CIRCLE, 403, 272, NORTH,  "天墉城" })
+exits$  : ({ "官道南", 117, 180, CIRCLE, 144, 11,  SOUTHWEST })
+monster_list : ({ "huli", "yegou" })
+template     : ({ "standard_template", "thief_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[官道南]
+big_map : 1
+alias   : ({ "guandaonan" })
+map_id  : 4000
+compact_map_index: 0
+npc$    : ({ "misc/jiefeihuhanshan", 107, 71, SOUTHWEST, 0, 劫匪胡汉山 })
+exits$  : ({ "官道北", 148, 7,   CIRCLE, 120, 177, NORTHEAST })
+exits$  : ({ "揽仙镇", 126, 233, CIRCLE, 202, 15,  SOUTH, "揽仙镇" })
+monster_list : ({ "houzi", "shanmao" })
+template     : ({ "standard_template", "thief_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[天墉城]
+big_map : 1
+alias   : ({ "tianyongcheng" })
+map_id  : 5000
+compact_map_index: 0
+exits$  : ({ "富甲钱庄",   251, 231, NORTHWEST, 65, 52,  NORTHWEST }),
+exits$  : ({ "神勇兵器铺",   262, 171, NORTHWEST, 25, 35,  NORTHWEST }),
+exits$  : ({ "巧手坊",   109, 165, NORTHEAST, 23, 45,  NORTHEAST }),
+exits$  : ({ "官府",   378, 18,  NORTHEAST, 17, 74,  NORTHEAST }),
+exits$  : ({ "喜来客栈",   282, 243, NORTHEAST, 27, 57,  NORTHEAST }),
+exits$  : ({ "回春堂药铺", 248, 109, NORTHWEST, 35, 53,  NORTHWEST }),
+exits$  : ({ "威震镖局",   27,  64,  NORTHEAST, 24, 47,  NORTHEAST }),
+exits$  : ({ "悟云观",   54,  220, NORTHWEST, 77, 57,  NORTHWEST }),
+exits$  : ({ "南北杂货铺", 109, 39,  NORTHWEST, 44, 47,  NORTHWEST }),
+exits$  : ({ "仁和布庄",   138, 121, NORTHWEST, 53, 63,  NORTHWEST }),
+#exits$ : ({ "民居1",      264, 73,  NORTHEAST, 18, 49,  NORTHEAST }),
+exits$  : ({ "民居2",      339, 106, NORTHEAST, 15, 29,  NORTHEAST }),
+#exits$  : ({ "监狱",       400, 10,  NORTHEAST, 27, 47,  NORTHEAST }),
+exits$  : ({ "官道北",     411, 277, CIRCLE,    14, 9,   SOUTHEAST, "官道" }),
+exits$  : ({ "桃柳林",     16,  4,   CIRCLE,    11, 118, NORTHEAST, "桃柳林" })
+npc$    : ({ "THIS_PLACE/donglaotou",        197, 100,   SOUTHWEST, 47104, 董老头 })
+npc$    : ({ "THIS_PLACE/shenmishangren",    141, 247,   SOUTHEAST, -1, 神秘商人 })
+npc$    : ({ "THIS_PLACE/lingshouyiren",     293, 247,   SOUTHWEST, 5120, 灵兽异人 })
+npc$    : ({ "THIS_PLACE/menpaishizhe",      339, 216,   SOUTHEAST, 19456, 门派使者 })
+npc$    : ({ "THIS_PLACE/chuanfu",           211, 272,   SOUTHEAST, 57344, 船夫 })
+npc$    : ({ "THIS_PLACE/chefu",             361, 139,   SOUTHEAST, 0, 车夫 })
+npc$    : ({ "THIS_PLACE/qigai",             273, 99,   SOUTHEAST, -1, 乞丐 })
+npc$    : ({ "THIS_PLACE/qigai",             408, 117,   SOUTHWEST, -1, 乞丐 })
+npc$    : ({ "THIS_PLACE/qigai",             122,  35,   SOUTHEAST, -1, 乞丐 })
+npc$    : ({ "THIS_PLACE/qianmianguai",       11, 192,   SOUTHEAST, 28672, 千面怪 })
+npc$    : ({ "THIS_PLACE/shouwei",           390, 262,   SOUTHWEST, -1, 天墉城守卫 })
+npc$    : ({ "THIS_PLACE/mengmian",          167,   8,   SOUTHEAST, 41984, 蒙面 })
+npc$    : ({ "THIS_PLACE/tianjilaoren",      407, 153,   SOUTHWEST, 1024, 天机老人 })
+npc$    : ({ "THIS_PLACE/shoucheng-shibing", 377, 266,   NORTHEAST, -1, 守城士兵 })
+npc$    : ({ "THIS_PLACE/shoucheng-shibing", 387, 261,   SOUTHWEST, -1, 守城士兵 })
+npc$    : ({ "THIS_PLACE/puhua-tianzun",     137, 20,    SOUTHEAST, 3072, 普华天尊 })
+#npc$   : ({ "THIS_PLACE/shibing",           323,  64,   NORTHWEST, -1, 士兵 })
+#npc$   : ({ "THIS_PLACE/shibing",           316,  60,   SOUTHEAST, -1, 士兵 })
+#npc$   : ({ "THIS_PLACE/shibing",           364,  47,   SOUTHWEST, -1, 士兵 })
+#npc$   : ({ "THIS_PLACE/shibing",           355,  42,   SOUTHWEST, -1, 士兵 })
+#npc$   : ({ "THIS_PLACE/shibing",           397,   8,   SOUTHWEST, -1, 士兵 })
+#npc$   : ({ "THIS_PLACE/shibing",           403,  11,   SOUTHWEST, -1, 士兵 })
+#npc$   : ({ "THIS_PLACE/shibing",           352,  16,   SOUTHWEST, -1, 士兵 })
+#npc$   : ({ "THIS_PLACE/shibing",           402,  44,   SOUTHEAST, -1, 士兵 })
+npc$    : ({ "THIS_PLACE/shoucheng-shibing",  51,  33,   SOUTHWEST, -1, 守城士兵 })
+npc$    : ({ "THIS_PLACE/shoucheng-shibing",  41,  38,   NORTHEAST, -1, 守城士兵 })
+npc$    : ({ "THIS_PLACE/nianxin-daoren",     74, 222,   SOUTHEAST, 29696, 念心道人 })
+npc$    : ({ "THIS_PLACE/bangpai-shizhe",    235, 175,   SOUTHWEST, 9216,  帮派使者 })
+npc$    : ({ "THIS_PLACE/baixiao-tong",      164, 115,   SOUTHEAST, 25600, 百晓通 })
+npc$    : ({ "THIS_PLACE/xin-renai",         307,  20,   SOUTHWEST, 44032, 辛仁皑 })
+npc$    : ({ "misc/yexingren",               98,   12,   SOUTHEAST, 27648, 夜行人 })
+npc$    : ({ "THIS_PLACE/shidaodahui-shenqingren", 231, 117, SOUTHWEST, 45056, 试道大会申请人 })
+npc$    : ({ "THIS_PLACE/nanji-xianweng",     43, 118,   SOUTHEAST, 46080, 南极仙翁 })
+npc$    : ({ "THIS_PLACE/wuming-jianke.c",    23, 107,   NORTHWEST, 30720, 无名剑客 })
+npc$    : ({ "THIS_PLACE/minfang-zongguan.c",220, 209,   SOUTHEAST, 49152, 民房总管 })
+npc$    : ({ "THIS_PLACE/hongniang.c",       159, 195,   SOUTHWEST, 50176, 红娘 })
+npc$    : ({ "THIS_PLACE/youfang-shushi.c",  126,  63,   SOUTHWEST, 51200, 游方术士 })
+npc$    : ({ "THIS_PLACE/dahuzi.c",          270,  25,   SOUTHEAST, 53248, 大胡子 })
+npc$    : ({ "THIS_PLACE/wuxing-jingcaishi.c",291, 197,  SOUTHWEST, 54272, 五行竞猜使 })
+npc$    : ({ "THIS_PLACE/maoshan-daoshi.c",  207,  36,   SOUTHEAST, 32768, 茅山道士 })
+npc$    : ({ "THIS_PLACE/xiaoyaoxian.c",     39,  268,   SOUTHWEST, 56320, 逍遥仙 })
+npc$    : ({ "THIS_PLACE/shensuanzi.c",      305, 250,   SOUTHEAST, 39936, 神算子 })
+npc$    : ({ "THIS_PLACE/jieri-dashi.c",      13, 133,   SOUTHEAST, 38912, 节日大使 })
+npc$    : ({ "THIS_PLACE/gongzhengren.c",    211, 7,     SOUTHWEST, 40960, 点卡寄售商 })
+npc$    : ({ "THIS_PLACE/shanghui-huizhang.c",248, 128,  SOUTHWEST, 6144, 商会会长 })
+npc$    : ({ "THIS_PLACE/jishi-chuansongren.c", 202, 144,  SOUTHEAST, 8192, 集市传送人 })
+npc$    : ({ "THIS_PLACE/paimaishi.c", 216, 110,  SOUTHWEST, 7168, 拍卖师 })
+npc$    : ({ "THIS_PLACE/bangpai-guanliyuan.c", 152, 82,  SOUTHWEST, 21504, 帮派管理员 })
+npc$    : ({ "THIS_PLACE/xingzhe.c",            65,  29,   SOUTHWEST, -1, 行者 })
+npc$    : ({ "THIS_PLACE/qingfengdaoren.c", 88, 159,  SOUTHWEST, 52224, 清风道人 })
+npc$    : ({ "THIS_PLACE/linlaohan.c",      332, 105,  SOUTHWEST, 31744, 林老汉 })
+npc$    : ({ "THIS_PLACE/gongchengzhan-guanliyuan.c", 145, 161, SOUTHEAST, 22528, 攻城战管理员 })
+npc$    : ({ "THIS_PLACE/chilingzunshen.c", 176, 51, SOUTHEAST, 20480, 赤灵尊神 })
+npc$    : ({ "THIS_PLACE/jingji-sqr.c",      275, 141,   SOUTHWEST, 23552, 竞技申请人 })
+npc$    : ({ "THIS_PLACE/shouhutianshen.c", 376, 200, SOUTHEAST, 24576, 守护天神 })
+npc$    : ({ "THIS_PLACE/toupiao-guanliyuan.c", 376, 54, SOUTHWEST, 58368, 合服投票管理员 })
+npc$    : ({ "THIS_PLACE/chongfanwendao-dashi.c", 298, 88, SOUTHEAST, 59392, 重返问道大使 })
+npc$    : ({ "THIS_PLACE/xuantianling-dashi",    179, 83,   SOUTHWEST, 62464, 玄天令活动大使 })
+npc$    : ({ "THIS_PLACE/kaoguan.c",        346, 211, SOUTHEAST, 60416, 天墉城考官 })
+npc$    : ({ "THIS_PLACE/menpaibiwu-shenqingren", 189, 95, SOUTHWEST, 61440, 门派比武大会申请人 })
+npc$    : ({ "THIS_PLACE/yuanbao-shangren", 141, 69, SOUTHEAST, 63488, 元宝商人 })
+#npc$    : ({ "THIS_PLACE/aoyunzhishi-kaoguan.c", 303, 167, SOUTHEAST, -1, 奥运知识考官 })
+npc$    : ({ "THIS_PLACE/wenjuan-diaochayuan.c", 154, 119, SOUTHEAST, 65536, 问卷调查专员 })
+npc$    : ({ "THIS_PLACE/guidaozi.c", 255, 74, SOUTHWEST, 26624, 鬼道子 })
+npc$    : ({ "THIS_PLACE/qingdian-dashi", 62, 108, SOUTHEAST, -1, 庆典大使 })
+npc$    : ({ "THIS_PLACE/huanjingsanren.c", 382, 128, SOUTHEAST, 27136, 幻境散人 })
+npc$    : ({ "THIS_PLACE/qingmu-daoren", 100, 225, SOUTHWEST, 67584, 青木道人 })
+npc$    : ({ "THIS_PLACE/baibangmang.c", 313, 245, SOUTHEAST, 66560, 白邦芒 })
+template: ({ "idle_template" })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[比武场]
+big_map : 1
+alias   : ({ "biwuchang" })
+map_id  : 5013
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/wuxin-daoren", 36, 44, SOUTHWEST, 0, 无心道人 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[GM工作室]
+big_map : 1
+alias   : ({ "GM-workroom" })
+map_id  : 99000
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/GM-manager", 18, 19, SOUTHEAST, 0, GM值班登记员 })
+exits$  : ({ "揽仙镇", 30, 26, CIRCLE, 56, 171,  SOUTHEAST, "揽仙镇" })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[民居2]
+big_map : 0
+alias   : ({ "minju2" })
+map_id  : 5014
+compact_map_index: 0
+exits$  : ({ "天墉城", 13, 30, SOUTHWEST, 335, 108, SOUTHWEST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[监狱]
+big_map : 0
+alias   : ({ "jianyu" })
+map_id  : 05015
+compact_map_index: 0
+exits$  : ({ "官府", 23, 49, SOUTHWEST, 132, 16, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/laotou", 51, 32, SOUTHWEST, -1, 牢头 })
+npc$    : ({ "THIS_PLACE/laotou", 29, 40, SOUTHEAST, -1, 牢头 })
+npc$    : ({ "THIS_PLACE/laotou", 45, 43, NORTHWEST, -1, 牢头 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[巧手坊]
+big_map : 0
+alias   : ({ "qiaoshou-fang" })
+map_id  : 5003
+compact_map_index: 0
+exits$  : ({ "天墉城", 21, 47, SOUTHWEST, 104, 168, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/liqiaoshou",  53, 33, SOUTHWEST, 16384, 厉巧手 })
+npc$    : ({ "THIS_PLACE/shengong",    27, 26, SOUTHEAST, 15360, 管神工 })
+npc$    : ({ "THIS_PLACE/jingjinger",  47, 29, SOUTHWEST, 35840, 精精儿 })
+npc$    : ({ "THIS_PLACE/jingjinger2", 16, 30, SOUTHEAST, 36864, 晶晶儿 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[悟云观]
+big_map : 0
+alias   : ({ "wuyun-guan" })
+map_id  : 5009
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/tongling-daoren",  46, 41, SOUTHEAST, 2048, 通灵道人 })
+exits$  : ({ "天墉城", 82, 60, SOUTHEAST, 57, 221, SOUTHEAST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[总督衙门]
+big_map : 0
+alias   : ({ "zongdu-yamen" })
+map_id  : 5004
+compact_map_index: 0
+exits$  : ({ "官府", 25, 62, SOUTHWEST, 83, 37, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/xiazongbing",    78,  38,  SOUTHWEST, 4096, 夏总兵 })
+npc$    : ({ "THIS_PLACE/shouwei",        69,  28,  SOUTHWEST, -1, 天墉城守卫 })
+npc$    : ({ "THIS_PLACE/shouwei",        98,  45,  SOUTHWEST, -1, 天墉城守卫 })
+#npc$    : ({ "THIS_PLACE/shibing",        74,  51,  NORTHWEST, -1, 士兵 })
+#npc$    : ({ "THIS_PLACE/shibing",        81,  48,  NORTHWEST, -1, 士兵 })
+#npc$    : ({ "THIS_PLACE/shibing",        67,  54,  NORTHWEST, -1, 士兵 })
+#npc$    : ({ "THIS_PLACE/shibing",        60,  57,  NORTHWEST, -1, 士兵 })
+#npc$    : ({ "THIS_PLACE/shibing",        53,  60,  NORTHWEST, -1, 士兵 })
+#npc$    : ({ "THIS_PLACE/shibing",        64,  39,  SOUTHEAST, -1, 士兵 })
+#npc$    : ({ "THIS_PLACE/shibing",        57,  42,  SOUTHEAST, -1, 士兵 })
+#npc$    : ({ "THIS_PLACE/shibing",        50,  45,  SOUTHEAST, -1, 士兵 })
+#npc$    : ({ "THIS_PLACE/shibing",        43,  48,  SOUTHEAST, -1, 士兵 })
+#npc$    : ({ "THIS_PLACE/shibing",        36,  51,  SOUTHEAST, -1, 士兵 })
+npc$    : ({ "THIS_PLACE/zhangsitu.c",    49,  33,  SOUTHEAST, 55296, 张司徒 })
+npc$    : ({ "THIS_PLACE/shoufangli.c",   63,  25,  SOUTHEAST, 48128, 售房吏 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[神勇兵器铺]
+big_map : 0
+alias   : ({ "shenyong-bingqipu" })
+map_id  : 5002
+compact_map_index: 0
+exits$  : ({ "天墉城", 28, 37, SOUTHEAST, 265, 174, SOUTHEAST })
+npc$    : ({ "THIS_PLACE/duantiexin", 39, 20, SOUTHWEST, 13312, 段铁心 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[仁和布庄]
+big_map : 0
+alias   : ({ "renhe-buzhuang" })
+map_id  : 5011
+compact_map_index: 0
+exits$  : ({ "天墉城", 58, 66, SOUTHEAST, 143, 124, SOUTHEAST })
+npc$    : ({ "THIS_PLACE/jiarenhe", 38, 45, SOUTHEAST, 14336, 贾仁和 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[南北杂货铺]
+big_map : 0
+alias   : ({ "nanbei-zahuopu" })
+map_id  : 5010
+compact_map_index: 0
+exits$  : ({ "天墉城", 48, 49, SOUTHEAST, 113, 41, SOUTHEAST })
+npc$    : ({ "THIS_PLACE/zahuodian-laoban", 61, 31, SOUTHWEST, 18432, 杂货店老板 })
+npc$    : ({ "THIS_PLACE/tujiaojiao",       23, 31, SOUTHEAST, 34816, 屠娇娇 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[回春堂药铺]
+big_map : 0
+alias   : ({ "huichuntang-yaopu" })
+map_id  : 5007
+compact_map_index: 0
+exits$  : ({ "天墉城", 40, 55, SOUTHEAST, 251, 111, SOUTHEAST })
+npc$    : ({ "THIS_PLACE/dubusi", 59, 28, SOUTHWEST, 12288, 杜卜思 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[富甲钱庄]
+big_map : 0
+alias   : ({ "fujia-qianzhuang" })
+map_id  : 5001
+compact_map_index: 0
+exits$  : ({ "天墉城", 69, 55, SOUTHEAST, 254, 233, SOUTHEAST })
+npc$    : ({ "THIS_PLACE/qiandafu", 31, 33, SOUTHEAST, 10240, 钱大富 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[喜来客栈]
+big_map : 0
+alias   : ({ "xilai-kezhan" })
+map_id  : 5005
+compact_map_index: 0
+exits$  : ({ "天墉城", 23, 58, SOUTHWEST, 277, 245, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/fengxilai",  67, 37, SOUTHWEST, 11264, 冯喜来 })
+npc$    : ({ "THIS_PLACE/dianxiaoer", 41, 34, SOUTHEAST, 37888, 店小二 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[威震镖局]
+big_map : 0
+alias   : ({ "weizhen-biaoju" })
+map_id  : 5008
+compact_map_index: 0
+exits$  : ({ "天墉城", 20, 48, SOUTHWEST, 20, 67, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/yangbiaotou", 78, 22, SOUTHWEST, 33792, 杨镖头 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+#[通吃赌坊]
+#big_map : 1
+#alias  : ({ "tongchi-dufang" })
+#map_id : 5006
+#compact_map_index: 0
+#exits$ : ({ "天墉城", 17, 54, SOUTHWEST, 372, 131, SOUTHWEST })
+#npc$   : ({ "THIS_PLACE/datongchi",   39, 31, SOUTHEAST, -1, 大通吃 })
+#npc$   : ({ "THIS_PLACE/xiaotongchi", 32, 47, SOUTHWEST, -1, 小通吃 })
+#p_touch_monster : 0
+#p_auto_touch : 0
+
+[桃柳林]
+big_map : 1
+alias   : ({ "taoliulin" })
+map_id  : 6000
+compact_map_index: 0
+exits$  : ({ "天墉城", 3, 115, CIRCLE, 15, 10,   SOUTH, "天墉城" })
+exits$  : ({ "轩辕庙", 192, 4, CIRCLE, 13, 241, NORTHEAST, "轩辕庙" })
+monster_list : ({ "taojing", "liugui" })
+template     : ({ "standard_template", "thief_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[轩辕庙]
+big_map : 1
+alias   : ({ "xuanyuanmiao" })
+map_id  : 8000
+compact_map_index: 0
+exits$  : ({ "轩辕庙内",   136, 108, NORTHWEST, 100, 73, NORTHWEST })
+exits$  : ({ "轩辕坟一层", 125, 14,  NORTHWEST, 141, 73, NORTHWEST })
+exits$  : ({ "桃柳林",     7, 243,   CIRCLE, 187, 7,     SOUTHWEST, "桃柳林" })
+exits$  : ({ "北海沙滩",   278, 3,   CIRCLE, 157, 146,   NORTHWEST, "北海沙滩" })
+exits$  : ({ "风月谷",     6,   4,   CIRCLE, 149, 199,   NORTHWEST, "风月谷" })
+npc$    : ({ "THIS_PLACE/chefu",        248, 177, SOUTHEAST, 1024, 车夫 })
+npc$    : ({ "THIS_PLACE/luya-zhenren", 159, 123, SOUTHEAST, 2048, 陆压真人 })
+npc$    : ({ "THIS_PLACE/wunianseng",   299,  60, SOUTHWEST, 3072, 无念僧 })
+monster_list : ({ "ying", "baiyuan" })
+boss_list    : ({ "shihungui" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[轩辕庙内]
+big_map : 0
+alias   : ({ "xuanyuanmiaonei" })
+map_id  : 8001
+compact_map_index: 0
+exits$  : ({ "轩辕庙", 104, 76, SOUTHEAST, 139, 111, SOUTHEAST })
+npc$    : ({ "THIS_PLACE/wuxiangseng",      48,  48, SOUTHEAST, 0, 无想僧 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[轩辕坟一层]
+big_map : 1
+alias   : ({ "xuanyuanfen-yiceng" })
+map_id  : 8100
+compact_map_index: 0
+exits$  : ({ "轩辕庙",     144, 73, SOUTHEAST, 127, 18, SOUTHEAST })
+exits$  : ({ "轩辕坟二层", 64,  16, NORTHWEST, 184, 64, NORTHWEST })
+monster_list : ({ "bianfu", "mang" })
+boss_list    : ({ "qidao-xiuluo" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[轩辕坟二层]
+big_map : 1
+alias   : ({ "xuanyuanfen-erceng" })
+map_id  : 8200
+compact_map_index: 0
+exits$  : ({ "轩辕坟一层", 188, 65, SOUTHEAST, 66,  18, SOUTHEAST })
+exits$  : ({ "轩辕坟三层", 21,  69, NORTHWEST, 183, 84, NORTHWEST })
+monster_list : ({ "jiangshi", "mangB" })
+boss_list    : ({ "qidao-xiuluo" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[轩辕坟三层]
+big_map : 1
+alias   : ({ "xuanyuanfen-sanceng" })
+map_id  : 8300
+compact_map_index: 0
+exits$  : ({ "轩辕坟二层", 187, 84, SOUTHEAST, 24, 72, SOUTHEAST })
+monster_list : ({ "guihuoying", "mangC" })
+boss_list    : ({ "qidao-xiuluo" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[北海沙滩]
+big_map : 1
+alias   : ({ "beihai-shatan" })
+map_id  : 9000
+compact_map_index: 0
+exits$  : ({ "轩辕庙", 163, 146, CIRCLE, 281,   7, SOUTH,     "轩辕庙" })
+exits$  : ({ "五龙山", 164, 18,  CIRCLE,  11, 311, NORTHEAST, "五龙山" })
+monster_list : ({ "haigui", "yingB" })
+boss_list    : ({ "naohai-yecha" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[十里坡]
+big_map : 1
+alias   : ({ "shilipo" })
+map_id  : 12000
+compact_map_index: 0
+exits$  : ({ "东海渔村", 327,   5, CIRCLE,  13, 192, NORTHEAST, "东海渔村" })
+exits$  : ({ "终南山",     2, 190, CIRCLE, 129, 408, NORTHWEST, "终南山" })
+exits$  : ({ "凤凰山",   331, 228, CIRCLE,   7, 320, NORTHEAST, "凤凰山" })
+exits$  : ({ "乾元山",    76,   5, CIRCLE,   8, 235, NORTHEAST, "乾元山" })
+exits$  : ({ "骷髅山",   114, 370, CIRCLE, 204, 221, SOUTH,     "骷髅山" })
+monster_list : ({ "langB", "laohuB" })
+boss_list    : ({ "shandawang" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+npc$    : ({ "misc/baihu", 177, 147, SOUTHEAST, 0, 白虎 })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[玉柱洞]
+big_map : 0
+alias   : ({ "yuzhudong" })
+map_id  : 14001
+compact_map_index: 0
+exits$  : ({ "终南山", 85, 74, SOUTHEAST, 28, 25, SOUTHEAST })
+npc$    : ({ "THIS_PLACE/yunzhongzi", 27, 8,  SOUTHEAST, 1024, 云中子 })
+npc$    : ({ "THIS_PLACE/biyutongzi", 31, 24, SOUTHEAST, 2048, 碧玉童子 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[盘虬洞]
+big_map : 1
+alias   : ({ "panqiudong" })
+map_id  : 14002
+compact_map_index: 0
+exits$  : ({ "终南山", 79, 72, SOUTHEAST, 22, 88, SOUTHEAST })
+npc$    : ({ "THIS_PLACE/zhangzhenren", 40, 35, SOUTHWEST, 0, 张真人 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[绝人阵]
+big_map : 1
+alias   : ({ "juerenzhen" })
+map_id  : 14003
+compact_map_index: 0
+exits$  : ({ "绝仙阵", 193, 22,  CIRCLE, 147, 153, NORTH })
+exits$  : ({ "盘虬洞", 157, 161, CIRCLE, 36, 36,  SOUTH, "终南山" })
+npc$    : ({ "misc/eling-guiwang", 84, 66, SOUTHEAST, 0, 恶灵鬼王 })
+npc$    : ({ "misc/lingyaowang", 52, 28, SOUTHWEST, 1024, 灵妖王 })
+monster_list : ({ "shiniuyao", "kulou-zhanjiang" })
+boss_list    : ({ "guinu" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[绝仙阵]
+big_map : 1
+alias   : ({ "juexianzhen" })
+map_id  : 14004
+compact_map_index: 0
+exits$  : ({ "绝人阵", 150, 161, CIRCLE, 184, 30, SOUTHWEST })
+exits$  : ({ "地绝阵", 116, 78,  CIRCLE, 18, 153, NORTHEAST })
+npc$    : ({ "misc/fantianshu", 49, 158, SOUTHEAST, 0, 翻天鼠 })
+npc$    : ({ "misc/jiushidaoren", 188, 18, SOUTHEAST, 1, 九世道人 })
+monster_list : ({ "lanmao-jushou", "tanglangguai" })
+boss_list    : ({ "guinu" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[地绝阵]
+big_map : 1
+alias   : ({ "dijuezhen" })
+map_id  : 14005
+compact_map_index: 0
+exits$  : ({ "天绝阵", 23, 13,   CIRCLE, 29,  195, SOUTHEAST })
+exits$  : ({ "绝仙阵", 14, 158,  CIRCLE, 116, 85,  SOUTH })
+npc$    : ({ "misc/jindasheng", 141, 9, SOUTHEAST, 0, 金大升 })
+monster_list : ({ "santou-juquan", "shixue-juren" })
+boss_list    : ({ "guinu" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[天绝阵]
+big_map : 1
+alias   : ({ "tianjuezhen" })
+map_id  : 14006
+compact_map_index: 0
+exits$  : ({ "地绝阵", 24,  187, CIRCLE, 27, 19, SOUTHEAST })
+exits$  : ({ "盘虬洞", 135, 34,  CIRCLE, 36, 36, SOUTH, "终南山" })
+npc$    : ({ "misc/yuanhong", 67, 27, SOUTHEAST, 0, 袁洪 })
+monster_list : ({ "lianmo", "hanbingguai" })
+boss_list    : ({ "guinu" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[终南山]
+big_map : 1
+alias   : ({ "zhongnanshan" })
+map_id  : 14000
+compact_map_index: 0
+exits$  : ({ "玉柱洞", 26, 22, NORTHWEST, 79, 68, NORTHWEST })
+exits$  : ({ "盘虬洞", 21, 85, NORTHWEST, 76, 73, NORTHWEST })
+exits$  : ({ "十里坡", 133, 413, CIRCLE, 4, 194, SOUTHEAST, "十里坡" })
+family  : FAMILY_YUZHUDONG
+npc$    : ({ "THIS_PLACE/jieyin-daotong", 37, 23, SOUTHWEST, 0, 接引道童 })
+npc$    : ({ "master/master-wood", 49, 30, SOUTHWEST, 3072, 木系掌门 })
+npc$    : ({ "misc/huashen",       88, 206, SOUTHEAST, 4096, 花神 })
+monster_list : ({ "lang", "laohu" })
+boss_list    : ({ "yuanmu-zhenqun" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[斗阙宫]
+big_map : 0
+alias   : ({ "douquegong" })
+map_id  : 15001
+compact_map_index: 0
+exits$  : ({ "凤凰山", 121, 71, SOUTHEAST, 215, 86, SOUTHEAST })
+npc$    : ({ "THIS_PLACE/longji-gongzhu", 40,  14, SOUTHWEST, 1024, 龙吉公主 })
+npc$    : ({ "THIS_PLACE/shuilingtongzi", 104, 27, SOUTHWEST, 2048, 水灵童子 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[凤凰山]
+big_map : 1
+alias   : ({ "fenghuangshan" })
+map_id  : 15000
+compact_map_index: 0
+exits$  : ({ "斗阙宫", 212, 83, NORTHWEST, 118, 70, NORTHWEST })
+exits$  : ({ "十里坡", 4, 326, CIRCLE, 324, 228, SOUTHWEST, "十里坡" })
+family  : FAMILY_DOUQUEGONG
+npc$    : ({ "THIS_PLACE/jieyin-daotong", 221, 83, SOUTHEAST, 0, 接引道童 })
+npc$    : ({ "master/master-water",       226, 100, SOUTHWEST, 3072, 水系掌门 })
+npc$    : ({ "misc/longshen",             171, 167, SOUTHEAST, 4096, 龙神 })
+monster_list : ({ "lang", "laohu" })
+boss_list    : ({ "zhaoshui-zhenqun" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[幽冥涧]
+big_map : 1
+alias   : ({ "youmingjian" })
+map_id  : 16100
+compact_map_index: 0
+exits$  : ({ "骷髅山", 451, 153, CIRCLE, 4, 238, SOUTHEAST, "骷髅山" })
+npc$    : ({ "misc/diyu-niutou",            187, 56,   SOUTHEAST, 0, 地狱牛头 })
+npc$    : ({ "THIS_PLACE/xiuluowang",       199, 129,  SOUTHEAST, 1024, 修罗王 })
+npc$    : ({ "misc/xiaoliang-mozun",        85,  65,   SOUTHEAST, 2048, 枭魉魔尊 })
+monster_list : ({ "quhun", "yuangui" })
+boss_list    : ({ "chedimo" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[骷髅山]
+big_map : 1
+alias   : ({ "kuloushan" })
+map_id  : 16000
+compact_map_index: 0
+exits$  : ({ "白骨洞", 155,  68, NORTHEAST, 15,  43, NORTHEAST })
+exits$  : ({ "十里坡", 206, 217, CIRCLE,   113, 366, NORTH,     "十里坡" })
+exits$  : ({ "幽冥涧",   2, 234, CIRCLE,   446, 150, NORTHWEST, "幽冥涧" })
+family  : FAMILY_BAIGUDONG
+npc$    : ({ "THIS_PLACE/jieyin-daotong", 161,  71, SOUTHWEST, 0, 接引道童 })
+npc$    : ({ "master/master-earth",       183,  79, SOUTHWEST, 3072, 土系掌门 })
+npc$    : ({ "misc/handimo",               34, 217, SOUTHEAST, 5120, 憾地魔 })
+npc$    : ({ "misc/shanshen",             17,  124, SOUTHEAST, 4096, 山神 })
+monster_list : ({ "lang", "laohu" })
+boss_list    : ({ "mingtu-zhenqun" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[白骨洞]
+big_map : 0
+alias   : ({ "baigudong" })
+map_id  : 16001
+compact_map_index: 0
+exits$  : ({ "骷髅山", 12, 45, SOUTHWEST,   151, 70, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/shiji-niangniang", 48,  7, SOUTHWEST, 1024, 石矶娘娘 })
+npc$    : ({ "THIS_PLACE/caiyuntongzi",     26, 23, SOUTHEAST, 2048, 彩云童子 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[金光洞]
+big_map : 0
+alias   : ({ "jinguangdong" })
+map_id  : 13001
+compact_map_index: 0
+exits$  : ({ "乾元山", 3, 74, SOUTHWEST, 287, 48, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/taiyi-zhenren", 68,  35, SOUTHWEST, 1024, 太乙真人 })
+npc$    : ({ "THIS_PLACE/chixiatongzi",  43,  51, SOUTHWEST, 2048, 赤霞童子 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[乾元山]
+big_map : 1
+alias   : ({ "qianyuanshan" })
+map_id  : 13000
+compact_map_index: 0
+exits$  : ({ "金光洞", 290, 45, NORTHEAST, 6, 72, NORTHEAST })
+exits$  : ({ "十里坡", 4,  239, CIRCLE,   71,  9, SOUTHWEST, "十里坡" })
+family  : FAMILY_JINGUANGDONG
+npc$    : ({ "THIS_PLACE/jieyin-daotong", 282, 45, SOUTHWEST, 0, 接引道童 })
+npc$    : ({ "master/master-fire",        250, 53, SOUTHEAST, 3072, 火系掌门 })
+npc$    : ({ "misc/yanshen",              351, 100, SOUTHWEST, 4096, 炎神 })
+monster_list : ({ "lang", "laohu" })
+boss_list    : ({ "chenhuo-zhenqun" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[云霄洞]
+big_map : 0
+alias   : ({ "yunxiaodong" })
+map_id  : 10001
+compact_map_index: 0
+exits$  : ({ "五龙山", 81, 71, SOUTHEAST, 193, 24, SOUTHEAST })
+npc$    : ({ "THIS_PLACE/wenshuguangfa-tianzun", 8,  22, SOUTHEAST, 1024, 文殊天尊 })
+npc$    : ({ "THIS_PLACE/yunxiaotongzi",         19, 41, SOUTHEAST, 2048, 云霄童子 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[五龙山]
+big_map : 1
+alias   : ({ "wulongshan" })
+map_id  : 10000
+compact_map_index: 0
+exits$  : ({ "云霄洞",     190,  21, NORTHWEST, 78,  71, NORTHWEST })
+exits$  : ({ "五龙窟一层", 33,  246, NORTHWEST, 278, 66, SOUTHWEST })
+exits$  : ({ "北海沙滩",   8,   314, CIRCLE,    160, 22, SOUTHWEST, "北海沙滩" })
+exits$  : ({ "东海渔村",   230, 317, CIRCLE,    7,    9, SOUTHEAST, "东海渔村" })
+family  : FAMILY_YUNXIAODONG
+npc$    : ({ "THIS_PLACE/jieyin-daotong", 206, 25, SOUTHWEST, 0, 接引道童 })
+npc$    : ({ "master/master-metal",       208, 58, SOUTHWEST, 3072, 金系掌门 })
+npc$    : ({ "misc/qinglong",             77,  32, SOUTHEAST, 5120, 青龙 })
+npc$    : ({ "misc/leishen",              32,  87, SOUTHEAST, 4096, 雷神 })
+monster_list : ({ "lang", "laohu" })
+boss_list    : ({ "jintan-zhenqun" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[五龙窟一层]
+big_map : 1
+alias   : ({ "wulongku-yiceng" })
+map_id  : 10100
+compact_map_index: 0
+exits$  : ({ "五龙山",     282, 64, NORTHEAST,  35, 249, SOUTH })
+exits$  : ({ "五龙窟二层", 55, 138, SOUTHWEST, 145,  27, SOUTHWEST })
+monster_list : ({ "huayao", "wulong" })
+boss_list    : ({ "anying-xiemo" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[五龙窟二层]
+big_map : 1
+alias   : ({ "wulongku-erceng" })
+map_id  : 10200
+compact_map_index: 0
+exits$  : ({ "五龙窟一层", 149, 25,  NORTHEAST, 57, 137, NORTHEAST })
+exits$  : ({ "五龙窟三层", 108, 137, SOUTHEAST, 13, 91,  SOUTHEAST })
+monster_list : ({ "yanlong", "yuren" })
+boss_list    : ({ "anying-xiemo" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[五龙窟三层]
+big_map : 1
+alias   : ({ "wulongku-sanceng" })
+map_id  : 10300
+compact_map_index: 0
+exits$  : ({ "五龙窟二层", 12,  89, NORTHWEST, 105, 134, NORTHWEST })
+exits$  : ({ "五龙窟四层", 197, 72, SOUTHWEST, 187,  75, SOUTHWEST })
+monster_list : ({ "binglong", "dilieshou" })
+boss_list    : ({ "anying-xiemo" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[五龙窟四层]
+big_map : 1
+alias   : ({ "wulongku-siceng" })
+map_id  : 10400
+compact_map_index: 0
+exits$  : ({ "五龙窟三层", 190, 73, NORTHEAST, 200, 69, NORTHEAST })
+exits$  : ({ "五龙窟五层", 11,  88, SOUTHWEST, 11,  58, SOUTHWEST })
+monster_list : ({ "jintoutuo", "qinglong" })
+boss_list    : ({ "anying-xiemo" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[五龙窟五层]
+big_map : 1
+alias   : ({ "wulongku-wuceng" })
+map_id  : 10500
+compact_map_index: 0
+exits$  : ({ "五龙窟四层", 13,  57, NORTHEAST, 13, 85, NORTHEAST })
+exits$  : ({ "五龙窟一层", 167, 22, CIRCLE,   182, 56, SOUTHWEST })
+npc$    : ({ "misc/yuyixian",     120,  21, SOUTHEAST, 0, 羽翼仙 })
+monster_list : ({ "huoya", "huanglong" })
+boss_list    : ({ "anying-xiemo" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[东海渔村]
+big_map : 1
+alias   : ({ "donghai-yucun" })
+map_id  : 11000
+compact_map_index: 0
+exits$  : ({ "药店",    37, 160, NORTHWEST, 30,  25, NORTHWEST })
+exits$  : ({ "杂货店", 135, 100, NORTHEAST, 14,  19, NORTHEAST })
+exits$  : ({ "钱庄",   201,  78, NORTHEAST, 19,  25, NORTHEAST })
+exits$  : ({ "客栈",   176, 143, NORTHEAST, 37,  42, NORTHEAST })
+exits$  : ({ "十里坡",   8, 194, CIRCLE,   324,   8, SOUTHWEST, "十里坡" })
+exits$  : ({ "五龙山",   4,   5, CIRCLE,   217, 317, NORTHWEST, "五龙山" })
+npc$    : ({ "THIS_PLACE/chuanfu",       267, 157, SOUTHEAST, 0, 船夫 })
+npc$    : ({ "THIS_PLACE/chefu",         161, 147, SOUTHWEST, 1024, 车夫 })
+npc$    : ({ "THIS_PLACE/lingshouyiren", 97,  193, NORTHEAST, 6144, 灵兽异人 })
+npc$    : ({ "THIS_PLACE/songxinzhe",   244,   75, SOUTHWEST, 7168, 宋辛哲 })
+npc$    : ({ "THIS_PLACE/liuruchen",    103,   51, SOUTHWEST, 8192, 柳如尘 })
+npc$    : ({ "THIS_PLACE/yuzhenzi",    165,   25, SOUTHWEST, 9216, 玉真子 })
+npc$    : ({ "THIS_PLACE/tianxuan-laoren",   111, 107, SOUTHWEST, 10240, 天玄老人 })
+npc$    : ({ "THIS_PLACE/huanjingsanren.c", 138, 107, SOUTHWEST, 12288, 幻境散人 })
+npc$    : ({ "THIS_PLACE/xuanqingdaoren.c", 52, 157, SOUTHEAST, 11264, 玄清道人 })
+npc$    : ({ "THIS_PLACE/yinshi.c", 162, 83, SOUTHEAST, 0, 隐士 })
+npc$    : ({ "THIS_PLACE/qingdian-dashi", 182, 80, SOUTHWEST, -1, 庆典大使 })
+template: ({ "idle_template" })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[杂货店]
+big_map : 0
+alias   : ({ "donghai-zahuodian" })
+map_id  : 11002
+compact_map_index: 0
+exits$  : ({ "东海渔村", 11, 20, SOUTHWEST, 133, 103, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/zahuodian-laoban", 16, 12, SOUTH, 5120, 杂货店老板 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[客栈]
+big_map : 0
+alias   : ({ "donghai-kezhan" })
+map_id  : 11004
+compact_map_index: 0
+exits$  : ({ "东海渔村", 35, 43, SOUTHWEST, 172, 146, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/kezhan-laoban", 51, 35, SOUTHWEST, 4096, 客栈老板 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[药店]
+big_map : 0
+alias   : ({ "donghai-yaodian" })
+map_id  : 11001
+compact_map_index: 0
+exits$  : ({ "东海渔村", 33, 27, SOUTHEAST, 39, 161, SOUTHEAST })
+npc$    : ({ "THIS_PLACE/yaodian-laoban", 12, 17, SOUTHEAST, 2048, 药店老板 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[钱庄]
+big_map : 0
+alias   : ({ "donghai-qianzhuang" })
+map_id  : 11003
+compact_map_index: 0
+exits$  : ({ "东海渔村", 17, 26, SOUTHWEST, 199, 80, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/qianzhuang-laoban", 36, 19, SOUTHWEST, 3072, 钱庄老板 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[蓬莱岛]
+big_map : 1
+alias   : ({ "penglaidao" })
+map_id  : 17000
+compact_map_index: 0
+exits$  : ({ "百花谷一", 226, 227, CIRCLE, 7,   135, NORTHEAST })
+exits$  : ({ "百花谷二", 329, 313, CIRCLE, 90,  8,   SOUTH })
+exits$  : ({ "百花谷三", 384, 164, CIRCLE, 145, 271, NORTHWEST })
+exits$  : ({ "百花谷四", 233, 123, CIRCLE, 13,  9,   SOUTHEAST })
+exits$  : ({ "百花谷五", 396, 36,  CIRCLE, 246, 11,   SOUTHWEST })
+exits$  : ({ "百花谷六", 64,  23,  CIRCLE, 213, 58,  WEST })
+exits$  : ({ "百花谷七", 69,  251, CIRCLE, 14,  9,   SOUTH })
+npc$    : ({ "THIS_PLACE/penglai-shizhe", 189, 166, SOUTHWEST, 0, 蓬莱使者 })
+npc$    : ({ "THIS_PLACE/longgong-shizhe", 406, 277, SOUTHWEST, 1024, 龙宫使者 })
+npc$    : ({ "THIS_PLACE/duobao-daoren", 294, 32,  NORTHWEST, 2048, 多宝道人 })
+npc$    : ({ "THIS_PLACE/milanxianzi",   27, 40, SOUTHWEST, 3072, 米兰仙子 })
+npc$    : ({ "THIS_PLACE/caoguojiu", 162, 24, SOUTHEAST, 4096, 曹国舅 })
+monster_list : ({ "juxi", "shimo" })
+boss_list    : ({ "gumo" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[百花谷一]
+big_map : 1
+alias   : ({ "baihuaguyi" })
+map_id  : 17100
+compact_map_index: 0
+exits$  : ({ "蓬莱岛", 3, 135, CIRCLE, 228, 233, SOUTH })
+npc$    : ({ "misc/hexiangu",    27, 51,  SOUTH, 0, 何仙姑 })
+monster_list : ({ "fenyi-xianzi", "dianjing" })
+boss_list    : ({ "yuehu" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[百花谷二]
+big_map : 1
+alias   : ({ "baihuaguer" })
+map_id  : 17200
+compact_map_index: 0
+exits$  : ({ "蓬莱岛", 92, 4, CIRCLE, 332, 319, SOUTHEAST })
+npc$    : ({ "misc/zhangguolao", 84, 126, SOUTH, 0, 张果老 })
+monster_list : ({ "qingyi-xianzi", "yushou" })
+boss_list    : ({ "yuehu" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[百花谷三]
+big_map : 1
+alias   : ({ "baihuagusan" })
+map_id  : 17300
+compact_map_index: 0
+exits$  : ({ "蓬莱岛", 146, 277, CIRCLE, 379, 168, SOUTHWEST })
+npc$    : ({ "misc/hanxiangzi",  159, 62,  EAST, 0, 韩湘子 })
+monster_list : ({ "huangyi-xianzi" , "fengguai"})
+boss_list    : ({ "yuehu" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[百花谷四]
+big_map : 1
+alias   : ({ "baihuagusi" })
+map_id  : 17400
+compact_map_index: 0
+exits$  : ({ "蓬莱岛", 7, 6, CIRCLE, 233, 128, SOUTH })
+npc$    : ({ "misc/lancaihe",    7, 211,  EAST, 0, 蓝采和 })
+monster_list : ({ "hongyi-xianzi" , "hongyao"})
+boss_list    : ({ "yuehu" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[百花谷五]
+big_map : 1
+alias   : ({ "baihuaguwu" })
+map_id  : 17500
+compact_map_index: 0
+exits$  : ({ "蓬莱岛", 250, 8, CIRCLE, 387, 37, WEST })
+npc$    : ({ "misc/yixianzi",  89, 168,   EAST, 1024, 医仙子 })
+npc$    : ({ "misc/lvdongbin", 66, 72,    WEST, 0, 吕洞宾 })
+monster_list : ({ "ziyi-xianzi" , "xuenv"})
+boss_list    : ({ "yuehu" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[百花谷六]
+big_map : 1
+alias   : ({ "baihuaguliu" })
+map_id  : 17600
+compact_map_index: 0
+exits$  : ({ "蓬莱岛", 221, 57, CIRCLE, 57, 25, SOUTHWEST })
+npc$    : ({ "misc/hanzhongli",  17,  111, SOUTHEAST, 0, 汉钟离 })
+monster_list : ({ "lanyi-xianzi", "yunshou" })
+boss_list    : ({ "yuehu" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[百花谷七]
+big_map : 1
+alias   : ({ "baihuaguqi" })
+map_id  : 17700
+compact_map_index: 0
+exits$  : ({ "蓬莱岛", 13, 5, CIRCLE, 67, 256, SOUTHWEST })
+npc$    : ({ "misc/xiaohuaxian",  65, 68,   SOUTHWEST, 1024, 小花仙 })
+#npc$    : ({ "misc/shibing",  103, 86,   SOUTHEAST, -1, 士兵 })
+npc$    : ({ "misc/tieguaili",    60,  207, SOUTHEAST, 0, 铁拐李 })
+monster_list : ({ "baiyi-xianzi" , "leiguai"})
+boss_list    : ({ "yuehu" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[风月谷]
+big_map : 1
+alias   : ({ "fengyuegu" })
+map_id  : 7000
+compact_map_index: 0
+exits$  : ({ "轩辕庙", 154, 203, CIRCLE,  10,   8, SOUTHEAST, "轩辕庙" })
+exits$  : ({ "无名小镇",  93,   5, CIRCLE, 148, 35, NORTHWEST, "无名小镇" })
+npc$    : ({ "misc/susu",  67, 80,    SOUTHWEST, 0, 苏苏 })
+npc$    : ({ "misc/baisu",  89, 149,  SOUTHEAST, 1024, 白素 })
+npc$    : ({ "misc/zhuque", 157,  17, SOUTHWEST, 2048, 朱雀 })
+npc$    : ({ "misc/yuelao", 160, 143, SOUTHEAST, 3072, 月老 })
+npc$    : ({ "misc/yunyou-daxian1",  26, 45,   SOUTHEAST, 4096, 云游大仙 })
+npc$    : ({ "misc/yunyou-daxian2",  24, 54,   NORTHEAST, 4096, 云游大仙 })
+npc$    : ({ "misc/yunyou-daxian3",  35, 47,   SOUTHWEST, 4096, 云游大仙 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[东昆仑]
+big_map : 1
+alias   : ({ "dongkunlun" })
+map_id  : 18000
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/xiaoyuanhou", 211, 218, SOUTHEAST, 1, 小猿猴 })
+npc$    : ({ "THIS_PLACE/chuanfu", 31, 273, SOUTHWEST, 0, 船夫 })
+#npc$    : ({ "THIS_PLACE/qiannian-taoshujing", 194, 176, SOUTHWEST, -1, 千年桃树精 })
+npc$    : ({ "misc/shenfuhu",  101, 53, SOUTHWEST, 2, 申伏虎 })
+npc$    : ({ "misc/wuliaochen", 65, 266, SOUTHEAST, 1024, 吴了尘 })
+exits$  : ({ "西昆仑", 130, 3, CIRCLE, 223, 141, NORTHWEST, "西昆仑" })
+exits$  : ({ "无名小镇", 197, 297, CIRCLE,  17, 10, SOUTH, "无名小镇" })
+monster_list : ({ "huoguangshu" , "ziyan"})
+boss_list : ({ "anyemo" })
+template  : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+#[玄洲]
+#big_map : 1
+#alias   : ({ "xuanzhou" })
+#map_id  : 19000
+#compact_map_index: 0
+#npc$    : ({ "THIS_PLACE/chuanfu", 227, 203, SOUTHEAST, -1, 船夫 })
+#exits$  : ({ "碧游宫", 34, 20, NORTHWEST, 91, 62, NORTHWEST })
+#boss_list : ({ "shitianmo" })
+#template  : ({ "standard_template", "thief_template", "hidden_boss_template" })
+#p_touch_monster : 0
+#p_auto_touch : 0
+
+[碧游宫]
+big_map : 1
+alias   : ({ "biyougong" })
+map_id  : 19000
+compact_map_index: 0
+npc$    : ({ "misc/chuansong-tongzi", 41, 37, SOUTHWEST, 1024, 传送童子 })
+#exits$  : ({ "玄洲", 99, 68, SOUTHEAST, 38, 22, SOUTHEAST })
+exits$  : ({ "逍遥殿", 17, 25, NORTHWEST, 88, 62, NORTHWEST })
+exits$  : ({ "寒冰阵", 20, 86, SJZ_EXIT, 23, 22, SOUTH })
+exits$  : ({ "红水阵", 95, 69, SJZ_EXIT, 22, 19, SOUTHWEST })
+exits$  : ({ "雪域冰原", 69, 94, CIRCLE, 19, 25, EAST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[逍遥殿]
+big_map : 0
+alias   : ({ "xiaoyaodian" })
+map_id  : 19001
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/tongtian-jiaozhu", 27, 27, SOUTHEAST, 0, 通天教主 })
+exits$  : ({ "碧游宫", 92, 64, SOUTHEAST, 20, 27, SOUTHEAST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+#[炎洲]
+#big_map : 1
+#alias   : ({ "yanzhou" })
+#map_id  : 20000
+#compact_map_index: 0
+#npc$    : ({ "THIS_PLACE/chuanfu", 17, 8, NORTHWEST, -1, 船夫 })
+#exits$  : ({ "玄都洞回廊", 169, 155, NORTHWEST, 82, 62, NORTHWEST })
+#boss_list : ({ "shitianmo" })
+#template  : ({ "standard_template", "thief_template", "hidden_boss_template" })
+#p_touch_monster : 0
+#p_auto_touch : 0
+
+[大罗宫]
+big_map : 1
+alias   : ({ "daluogong" })
+map_id  : 20000
+compact_map_index: 0
+npc$    : ({ "misc/chuansong-tongzi", 41, 24, SOUTHWEST, 1024, 传送童子 })
+exits$  : ({ "玄都洞", 27, 23, NORTHWEST, 73, 52, NORTHWEST })
+exits$  : ({ "风吼阵", 11, 66, SJZ_EXIT, 29, 24, SOUTH })
+exits$  : ({ "金光阵", 140, 69, SJZ_EXIT, 24, 20, SOUTHWEST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[玄都洞]
+big_map : 0
+alias   : ({ "xuandudong" })
+map_id  : 20001
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/taishang-laojun", 13, 20, SOUTHEAST, 0, 太上老君 })
+#exits$  : ({ "玄都洞回廊", 69, 75, SOUTHEAST, 32, 39, SOUTHEAST })
+exits$  : ({ "大罗宫", 77, 54, SOUTHEAST, 33, 27, SOUTHEAST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+#[玄都洞回廊]
+#big_map : 1
+#alias   : ({ "xuandudong-huilang" })
+#map_id  : 20002
+#compact_map_index: 0
+#exits$  : ({ "玄都洞", 27, 37, NORTHWEST,  66,  71, NORTHWEST })
+#exits$  : ({ "炎洲",   85, 64, SOUTHEAST, 172, 158, SOUTHEAST })
+#p_touch_monster : 0
+#p_auto_touch : 0
+
+#[聚窟洲]
+#big_map : 1
+#alias   : ({ "jukuzhou" })
+#map_id  : 21000
+#compact_map_index: 0
+#npc$    : ({ "THIS_PLACE/chuanfu", 28, 237, SOUTHWEST, -1, 船夫 })
+#exits$  : ({ "七宝林", 240, 8, NORTHEAST, 12, 67, NORTHEAST })
+#boss_list    : ({ "shitianmo" })
+#template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+#p_touch_monster : 0
+#p_auto_touch : 0
+
+[七宝林]
+big_map : 1
+alias   : ({ "qibaolin" })
+map_id  : 21001
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/zhunti-daoren", 127, 14, SOUTHWEST, 0, 准提道人 })
+npc$    : ({ "misc/chuansong-tongzi", 79, 59, SOUTHEAST, 1024, 传送童子 })
+npc$    : ({ "misc/xiaosheng", 32, 89, SOUTHEAST, 1, 萧升 })
+exits$  :  ({"迷境花树", 139, 140, CIRCLE, 13, 12, SOUTHEAST})
+#exits$  : ({ "聚窟洲", 5, 70, SOUTHWEST, 238, 13, SOUTHWEST })
+exits$  : ({ "天阙阵", 20, 45, SJZ_EXIT, 41, 17, SOUTHWEST })
+exits$  : ({ "红砂阵", 131, 79, SJZ_EXIT, 25, 22, SOUTHEAST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+#[流洲]
+#big_map : 1
+#alias   : ({ "liuzhou" })
+#map_id  : 22000
+#compact_map_index: 0
+#npc$    : ({ "THIS_PLACE/chuanfu", 269, 14, NORTHEAST, -1, 船夫 })
+#exits$  : ({ "八德池", 135, 156, NORTHWEST, 127, 85, NORTHWEST })
+#boss_list    : ({ "shitianmo" })
+#template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+#p_touch_monster : 0
+#p_auto_touch : 0
+
+[八德池]
+big_map : 1
+alias   : ({ "badechi" })
+map_id  : 22001
+compact_map_index: 0
+npc$    : ({ "liuzhou/xifang-jiaozhu", 35, 17, SOUTHEAST, 0, 西方教主 })
+npc$    : ({ "misc/chuansong-tongzi", 68, 79, SOUTHWEST, 1024, 传送童子 })
+npc$    : ({ "misc/caobao", 15, 58, SOUTHEAST, 1, 曹宝 })
+#exits$  : ({ "流洲", 130, 88, SOUTHEAST, 139, 159, SOUTHEAST })
+exits$  : ({ "地烈阵", 115, 106, SJZ_EXIT, 25, 18, SOUTHWEST })
+exits$  : ({ "烈焰阵", 20, 106, SJZ_EXIT, 1, 23, SOUTHWEST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[无名小镇]
+big_map : 1
+alias   : ({ "wumingxiaozhen" })
+map_id  : 23000
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/lingshouyiren", 94, 32, SOUTHEAST, 4096, 灵兽异人 })
+npc$    : ({ "THIS_PLACE/chuanfu", 40, 180, SOUTHWEST, 0, 船夫 })
+npc$    : ({ "THIS_PLACE/chefu",   56, 98,  SOUTHEAST, 1024, 车夫 })
+npc$    : ({ "THIS_PLACE/shancai-tongzi", 81, 108, SOUTHWEST, 13312, 善财童子 })
+#npc$    : ({ "THIS_PLACE/recommend", 126, 169, SOUTHWEST, -1, 推荐人 })
+npc$    : ({ "THIS_PLACE/yuquanzhenren", 103, 51, SOUTHWEST, 14336, 玉泉真人 })
+npc$    : ({ "THIS_PLACE/qingwei-zhenren", 125, 168, SOUTHWEST, 15360, 清微真人 })
+npc$    : ({ "THIS_PLACE/nanhua-zhenren", 70, 78, SOUTHEAST, 2048, 南华真人 })
+npc$    : ({ "THIS_PLACE/yujian-shangren", 44, 39, SOUTHWEST, 2560, 玉鉴上人 })
+exits$  : ({ "无名药铺",   141,  66, NORTHEAST, 19, 35, NORTHEAST })
+exits$  : ({ "无名杂货店", 136, 102, NORTHEAST, 16, 29, NORTHEAST })
+exits$  : ({ "无名客栈",   114,  30, NORTHEAST, 18, 38, NORTHEAST })
+exits$  : ({ "无名武器店",  67,  29, NORTHWEST, 44, 31, NORTHWEST })
+exits$  : ({ "无名钱庄",   141, 142, NORTHEAST, 17, 28, NORTHEAST })
+exits$  : ({ "无名布庄",   112, 125, NORTHWEST, 33, 25, NORTHWEST })
+exits$ : ({ "东昆仑",  13, 4, CIRCLE, 188, 290, NORTHWEST, "东昆仑" })
+exits$  : ({ "风月谷", 154, 34, CIRCLE,  99,  10, SOUTHEAST, "风月谷" })
+template: ({ "idle_template" })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[无名药铺]
+big_map : 0
+alias   : ({ "wumingyaopu" })
+map_id  : 23001
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/yaopu-laoban", 48, 28, SOUTHWEST, 9216, 无名药铺老板 })
+exits$  : ({ "无名小镇", 16, 37, SOUTHWEST, 137, 68, SOUTHWEST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[无名杂货店]
+big_map : 0
+alias   : ({ "wumingzahuodian" })
+map_id  : 23002
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/zahuodian-laoban", 19, 20, SOUTHEAST, 8192, 无名杂货店老板 })
+exits$  : ({ "无名小镇", 14, 32, SOUTHWEST, 133, 103, SOUTHWEST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[无名钱庄]
+big_map : 0
+alias   : ({ "qianzhuang" })
+map_id  : 23003
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/qianzhuang-laoban", 17, 20,  SOUTHEAST, 5120, 无名钱庄老板 })
+exits$  : ({ "无名小镇", 15, 30, SOUTHWEST, 138, 143, SOUTHWEST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[无名客栈]
+big_map : 0
+alias   : ({ "wumingkezhang" })
+map_id  : 23004
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/kezhan-laoban", 21, 31, SOUTHEAST, 6144, 无名客栈老板 })
+npc$    : ({ "THIS_PLACE/xiaoer", 35, 29, SOUTHWEST, 7168, 无名客栈小二 })
+exits$  : ({ "无名小镇", 15, 41, SOUTHWEST, 111, 32, SOUTHWEST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[无名武器店]
+big_map : 0
+alias   : ({ "wumingwuqidian" })
+map_id  : 23005
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/wuqidian-laoban", 51, 21, SOUTHWEST, 11264, 无名武器店老板 })
+npc$    : ({ "THIS_PLACE/yujianxian",      23, 19, SOUTHEAST, 12288, 驭剑仙 })
+exits$  : ({ "无名小镇", 46, 34, SOUTHEAST, 70, 32, SOUTHEAST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[无名布庄]
+big_map : 0
+alias   : ({ "wumingbuzhuang" })
+map_id  : 23006
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/buzhuang-laoban", 21, 16, SOUTHEAST, 10240, 无名布庄老板 })
+npc$    : ({ "THIS_PLACE/lugongjiang",     33, 18, SOUTHWEST, 11264, 鲁工匠 })
+exits$  : ({ "无名小镇", 36, 27, SOUTHEAST, 114, 126, SOUTHEAST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[西昆仑]
+big_map : 1
+alias   : ({ "xikunlun" })
+map_id  : 25000
+compact_map_index: 0
+npc$    : ({ "misc/chuansong-tongzi", 65, 46, SOUTHWEST, 1024, 传送童子 })
+exits$  : ({ "玉虚宫", 38, 34, NORTHWEST, 91, 63, NORTHWEST })
+exits$  : ({ "昆仑云海", 180, 19, CIRCLE, 231, 190, NORTHWEST, "昆仑云海" })
+exits$  : ({ "东昆仑", 227, 146, CIRCLE, 135, 6, SOUTHEAST, "东昆仑" })
+exits$  : ({ "化血阵", 84, 29, SJZ_EXIT, 24, 16, SOUTHEAST })
+exits$  : ({ "落魄阵", 13, 67, SJZ_EXIT, 18, 24, SOUTHEAST })
+boss_list : ({ "shitianmo" })
+template  : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 0
+
+[玉虚宫]
+big_map : 0
+alias   : ({ "yuxugong" })
+map_id  : 25001
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/yuanshi-tianzun", 26, 27, SOUTHEAST, 0, 元始天尊 })
+exits$  : ({ "西昆仑", 96, 67, SOUTHEAST, 41, 36, SOUTHEAST })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[昆仑云海]
+big_map : 1
+alias   : ({ "kunlunyunhai" })
+map_id  : 25002
+compact_map_index: 0
+npc$    : ({ "misc/feishengxianguan", 20, 133, SOUTHWEST, 0, 飞升仙官 })
+exits$  : ({ "西昆仑", 253, 192, CIRCLE, 171, 26, SOUTHWEST, "西昆仑" })
+monster_list : ({ "bingjinglonglinshou" , "jinchiyuan"})
+boss_list : ({ "shitianmo" })
+template  : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[帮派总坛]
+big_map : 1
+map_id  : 26000
+compact_map_index: 0
+exits$  : ({ "聚义堂", 130,  21, NORTHEAST,  22,  37,  NORTHEAST })
+exits$  : ({ "住所一", 137,  56, NORTHEAST,  14,  23,  NORTHEAST })
+exits$  : ({ "住所二", 124,  90, NORTHEAST,  16,  28,  NORTHEAST })
+exits$  : ({ "住所三",  68,  24, NORTHWEST,  17,  29,  NORTHWEST })
+exits$  : ({ "天墉城",  10, 163, CIRCLE,     224, 176, SOUTHEAST, "天墉城" })
+npc$    : ({ "THIS_PLACE/bangpai-chuansongren", 95, 30, SOUTHEAST, 0, 帮派传送人 })
+npc$    : ({ "THIS_PLACE/bangpai-shutong", 120, 37, SOUTHWEST, 1024, 帮派书童 })
+npc$    : ({ "THIS_PLACE/bangpai-zongjiaotou", 83, 80, SOUTHWEST, 2048, 帮派总教头 })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 1
+no_change_upgrade : 1
+
+[聚义堂]
+big_map : 0
+map_id  : 26001
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/bangpai-zongguan", 39, 27, SOUTHWEST, 3072, 帮派总管 })
+exits$  : ({ "帮派总坛", 19, 38, SOUTHWEST, 124, 23, SOUTHWEST })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[住所一]
+big_map : 0
+map_id  : 26002
+compact_map_index: 0
+npc$    : ({ "THIS_PLACE/bangpai-junshi", 24, 18, SOUTHWEST, 4096, 帮派军师 })
+npc$    : ({ "THIS_PLACE/cangku-guanliyuan", 12, 17, SOUTHEAST, 5120, 仓库管理员 })
+exits$  : ({ "帮派总坛", 12, 25, SOUTHWEST, 135, 57, SOUTHWEST })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[住所二]
+big_map : 0
+map_id  : 26003
+compact_map_index: 0
+exits$  : ({ "帮派总坛", 14, 30, SOUTHWEST, 120, 92, SOUTHWEST })
+npc$    : ({ "THIS_PLACE/zhangfang-xiansheng", 27, 20, SOUTHWEST, 6144, 账房先生 })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[住所三]
+big_map : 0
+map_id  : 26004
+compact_map_index: 0
+exits$  : ({ "帮派总坛", 20, 31, SOUTHEAST, 72, 28, SOUTHEAST })
+npc$    : ({ "THIS_PLACE/bangpai-shinv",    18, 24, SOUTHEAST, 7168, 帮派侍女 })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[高级帮派总坛]
+big_map : 1
+map_id  : 30000
+compact_map_index: 0
+exits$  : ({ "聚义堂", 153,  41, NORTHEAST,  22,  37,  NORTHEAST })
+exits$  : ({ "住所一", 176,  114, NORTHEAST,  14,  23,  NORTHEAST })
+exits$  : ({ "住所二", 152,  172, NORTHEAST,  16,  28,  NORTHEAST })
+exits$  : ({ "住所三",  31,  32, NORTHWEST,  17,  29,  NORTHWEST })
+exits$  : ({ "天墉城",  9, 244, CIRCLE,     224, 176, SOUTHEAST, "天墉城" })
+npc$    : ({ "bangpaiditu/bangpai-chuansongren", 134, 45, SOUTHEAST, 0, 帮派传送人 })
+npc$    : ({ "bangpaiditu/bangpai-shutong", 160, 46, SOUTHWEST, 1024, 帮派书童 })
+npc$    : ({ "bangpaiditu/bangpai-zongjiaotou", 98, 142, SOUTHEAST, 2048, 帮派总教头 })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 1
+no_change_upgrade : 1
+
+[高级聚义堂]
+big_map : 0
+map_id  : 26001
+npc_guide_index: 1
+compact_map_index: 0
+npc$    : ({ "bangpaiditu/bangpai-zongguan", 39, 27, SOUTHWEST, 3072, 帮派总管 })
+exits$  : ({ "帮派总坛", 19, 38, SOUTHWEST, 149, 43, SOUTHWEST })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[高级住所一]
+big_map : 0
+map_id  : 26002
+npc_guide_index: 1
+compact_map_index: 0
+npc$    : ({ "bangpaiditu/bangpai-junshi", 24, 18, SOUTHWEST, 4096, 帮派军师 })
+npc$    : ({ "bangpaiditu/cangku-guanliyuan", 12, 17, SOUTHEAST, 5120, 仓库管理员 })
+exits$  : ({ "帮派总坛", 12, 25, SOUTHWEST, 172, 116, SOUTHWEST })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[高级住所二]
+big_map : 0
+map_id  : 26003
+npc_guide_index: 1
+compact_map_index: 0
+exits$  : ({ "帮派总坛", 14, 30, SOUTHWEST, 148, 174, SOUTHWEST })
+npc$    : ({ "bangpaiditu/zhangfang-xiansheng", 27, 20, SOUTHWEST, 6144, 账房先生 })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[高级住所三]
+big_map : 0
+map_id  : 26004
+npc_guide_index: 1
+compact_map_index: 0
+exits$  : ({ "帮派总坛", 20, 31, SOUTHEAST, 34, 34, SOUTHEAST })
+npc$    : ({ "bangpaiditu/bangpai-shinv",    18, 24, SOUTHEAST, 7168, 帮派侍女 })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[幽雅小居]
+big_map : 1
+map_id  : 28000
+compact_map_index: 0
+npc$    : ({ "misc/guanjia", 23, 22, SOUTHEAST, 0, 管家 })
+npc$    : ({ "misc/guanliyuan", 36, 28, NORTHWEST, 1024, 储物箱管理员 })
+exits$  : ({ "天墉城", 23, 29, SOUTHWEST,  226, 213, SOUTHEAST, "天墉城" })
+entrance: ({ 26, 27, NORTHEAST })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[豪华居所]
+big_map : 1
+map_id  : 28001
+compact_map_index: 0
+npc$    : ({ "misc/guanjia", 25, 40, SOUTHEAST, 0, 管家 })
+npc$    : ({ "misc/guanliyuan", 42, 45, NORTHWEST, 1024, 储物箱管理员 })
+exits$  : ({ "天墉城", 26, 45, SOUTHWEST, 226, 213, SOUTHWEST, "天墉城" })
+entrance: ({ 31, 43, NORTHEAST })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[花园别墅]
+big_map : 1
+map_id  : 28002
+compact_map_index: 0
+npc$    : ({ "misc/guanjia", 50, 58, SOUTHEAST, 0, 管家 })
+npc$    : ({ "misc/guanliyuan", 64, 63, NORTHWEST, 1024, 储物箱管理员 })
+exits$  : ({ "天墉城", 52, 65, SOUTHWEST, 226, 213, SOUTHEAST, "天墉城" })
+entrance: ({ 57, 62, NORTHEAST })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[百鬼地]
+big_map : 1
+map_id  : 16100
+compact_map_index: 1
+npc$    : ({ "misc/xieling-guiwang", 89, 67, SOUTHEAST, 0, 邪灵鬼王 })
+npc$    : ({ "misc/xiongling-guiwang", 205, 67, SOUTHEAST, 1024, 凶灵鬼王 })
+npc$    : ({ "misc/kuangling-guiwang", 303, 67, SOUTHEAST, 2048, 狂灵鬼王 })
+npc$    : ({ "misc/meiling-guiwang", 219, 130, SOUTHEAST, 3072, 魅灵鬼王 })
+npc$    : ({ "misc/wangling-guiwang", 315, 185, SOUTHEAST, 4096, 魍灵鬼王 })
+npc$    : ({ "misc/tianxin-daoren",   418, 140, SOUTHWEST, 5120, 天心道人 })
+exits$  : ({ "揽仙镇", 451, 153, CIRCLE, 80, 126, SOUTHEAST, "揽仙镇" })
+not_start_room : 1
+switch_server_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[蝴蝶谷]
+big_map : 1
+map_id  : 7001
+compact_map_index: 1
+npc$    : ({ "misc/xuanlu-xianzi", 158, 18, SOUTHEAST, 0, 玄露仙子 })
+npc$    : ({ "misc/baihua-shennv",   205, 165, SOUTHWEST, 1024, 百花神女 })
+exits$  : ({ "揽仙镇", 152, 203, CIRCLE, 80, 126, SOUTHEAST, "揽仙镇" })
+not_start_room : 1
+switch_server_room : 1
+p_touch_monster : 0
+p_auto_touch : 1
+no_change_upgrade : 1
+
+[试道场]
+big_map : 1
+alias   : ({ "shidaochang" })
+map_id  : 29000
+npc$    : ({ "misc/shidao-chuansongren", 101, 76, SOUTHWEST, 0, 试道传送人 })
+not_start_room : 1
+p_touch_monster : 1
+p_auto_touch : 1
+no_change_upgrade : 1
+
+[帮战地图]
+big_map : 0
+alias   : ({ "bangzhanditu" })
+map_id  : 29001
+not_start_room : 1
+no_anticheater: 1
+p_touch_monster : 1
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[证道殿]
+big_map : 1
+alias   : ({ "zhengdaodian" })
+map_id  : 29002
+exits$  : ({ "天墉城", 120, 175, CIRCLE, 362, 223, SOUTHWEST,  "天墉城" })
+not_start_room : 1
+switch_server_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[龙宫]
+big_map : 1
+alias   : ({ "longgong" })
+map_id  : 27001
+compact_map_index: 0
+exits$  : ({ "海底迷宫", 167, 104, CIRCLE, 43, 35, SOUTHEAST, "海底迷宫" })
+exits$  : ({ "龙宫大殿", 28, 25, NORTHWEST, 95, 64, NORTHWEST })
+npc$    : ({ "THIS_PLACE/longgong-shizhe", 61, 38, SOUTHWEST, 0, 龙宫使者 })
+template: ({ "idle_template" })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[龙宫大殿]
+big_map : 0
+alias   : ({ "longgong-dadian" })
+map_id  : 27002
+compact_map_index: 0
+exits$  : ({ "龙宫", 101, 68, SOUTHEAST, 33, 28, SOUTHEAST })
+npc$   : ({ "THIS_PLACE/longnv", 81, 49, SOUTHEAST, 2048, 龙女 })
+npc$    : ({ "THIS_PLACE/longwang", 30, 23, SOUTHEAST, 1024, 龙王 })
+npc$    : ({ "THIS_PLACE/shinv", 34, 34, SOUTHEAST, 3072, 侍女 })
+npc$    : ({ "THIS_PLACE/shinv", 45, 29, SOUTHEAST, 3072, 侍女 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[海底迷宫]
+big_map : 1
+alias   : ({ "haidi-migong" })
+map_id  : 27000
+compact_map_index: 0
+exits$  : ({ "龙宫", 35, 26, CIRCLE, 162, 97, NORTHWEST, "龙宫" })
+monster_list : ({ "xiabing", "xiejiang" })
+boss_list    : ({ "bishui-jinqingshou" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+
+[天上集市]
+big_map : 1
+alias   : ({ "tianshangjishi" })
+map_id  : 29000
+npc$    : ({ "THIS_PLACE/jishi-chuansongren", 101, 76, SOUTHWEST, 0, 集市传送人 })
+p_touch_monster : 0
+p_auto_touch : 0
+
+[万妖窟1层]
+big_map : 1
+repeat_map : "万妖窟[2,3,4,5,6,7]层"
+alias   : ({ "wanyaoku" })
+map_id  : 12001
+npc$    : ({ "misc/xuanwushenjiang", 158, 99, SOUTHWEST, 0, 玄武神将 })
+not_start_room : 1
+switch_server_room : 1
+p_touch_monster : 1
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[帮派名人堂]
+big_map : 1
+alias   : ({ "bangpai-mingrentang" })
+map_id  : 29002
+npc$    : ({ "THIS_PLACE/mingrentang-guanshi", 43, 143, SOUTHEAST, 0, 名人堂管事 })
+not_start_room : 1
+switch_server_room : 0
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[帮派外坛]
+big_map : 1
+alias   : ({ "bangpai-waitan" })
+map_id  : 30001
+exits$  : ({ "天墉城",  9, 242, CIRCLE, 158, 159, NORTHEAST, "天墉城" })
+npc$    : ({ "misc/bangpai-shouhushixiang", 59, 18, SOUTHWEST, -1, 帮派守护石像 })
+npc$    : ({ "misc/bangpai-shouhushixiang", 163, 65, SOUTHWEST, -1, 帮派守护石像 })
+npc$    : ({ "misc/chengmen", 183, 15, SOUTHWEST, -1, 城门 })
+not_start_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[正斗场]
+big_map : 1
+alias   : ({ "zhengdouchang" })
+map_id  : 29001
+exits$  : ({ "天墉城", 189, 103, CIRCLE, 378, 176, SOUTHEAST, "天墉城" })
+exits$  : ({ "天墉城",  77,  43, CIRCLE, 378, 176, SOUTHEAST, "天墉城" })
+template : ({ "zhengdou_template" })
+not_start_room : 1
+switch_server_room : 0
+p_touch_monster : 0
+p_auto_touch : 1
+no_change_upgrade : 1
+
+[黑风洞一层]
+big_map : 1
+alias   : ({ "heifengdong-yiceng" })
+map_id  : 31100
+template: ({ "dungeon80_anleiguai" })
+npc$    : ({ "misc/yangxiaowei", 127, 91, SOUTHEAST, 0, 杨校尉 })
+not_start_room : 1
+no_change_upgrade : 1
+
+[黑风洞二层]
+big_map : 1
+alias   : ({ "heifengdong-erceng" })
+map_id  : 31200
+template: ({ "dungeon80_anleiguai" })
+npc$    : ({ "misc/mengmianren", 191, 71, SOUTHEAST, -1, 蒙面人 })
+not_start_room : 1
+no_change_upgrade : 1
+
+[黑风洞三层]
+big_map : 1
+alias   : ({ "heifengdong-sanceng" })
+map_id  : 31300
+template: ({ "dungeon80_anleiguai" })
+not_start_room : 1
+no_change_upgrade : 1
+
+[官府]
+big_map : 0
+alias   : ({ "guanfu" })
+map_id  : 5016
+exits$  : ({ "监狱", 135, 15, NORTHEAST, 27, 47, NORTHEAST })
+exits$  : ({ "天墉城", 13, 76, SOUTHWEST, 374, 21, SOUTHWEST })
+exits$  : ({ "总督衙门", 87, 36, NORTHEAST, 28, 59, NORTHEAST })
+npc$    : ({ "THIS_PLACE/jiashiye", 44,  30, SOUTHEAST, 43008, 贾师爷 })
+npc$    : ({ "THIS_PLACE/shibing",  133, 13, SOUTHWEST, -1, 士兵 })
+npc$    : ({ "THIS_PLACE/shibing",  139, 16, SOUTHWEST, -1, 士兵 })
+compact_map_index: 0
+p_touch_monster : 0
+p_auto_touch : 0
+
+[兰若寺]
+big_map : 1
+alias   : ({ "lanruosi" })
+map_id  : 32000
+npc$    : ({ "misc/chixiazhenren", 226, 195, SOUTHWEST, 0, 赤霞真人 })
+exits$  : ({ "兰若寺内",  143, 123, NORTHEAST, 17, 27, NORTHEAST })
+template: ({ "lanruosi_template" })
+not_start_room : 1
+no_change_upgrade : 1
+
+[兰若寺内]
+big_map : 0
+alias   : ({ "lanruosinei" })
+exits$  : ({ "兰若寺",  11, 30, SOUTHWEST, 138, 126, SOUTHWEST })
+map_id  : 32001
+not_start_room : 1
+no_change_upgrade : 1
+
+[舞会场地]
+big_map : 1
+alias   : ({ "costume_ball" })
+map_id  : 7001
+exits$  : ({ "天墉城",  151, 203, CIRCLE, 338, 222, NORTH ,"天墉城"})
+compact_map_index: 1
+p_touch_monster : 0
+p_auto_touch : 0
+not_start_room : 1
+no_change_upgrade : 1
+
+[乱斗场]
+big_map : 1
+alias   : ({ "luandouchang" })
+map_id  : 29001
+exits$  : ({ "天墉城", 189, 103, CIRCLE, 378, 176, SOUTHEAST, "天墉城" })
+exits$  : ({ "天墉城",  77,  43, CIRCLE, 378, 176, SOUTHEAST, "天墉城" })
+template : ({ "luandou_template" })
+not_start_room : 1
+switch_server_room : 0
+p_touch_monster : 0
+p_auto_touch : 1
+not_start_room : 1
+no_change_upgrade : 1
+
+[烈火涧]
+big_map : 1
+alias   : ({ "liehuojian" })
+map_id  : 33000
+template: ({ "dungeon100_anleiguai" })
+npc$    : ({ "misc/tudigonggong", 13, 107, SOUTHEAST, 0, 土地公公 })
+not_start_room : 1
+no_change_upgrade : 1
+
+[门派比武场]
+big_map : 1
+alias   : ({ "menpaibiwuchang" })
+map_id  : 29000
+npc$    : ({ "misc/menpaibiwudahui-chuansongren", 101, 76, SOUTHWEST, 0, 门派比武大会传送人 })
+not_start_room : 1
+p_touch_monster : 1
+p_auto_touch : 1
+not_start_room : 1
+no_change_upgrade : 1
+
+[守护祭坛]
+big_map : 1
+alias  : ({ "shouhu-jitan" })
+map_id : 29000
+npc$    : ({ "misc/shouhu-shixiang", 170,  40, SOUTHEAST, 0, 守护石像 })
+npc$    : ({ "misc/shouhu-tuteng", 28, 112, SOUTHWEST, 1024, 守护图腾 })
+npc$    : ({ "misc/jitan-chuansongshi", 101, 76, SOUTHWEST, 2048, 祭坛传送使 })
+compact_map_index : 0
+not_start_room : 1
+switch_server_room : 1
+p_touch_monster : 0
+p_auto_touch : 0
+no_change_upgrade : 1
+
+[镇邪冢]
+big_map : 1
+alias   : ({ "zhenxiezhong" })
+map_id  : 34000
+template: ({ "dungeon110_anleiguai" })
+npc$    : ({ "misc/zhenxieshenjiang", 161, 110, SOUTHEAST, 0, 镇邪神将 })
+not_start_room : 1
+no_change_upgrade : 1
+
+[化血阵]
+big_map : 1
+alias   : ({ "huaxuezhen" })
+map_id  : 19003
+exits$  : ({ "西昆仑", 48, 28, CIRCLE, 81, 36, SOUTHWEST })
+template: ({ "idle_template" })
+not_start_room : 1
+no_change_upgrade : 1
+
+[落魄阵]
+big_map : 1
+alias   : ({ "luopozhen" })
+map_id  : 19004
+exits$  : ({ "西昆仑", 43, 32, CIRCLE, 19, 72, SOUTHEAST })
+template: ({ "idle_template" })
+not_start_room : 1
+no_change_upgrade : 1
+
+[寒冰阵]
+big_map : 1
+alias   : ({ "hanbingzhen" })
+map_id  : 20003
+exits$  : ({ "碧游宫", 47, 21, CIRCLE, 24, 91, SOUTHEAST })
+template: ({ "idle_template" })
+not_start_room : 1
+no_change_upgrade : 1
+
+[红水阵]
+big_map : 1
+alias   : ({ "hongshuizhen" })
+map_id  : 20004
+exits$  : ({ "碧游宫", 47, 20, CIRCLE, 84, 70, SOUTHWEST })
+template: ({ "idle_template" })
+not_start_room : 1
+no_change_upgrade : 1
+
+[风吼阵]
+big_map : 1
+alias   : ({ "fenghouzhen" })
+map_id  : 21002
+exits$  : ({ "大罗宫", 12, 10, CIRCLE, 16, 69, SOUTHEAST })
+template: ({ "idle_template" })
+not_start_room : 1
+no_change_upgrade : 1
+
+[金光阵]
+big_map : 1
+alias   : ({ "jinguangzhen" })
+map_id  : 21003
+exits$  : ({ "大罗宫", 5, 31, CIRCLE, 131, 62, SOUTHEAST })
+template: ({ "idle_template" })
+not_start_room : 1
+no_change_upgrade : 1
+
+[天阙阵]
+big_map : 1
+alias   : ({ "tianquezhen" })
+map_id  : 22002
+exits$  : ({ "七宝林", 8, 18, CIRCLE, 29, 44, EAST })
+template: ({ "idle_template" })
+not_start_room : 1
+no_change_upgrade : 1
+
+[红砂阵]
+big_map : 1
+alias   : ({ "hongshazhen" })
+map_id  : 22003
+exits$  : ({ "七宝林", 47, 10, CIRCLE, 119, 77, NORTHWEST })
+template: ({ "idle_template" })
+not_start_room : 1
+no_change_upgrade : 1
+
+[地烈阵]
+big_map : 1
+alias   : ({ "diliezhen" })
+map_id  : 25003
+exits$  : ({ "八德池", 3, 32, CIRCLE, 107, 110, SOUTHWEST })
+template: ({ "idle_template" })
+not_start_room : 1
+no_change_upgrade : 1
+
+[烈焰阵]
+big_map : 1
+alias   : ({ "lieyanzhen" })
+map_id  : 25004
+exits$  : ({ "八德池", 47, 25, CIRCLE, 30, 110, SOUTHEAST })
+template: ({ "idle_template" })
+not_start_room : 1
+no_change_upgrade : 1
+
+[雪域冰原]
+big_map : 1
+alias   : ({ "xueyubingyuan" })
+map_id  : 19002
+npc$    : ({ "xueyubingyuan/luli", 123, 87, SOUTHEAST, 1, 陆离 })
+npc$    : ({ "misc/wudidong", 269, 28, SOUTHWEST, 0, 无底洞 })
+monster_list : ({ "xuehu", "jianhun" })
+boss_list    : ({ "miedimo" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template" })
+exits$  : ({ "碧游宫", 7, 26, CIRCLE, 72, 86, NORTHEAST })
+p_touch_monster : 1
+p_auto_touch : 1
+
+
+[战场]
+big_map : 0
+map_id  : 29001
+npc$    : ({ "misc/zhanshen.c", 132,  72, SOUTHEAST, -1, 战神 })
+switch_server_room : 1
+p_touch_monster : 1
+p_auto_touch : 1
+compact_map_index : 0
+no_change_upgrade : 1
+
+[八阵图]
+big_map : 1
+alias   : ({ "bazhentu" })
+map_id  : 21003
+npc$    : ({ "misc/yinluzhe", 24, 20, SOUTHEAST, 0, 引路者 })
+not_start_room : 1
+switch_server_room : 0
+no_change_upgrade : 1
+
+[离阵]
+big_map : 0
+alias   : ({ "bazhentu_lipo" })
+map_id  : 20004
+not_start_room : 1
+switch_server_room : 0
+no_change_upgrade : 1
+
+[莲花池]
+big_map : 0
+compact_map_index : 2
+alias   : ({ "lianhuachi" })
+map_id  : 22001
+not_start_room : 0
+npc$    : ({ "misc/change-xianzi", 35, 17, SOUTHEAST, -1, 嫦娥仙子 })
+switch_server_room : 1
+no_change_upgrade : 1
+
+[驯鹿林地]
+big_map : 1
+alias   : ({ "christmas_party" })
+map_id  : 21001
+compact_map_index: 1
+p_touch_monster : 0
+p_auto_touch : 0
+not_start_room : 1
+switch_server_room : 1
+
+[迷境花树]
+big_map : 1
+alias   : ({ "mijinghuashu" })
+map_id  : 21000
+exits$  : ({ "七宝林", 6, 6, CIRCLE, 128, 137, NORTHWEST })
+compact_map_index: 0
+monster_list : ({ "zhengshou", "diexian" })
+boss_list    : ({ "huanji" })
+template     : ({ "standard_template", "thief_template", "hidden_boss_template"})
+p_touch_monster : 1
+p_auto_touch : 1
+switch_server_room : 1
+
+[虚灵幻境]
+big_map : 1
+alias   : ({ "xulinghuanjing" })
+map_id  : 20003
+not_start_room : 1
+compact_map_index: 0
+npc$     : ({ "misc/xulingsanren", 27, 21, SOUTHEAST, 20009, 虚灵散人 })
+template : ({ "xulinghuanjing_template", "xulinghuanjing_boss_template" })
+p_touch_monster : 1
+p_auto_touch : 1
+no_change_upgrade : 1
+switch_server_room : 0

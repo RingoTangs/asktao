@@ -1,0 +1,157 @@
+#FORM2
+
+[setting]
+# 刷怪地点
+rooms : ({ "揽仙镇", "天墉城", "东海渔村", "无名小镇" })
+# 怪物名字
+monsters : ({ "财神", "福星", "战神" })
+# 刷怪时间振幅
+zhenfu : 3600
+
+# 怪物掉落的装备等级(根据出生点区别)
+[equ_level]
+揽仙镇   : ({ 50, 80 })
+天墉城   : ({ 50, 90 })
+东海渔村 : ({ 60, 100 })
+无名小镇 : ({ 60, 110 })
+
+# 怪物属性
+[财神]
+icon              : 6236
+portrait          : 6236
+name              : "财神"
+polar             : -1
+life_effect       : 100
+speed_effect      : 1000
+phy_absorb        : -100
+mag_absorb        : -100
+resist_forgotten  : 300
+resist_poison     : 300
+resist_frozen     : 300
+resist_sleep      : 300
+resist_confusion  : 300
+tao_effect        : 50
+skills            : ({ "C5" })
+monster_menu      : ({ "caishen_menu_content", "menu_action" })
+template          : "caishen_template"
+combat_trigger    : "combat_trigger_caishen"
+dialog            : ({100, "讨厌的#Y精灵鼠#n又来了，快消灭它！小心不要误伤到我的爱宠！"})
+monster_tactics   : "caishen_tactics"
+no_destruct       : 1
+modify_attrib     : "modify_level_value"
+
+[宠物狗]
+icon              : 6177
+portrait          : 6177
+name              : "宠物狗"
+life              : 100
+dialog            : ({ 50, "我是财神的爱宠，千万不要伤到我！" })
+level             : 1
+sf_die            : "sf_die_chongwugou"
+monster_tactics   : "tactics_defence"
+
+[财气猪]
+icon              : 6178
+portrait          : 6178
+name              : "财气猪"
+life              : 100
+level             : 1
+dialog            : ({ 50, "我是看管钱袋子的，打我没好处哦！" })
+sf_die            : "sf_die_caiqizhu"
+monster_tactics   : "tactics_defence"
+
+[精灵鼠]
+icon              : 6179
+portrait          : 6179
+name              : "精灵鼠"
+dialog            : ({ 50, "不要打我啊！我真的没有宝贝啊！" })
+sf_die            : "sf_die_lingjingshu"
+monster_tactics   : "tactics_defence"
+life_effect       : 60
+# modify_attrib     : "modify_life_effect"
+
+[功夫龙]
+icon              : 6183
+portrait          : 6183
+name              : "功夫龙"
+polar             : -1
+life_effect       : 60
+phy_effect        : 150
+mag_effect        : 200
+speed_effect      : 30
+stunt_rate        : 50
+resist_forgotten  : 0
+resist_poison     : 0
+resist_frozen     : 0
+resist_sleep      : 0
+resist_confusion  : 0
+skills            : ({ "B4" })
+monster_tactics   : "gongfulong_tactics"
+
+[福星]
+icon              : 6047
+portrait          : 6047
+name              : "福星"
+life_effect       : 100
+phy_absorb        : -100
+mag_absorb        : -100
+speed_effect      : 1000
+resist_forgotten  : 300
+resist_poison     : 300
+resist_frozen     : 300
+resist_sleep      : 300
+resist_confusion  : 300
+tao_effect        : 1000
+monster_menu      : ({ "fuxing_menu_content", "menu_action" })
+template          : "fuxing_template"
+combat_trigger    : "combat_trigger_fuxing"
+no_destruct       : 1
+monster_tactics   : "tactics_defence"
+modify_attrib     : "modify_level_value"
+
+[战神]
+icon              : 6232
+portrait          : 6232
+name              : "战神"
+polar             : 1
+life_effect       : 2000
+phy_effect        : 250
+mag_effect        : 300
+speed_effect      : 100
+phy_absorb        : -50
+mag_absorb        : -50
+resist_forgotten  : 300
+resist_sleep      : 300
+resist_confusion  : 300
+tao_effect        : 50
+double_hit_rate   : 30
+double_hit        : 8
+monster_menu      : ({ "zhanshen_menu_content", "menu_action" })
+template          : "zhanshen_template"
+no_destruct       : 1
+modify_attrib     : "modify_zhanshen_value"
+sf_die            : "sf_die_zhanshen"
+monster_tactics   : "zhanshen_tactics"
+mag_action_rate   : 80
+
+[战将]
+icon              : 6223
+portrait          : 6223
+name              : "战将"
+polar             : -1
+life_effect       : 500
+phy_effect        : 100
+mag_effect        : 100
+speed_effect      : 30
+resist_forgotten  : 30
+resist_poison     : 30
+resist_frozen     : 30
+resist_sleep      : 30
+resist_confusion  : 30
+tao_effect        : 0
+double_hit_rate   : 30
+double_hit        : 5
+skills            : ({ "B3", "B4" })
+sf_die            : "sf_die_zhanjiang"
+monster_tactics   : "zhanshen_tactics"
+mag_action_rate   : 50

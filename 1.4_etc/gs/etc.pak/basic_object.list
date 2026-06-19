@@ -1,0 +1,40 @@
+# 本表用于根据基类对象模板和配置表生成所有的基本对象(basic_object)
+# key_name      相关配置表格名字                基类对象模板
+key_name,       table,                         type
+
+# 各类道具
+药品,           "basic_medicine.list",         "/gs/clone/item/medicine/basic.c"
+项链,           "basic_necklace.list",         "/gs/clone/item/necklace/basic.c"
+系统道具,       "basic_service_item.list",     "/gs/clone/item/service_item/basic.c"
+技能道具,       "basic_skill_artifact.list",   "/gs/clone/item/skill_artifact/basic.c"
+特殊道具,       "basic_special.list",          "/gs/clone/item/special/basic.c"
+新手礼包,       "basic_newbie_gift.list",      "/gs/clone/item/newbie_gift/basic.c"
+任务道具,       "basic_task_item.list",        "/gs/clone/item/task/basic.c"
+武器,           "basic_weapon.list",           "/gs/clone/item/weapon/basic.c"
+防具,           "basic_armor.list",            "/gs/clone/item/armor/basic.c"
+法宝,           "basic_artifact.list",         "/gs/clone/item/artifact/basic.c"
+腰带,           "basic_baldric.list",          "/gs/clone/item/baldric/basic.c"
+书籍,           "basic_book.list",             "/gs/clone/item/book/basic.c"
+鞋子,           "basic_boot.list",             "/gs/clone/item/boot/basic.c"
+光效,           "basic_carpet.list",           "/gs/clone/item/carpet/basic.c"
+变身卡,         "basic_change_look.list",      "/gs/clone/item/change_look/basic.c"
+收费道具,       "charge_item.list",            "/gs/clone/item/charge/basic.c"
+天书,           "basic_god_book.list",         "/gs/clone/item/god_book/basic.c"
+头盔,           "basic_helmet.list",           "/gs/clone/item/helmet/basic.c"
+手镯,           "basic_wrist.list",            "/gs/clone/item/wrist/basic.c"
+升级道具,       "basic_upgrade.list",          "/gs/clone/item/upgrade/basic.c"
+宠物天生技能书, "pet-skill-book.list",         "/gs/clone/item/pet-skill-book/basic.c"
+家具,           "basic_furniture.list",        "/gs/clone/item/furniture/basic.c"
+鲁班密卷,       "basic_luban_book.list",       "/gs/clone/item/luban_book/basic.c"
+家具毛坯,       "basic_furniture_rough.list",  "/gs/clone/item/furniture_rough/basic.c"
+
+# 各类角色
+显性BOSS,       "basic_boss_monster.list",     "/gs/clone/boss_monster/basic.c"
+隐藏BOSS,       "basic_hidden_boss.list",      "/gs/clone/hidden_boss/basic.c"
+怪物,           "monster.list",                "/gs/clone/monster/basic.c"
+骑宠,           "mount.list",                  "/gs/clone/mount/basic.c"
+普通NPC,        "basic_raw_npc.list",          "/gs/clone/npc/basic.c"
+动态菜单NPC,    "basic_dynamic_menu_npc.list", "/gs/clone/npc/basic.c"
+静态菜单NPC,    "basic_static_menu_npc.list",  "/gs/clone/npc/basic.c"
+特殊怪物,       "basic_special_monster.list",  "/gs/clone/special_monster/basic.c"
+

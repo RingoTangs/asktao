@@ -1,0 +1,121 @@
+#FORM2
+
+[四圣阵·玄武]
+name: 四圣阵·玄武
+index: "00000001"
+type: 防御阵法
+req_players: 5
+desc: 海龟卡+海龟卡+海龟卡+海龟卡+海龟卡
+apply: ({ "def : 3" })
+process: "change_look"
+magic_icon: ({ 8005, 8006 })
+
+[异兽阵·巨蜥]
+name: 异兽阵·巨蜥
+index: "00000002"
+type: 防御阵法
+req_players: 5
+desc: 巨蜥卡+巨蜥卡+巨蜥卡+巨蜥卡+巨蜥卡
+apply: ({ "speed : -2", "def : 4" })
+process: "change_look"
+magic_icon: ({ 8005, 8006 })
+
+[异兽阵·龙行天下]
+name: 异兽阵·龙行天下
+index: "00000003"
+type: 防御阵法
+req_players: 5
+desc: 乌龙卡+炎龙卡+冰龙卡+青龙卡+黄龙卡
+apply: ({ "phy_power : -2", "def : 5" })
+process: "change_look"
+magic_icon: ({ 8005, 8006 })
+
+[四圣阵·白虎]
+name: 四圣阵·白虎
+index: "00000004"
+type: 物攻阵法
+req_players: 5
+desc: 老虎卡+老虎卡+老虎卡+老虎卡+老虎卡
+apply: ({ "phy_power : 3" })
+process: "change_look"
+magic_icon: ({ 8003, 8004 })
+
+[奇门阵·大梵般若]
+name: 奇门阵·大梵般若
+index: "00000005"
+type: 物攻阵法
+req_players: 5
+desc: 金头陀卡+金头陀卡+金头陀卡+金头陀卡+金头陀卡
+apply: ({ "phy_power : 4", "def : -2" })
+process: "change_look"
+magic_icon: ({ 8003, 8004 })
+
+[异兽阵·横行]
+name: 异兽阵·横行
+index: "00000006"
+type: 物攻阵法
+req_players: 5
+desc: 蟹将卡+蟹将卡+蟹将卡+蟹将卡+蟹将卡
+apply: ({ "phy_power : 6", "def : -2" })
+process: "change_look"
+magic_icon: ({ 8003, 8004 })
+
+[四圣阵·青龙]
+name: 四圣阵·青龙
+index: "00000007"
+type: 法攻阵法
+req_players: 5
+desc: 青龙卡+青龙卡+青龙卡+青龙卡+青龙卡
+apply: ({ "mag_power : 3" })
+process: "change_look"
+magic_icon: ({ 8001, 8002 })
+
+[天象阵·雷]
+name: 天象阵·雷
+index: "00000008"
+type: 法攻阵法
+req_players: 5
+desc: 雷怪卡+雷怪卡+雷怪卡+雷怪卡+雷怪卡
+apply: ({ "mag_power : 4", "phy_power : -2" })
+process: "change_look"
+magic_icon: ({ 8001, 8002 })
+
+[天象阵·冰]
+name: 天象阵·冰
+index: "00000009"
+type: 法攻阵法
+req_players: 5
+desc: 寒冰怪卡+寒冰怪卡+寒冰怪卡+寒冰怪卡+寒冰怪卡
+apply: ({ "mag_power : 6", "phy_power : -2" })
+process: "change_look"
+magic_icon: ({ 8001, 8002 })
+
+[四圣阵·朱雀]
+name: 四圣阵·朱雀
+index: "00000010"
+type: 速度阵法
+req_players: 5
+desc: 火鸦卡+火鸦卡+火鸦卡+火鸦卡+火鸦卡
+apply: ({ "speed : 3" })
+process: "change_look"
+magic_icon: ({ 8007, 8008 })
+
+[天象阵·风]
+name: 天象阵·风
+index: "00000011"
+type: 速度阵法
+req_players: 5
+desc: 风怪卡+风怪卡+风怪卡+风怪卡+风怪卡
+apply: ({ "speed : 4", "def : -2" })
+process: "change_look"
+magic_icon: ({ 8007, 8008 })
+
+[天象阵·电]
+name: 天象阵·电
+index: "00000012"
+type: 速度阵法
+req_players: 5
+desc: 电精卡+电精卡+电精卡+电精卡+电精卡
+apply: ({ "speed : 5", "def : -2" })
+process: "change_look"
+magic_icon: ({ 8007, 8008 })

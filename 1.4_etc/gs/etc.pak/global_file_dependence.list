@@ -1,0 +1,2 @@
+/daemons/configd.c : /daemons/communicated.c
+/daemons/communicated.c : /daemons/threadd.c

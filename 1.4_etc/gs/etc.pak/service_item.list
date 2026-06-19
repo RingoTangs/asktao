@@ -1,0 +1,210 @@
+#FORM2
+
+#[xx]: 物品关键名称
+#基本信息：
+#name: 物品显示名字
+#desc: 物品描述
+#icon: 物品编号
+#combined: 物品是否能够叠加(1可以, 0不可以)
+#unit:  单位
+#value: 物品价格
+
+#服务内容
+#service_way: 使用/携带(使用后获得服务的，可以不写；
+#                       携带后就获得服务的，则一定要填写)
+#service_list$: ({ 提供的服务名称, 服务效果 })
+
+[会员卡]
+#基本信息
+name: "道具套餐卡"
+desc: 使用后可以让玩家得到30天仙籍的神奇卡片，玩家每周可以领取16个小时双倍时间，另外在登陆游戏、挑战BOSS、参与活动、杀星、跑环任务、合成饰物等方面具备更多优惠
+icon: 9001
+combined: 0
+unit: 张
+value: 500
+
+#服务
+service_list$: ({ 位列仙班, "30天" })
+
+[BOSS卡]
+#基本信息
+key_name: "BOSS卡"
+name: "BOSS卡"
+desc: 用来取得挑战BOSS资格的神奇卡片。（道具套餐卡包含此功能）
+icon: 9017
+combined: 0
+unit: 张
+value: 500
+
+#道具提供的服务
+service_way: 携带
+service_list$: ({ 挑战BOSS, "1次" })
+
+[急急如律令]
+#基本信息
+name: 急急如律令
+desc: 使用后1小时内，普通战斗、除暴、降妖、伏魔、修法和仙界通缉任务遇怪数量皆为队伍中玩家数量*2
+icon: 9010
+combined: 0
+unit: 个
+value: 500
+RMB: 3000
+
+#服务信息
+service_list$: ({ 满怪遇敌, "1小时" })
+
+[灵引咒]
+#基本信息
+name: 灵引咒
+desc: 使用后一段时间内，捕捉天生技能宠物的机率翻倍
+icon: 9009
+combined: 0
+value: 500
+unit: 个
+
+#服务信息
+service_list$: ({ 捕捉宠物, "1小时" })
+
+[装备改造卡]
+#基本信息
+key_name: 装备改造卡
+name: 装备改造卡
+desc: 用来改造装备的神奇卡片。（属于道具套餐功能之一）
+icon: 9015
+combined: 0
+unit: 张
+service_way: 携带
+
+#服务信息
+service_list$: ({ 装备改造, "10次" })
+
+[饰物合成卡]
+#基本信息
+key_name: 饰物合成卡
+name: 饰物合成卡
+desc: 用来获取合成饰物资格的神奇卡片。（道具套餐卡包含此功能）
+icon: 9016
+combined: 0
+unit: 张
+value: 500
+service_way: 携带
+
+#服务信息
+service_list$: ({ 饰物合成, "10次" })
+
+[杀星卡]
+#基本信息
+key_name: 杀星卡
+name: 杀星卡
+desc: 用来获得杀星双倍奖励的神奇卡片。（道具套餐卡包含此功能）
+icon: 9018
+combined: 0
+unit: 张
+value: 500
+
+#服务信息
+service_way: 携带
+service_list$: ({ 杀星, "5次" })
+
+[降妖伏魔卡]
+#基本信息
+key_name: 降妖伏魔卡
+name: 降妖伏魔卡
+desc: 用来提高降妖伏魔任务奖励的神奇卡片。（属于道具套餐功能之一）
+icon: 9019
+combined: 0
+unit: 张
+value: 100
+
+#服务信息
+service_way: 携带
+service_list$: ({ 降妖伏魔, "30次" })
+
+[跑环记录卡]
+#基本信息
+key_name: 跑环记录卡
+name: 跑环记录卡
+desc: 用来记录跑环任务次数的神奇卡片。（道具套餐卡包含此功能）
+icon: 9020
+combined: 0
+unit: 张
+value: 500
+
+#服务信息
+service_way: 携带
+service_list$: ({ 跑环, "10次" })
+
+[寻宝卡]
+#基本信息
+key_name: 寻宝卡
+name: 寻宝卡
+desc: 用来查看宝级宝图的神奇卡片。（属于道具套餐功能之一）
+icon: 9023
+combined: 0
+unit: 张
+value: 100
+
+#服务信息
+service_way: 携带
+service_list$: ({ 寻宝, "1次" })
+
+[天神护佑]
+#基本信息
+name: 天神护佑
+desc: 使用后可以得到天神的护佑，死亡后没有任何损失，但死亡后天神护佑的效果也同时消失
+icon: 9007
+combined: 0
+unit: 张
+value: 500
+
+#服务信息
+service_list$: ({ 免死护佑, "1次" })
+
+[离线摆摊卡]
+#基本信息
+name: 离线摆摊卡
+desc: 使用后可以在离线状态继续摆摊6小时的神奇卡片
+icon: 9027
+combined: 0
+unit: 张
+value: 500
+
+#服务信息
+service_list$: ({ 离线摆摊, "6小时" })
+
+[惊妖铃]
+#基本信息
+name: 惊妖铃
+desc: 使用后一段时间内，可以缩短遇敌时间、降低怪物战斗力并且不遇触发任务的神奇道具。
+icon: 9049
+combined: 0
+unit: 只
+value: 500
+RMB: 328
+
+#服务信息
+service_list$: ({ 加速遇敌, "1小时" })
+
+[高级道具套餐卡]
+#基本信息
+name: "高级道具套餐卡"
+desc: 使用后可以让玩家得到90天仙籍的神奇卡片，玩家每周可以领取16个小时双倍时间，另外在登陆游戏、挑战BOSS、参与活动、杀星、跑环任务、合成饰物等方面具备更多优惠
+icon: 9067
+combined: 0
+unit: 张
+value: 500
+
+#服务
+service_list$: ({ 位列仙班, "90天" })
+
+[道具套餐体验卡]
+#道具套餐体验卡
+name: "道具套餐体验卡"
+desc: 使用后可以让玩家得到7天仙籍的神奇卡片，玩家每周可以领取16个小时双倍时间，另外在登陆游戏、挑战BOSS、参与活动、杀星、跑环任务、合成饰物等方面具备更多优惠
+icon: 9110
+combined: 0
+unit: 张
+value: 500
+
+#服务
+service_list$: ({ 位列仙班, "7天" })

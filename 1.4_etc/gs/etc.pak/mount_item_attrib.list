@@ -1,0 +1,105 @@
+#FORM2
+
+// mount_item_attrib.list
+// create by yugq 16/02/2009
+// Æï³èµÀ¾ß¹¦ÄÜÁĞ±í
+
+[ÔÀÂ´½£]
+max_speed : 30
+attrib : 10
+
+[´äÁé½£]
+max_speed : 25
+attrib : 12
+
+[Ë®ÔÏ½£]
+max_speed : 20
+attrib : 15
+
+[Ê¥Ì´½£]
+max_speed : 15
+attrib : 18
+
+[ÏÉÑô½£]
+max_speed : 10
+attrib : 20
+
+[¹ÅÂ¹]
+max_speed : 30
+attrib : 10
+
+[ÁéÂ¹]
+max_speed : 25
+attrib : 12
+
+[»ÃÂ¹]
+max_speed : 20
+attrib : 15
+
+[ÑÅÂ¹]
+max_speed : 15
+attrib : 18
+
+[ÔÆÂ¹]
+max_speed : 10
+attrib : 20
+
+[ÔÆ±ª]
+max_speed : 30
+attrib : 10
+
+[Óñ±ª]
+max_speed : 25
+attrib : 12
+
+[Ë®¾§±ª]
+max_speed : 20
+attrib : 15
+
+[ÁèÑÒ±ª]
+max_speed : 15
+attrib : 18
+
+[Ñ©±ª]
+max_speed : 10
+attrib : 20
+
+[Ì«¼«ĞÜ]
+max_speed : 40
+attrib : 8
+
+[±±¼«ĞÜ]
+max_speed : 30
+attrib : 10
+
+[ÎŞ¼«ĞÜ]
+max_speed : 25
+attrib : 12
+
+[³à½õĞÜ]
+max_speed : 15
+attrib : 18
+
+[×ØÈ×ĞÜ]
+max_speed : 10
+attrib : 20
+
+[ôä´äºùÂ«]
+max_speed : 30
+attrib : 10
+
+[ÏÉºùÂ«]
+max_speed : 25
+attrib : 12
+
+[³àÑæºùÂ«]
+max_speed : 20
+attrib : 15
+
+[×ÏÌÙºùÂ«]
+max_speed : 15
+attrib : 18
+
+[ÁéºùÂ«]
+max_speed : 10
+attrib : 20

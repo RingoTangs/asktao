@@ -1,0 +1,25 @@
+#FORM2
+
+#start 活动开始时间
+#duration 活动持续时间
+#interval 两次活动的间隔时间
+
+
+[setting]
+start    : "2008-01-22-13:00:00"
+duration : 10800
+interval : 86400
+before_sign : 1800
+interval_before_sign : 180
+before_start : 600
+interval_before_start : 60
+interval_broadcast_in : 900
+broadcast_30 : 1800
+before_end : 600
+interval_before_end : 60
+x_back : 374
+y_back : 149
+monstor : 2
+min_level : 50
+step_rate : 50
+player_num : 5

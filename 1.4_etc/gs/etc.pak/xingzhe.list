@@ -1,0 +1,227 @@
+#FORM2
+#xingzhe.list
+#Create by xuj Jan/25/2007
+#内测区功能NPC-行者出售的物品列表
+
+#name    : 名称
+#level   : 等级
+#color   : 颜色
+#contrib : 购买需花费的帮贡
+
+[灵引咒]
+name: 灵引咒
+contrib: 3000
+
+[女娲石]
+name: 女娲石
+contrib: 500
+
+[6级白色精铁]
+name: 精铁
+level: 6
+color: 白色
+contrib: 40
+
+[6级白色水铜]
+name: 水铜
+level: 6
+color: 白色
+contrib: 40
+
+[6级白色麟木]
+name: 麟木
+level: 6
+color: 白色
+contrib: 40
+
+[6级白色玄石]
+name: 玄石
+level: 6
+color: 白色
+contrib: 40
+
+[6级白色炎石]
+name: 炎石
+level: 6
+color: 白色
+contrib: 40
+
+[7级白色精铁]
+name: 精铁
+level: 7
+color: 白色
+contrib: 45
+
+[7级白色水铜]
+name: 水铜
+level: 7
+color: 白色
+contrib: 45
+
+[7级白色麟木]
+name: 麟木
+level: 7
+color: 白色
+contrib: 45
+
+[7级白色玄石]
+name: 玄石
+level: 7
+color: 白色
+contrib: 45
+
+[7级白色炎石]
+name: 炎石
+level: 7
+color: 白色
+contrib: 45
+
+[8级白色精铁]
+name: 精铁
+level: 8
+color: 白色
+contrib: 50
+
+[8级白色水铜]
+name: 水铜
+level: 8
+color: 白色
+contrib: 50
+
+[8级白色麟木]
+name: 麟木
+level: 8
+color: 白色
+contrib: 50
+
+[8级白色玄石]
+name: 玄石
+level: 8
+color: 白色
+contrib: 50
+
+[8级白色炎石]
+name: 炎石
+level: 8
+color: 白色
+contrib: 50
+
+[9级白色精铁]
+name: 精铁
+level: 9
+color: 白色
+contrib: 55
+
+[9级白色水铜]
+name: 水铜
+level: 9
+color: 白色
+contrib: 55
+
+[9级白色麟木]
+name: 麟木
+level: 9
+color: 白色
+contrib: 55
+
+[9级白色玄石]
+name: 玄石
+level: 9
+color: 白色
+contrib: 55
+
+[9级白色炎石]
+name: 炎石
+level: 9
+color: 白色
+contrib: 55
+
+[10级白色精铁]
+name: 精铁
+level: 10
+color: 白色
+contrib: 60
+
+[10级白色水铜]
+name: 水铜
+level: 10
+color: 白色
+contrib: 60
+
+[10级白色麟木]
+name: 麟木
+level: 10
+color: 白色
+contrib: 60
+
+[10级白色玄石]
+name: 玄石
+level: 10
+color: 白色
+contrib: 60
+
+[10级白色炎石]
+name: 炎石
+level: 10
+color: 白色
+contrib: 60
+
+[11级白色精铁]
+name: 精铁
+level: 11
+color: 白色
+contrib: 65
+
+[11级白色水铜]
+name: 水铜
+level: 11
+color: 白色
+contrib: 65
+
+[11级白色麟木]
+name: 麟木
+level: 11
+color: 白色
+contrib: 65
+
+[11级白色玄石]
+name: 玄石
+level: 11
+color: 白色
+contrib: 65
+
+[11级白色炎石]
+name: 炎石
+level: 11
+color: 白色
+contrib: 65
+
+[12级白色精铁]
+name: 精铁
+level: 12
+color: 白色
+contrib: 70
+
+[12级白色水铜]
+name: 水铜
+level: 12
+color: 白色
+contrib: 70
+
+[12级白色麟木]
+name: 麟木
+level: 12
+color: 白色
+contrib: 70
+
+[12级白色玄石]
+name: 玄石
+level: 12
+color: 白色
+contrib: 70
+
+[12级白色炎石]
+name: 炎石
+level: 12
+color: 白色
+contrib: 70

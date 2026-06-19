@@ -1,0 +1,68 @@
+#FORM2
+# green_equip_attrib_sort.list
+# Created by Huang Yadan @ 2006-11-29
+# 绿装备可以选用的属性集合的分类信息
+# 值 1 为凑格式用
+
+# 总共分四大类：武器、衣服、鞋子和头盔
+# 对于武器，每一相性的武器又有特殊的属性
+
+[武器]
+super_excluse_metal         : 1
+super_excluse_wood          : 1
+super_excluse_water         : 1
+super_excluse_fire          : 1
+super_excluse_earth         : 1
+
+[衣服]
+resist_poison               : 1
+resist_frozen               : 1
+resist_sleep                : 1
+resist_forgotten            : 1
+resist_confusion            : 1
+release_forgotten           : 1
+release_poison              : 1
+release_frozen              : 1
+release_sleep               : 1
+release_confusion           : 1
+
+[鞋子]
+B_skill_low_cost            : 1
+C_skill_low_cost            : 1
+D_skill_low_cost            : 1
+mag_dodge                   : 1
+
+[头盔]
+B_skill_low_cost            : 1
+C_skill_low_cost            : 1
+D_skill_low_cost            : 1
+
+[枪]
+super_forgotten             : 1
+enhanced_metal              : 1
+ignore_resist_metal         : 1
+ignore_resist_forgotten     : 1
+
+[爪]
+super_poison                : 1
+enhanced_wood               : 1
+ignore_resist_wood          : 1
+ignore_resist_poison        : 1
+
+[剑]
+super_frozen                : 1
+enhanced_water              : 1
+ignore_resist_water         : 1
+ignore_resist_frozen        : 1
+
+[扇]
+super_sleep                 : 1
+enhanced_fire               : 1
+ignore_resist_fire          : 1
+ignore_resist_sleep         : 1
+
+[锤]
+super_confusion             : 1
+enhanced_earth              : 1
+ignore_resist_earth         : 1
+ignore_resist_confusion     : 1

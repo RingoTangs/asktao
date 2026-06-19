@@ -1,0 +1,207 @@
+#FORM2
+
+# xunxian.list - 寻仙任务配置表
+# Created by hongjs Oct/15/2008
+
+[铁拐李]
+name              : 铁拐李
+icon              : 20004
+portrait          : 20004
+polar             : 5
+life_effect       : 5000
+speed_effect      : 100
+phy_effect        : 300
+mag_effect        : 250
+tao_effect        : 40
+resist_earth      : 100
+resist_forgotten  : 100
+resist_poison     : 100
+resist_frozen     : 100
+resist_sleep      : 100
+resist_confusion  : 50
+skills            : ({ "B4", "B5" })
+monster_tactics   : "tactics_tieguaili"
+assistant_monster : 神将
+
+[汉钟离]
+name              : 汉钟离
+icon              : 20005
+portrait          : 20005
+polar             : 5
+life_effect       : 5000
+speed_effect      : 100
+phy_effect        : 500
+mag_effect        : 250
+tao_effect        : 40
+resist_fire       : 100
+resist_forgotten  : 100
+resist_poison     : 100
+resist_frozen     : 100
+resist_sleep      : 50
+resist_confusion  : 100
+monster_tactics   : "tactics_hanzhongli"
+assistant_monster : 神将
+artifact          : ({ "hunyuan-jindou", 18 })
+
+[吕洞宾]
+name              : 吕洞宾
+icon              : 20006
+portrait          : 20006
+polar             : 1
+life_effect       : 5000
+speed_effect      : 100
+phy_effect        : 300
+mag_effect        : 250
+tao_effect        : 40
+resist_metal      : 100
+resist_forgotten  : 50
+resist_poison     : 100
+resist_frozen     : 100
+resist_sleep      : 300
+resist_confusion  : 100
+skills            : ({ "B4", "B5" })
+monster_tactics   : "tactics_lvdongbin"
+assistant_monster : 神将
+artifact          : ({ "dinghaizhu", 18 })
+
+[蓝采和]
+name              : 蓝采和
+icon              : 20007
+portrait          : 20007
+polar             : 3
+life_effect       : 5000
+speed_effect      : 100
+phy_effect        : 300
+mag_effect        : 250
+tao_effect        : 40
+resist_water      : 100
+resist_forgotten  : 100
+resist_poison     : 50
+resist_frozen     : 300
+resist_sleep      : 100
+resist_confusion  : 100
+skills            : ({ "B4", "B5" })
+monster_tactics   : "tactics_lancaihe"
+assistant_monster : 神将
+artifact          : ({ "fantianyin", 18 })
+
+[韩湘子]
+name              : 韩湘子
+icon              : 20008
+portrait          : 20008
+polar             : 2
+life_effect       : 5000
+speed_effect      : 100
+phy_effect        : 300
+mag_effect        : 250
+tao_effect        : 40
+resist_wood       : 100
+resist_forgotten  : 100
+resist_poison     : 50
+resist_frozen     : 100
+resist_sleep      : 100
+resist_confusion  : 100
+skills            : ({ "B4", "B5" })
+monster_tactics   : "tactics_hanxiangzi"
+assistant_monster : 神将
+
+[张果老]
+name                : 张果老
+icon                : 20009
+portrait            : 20009
+polar               : 4
+life_effect         : 5000
+speed_effect        : 5000
+phy_effect          : 300
+mag_effect          : 250
+tao_effect          : 40
+resist_fire         : 100
+resist_forgotten    : 100
+resist_poison       : 100
+resist_frozen       : 100
+resist_sleep        : 100
+resist_confusion    : 50
+counter_attack_rate : 100
+counter_attack      : 5
+damage_sel_rate     : 100
+damage_sel          : 100
+skills              : ({ "B4", "B5", "D5" })
+monster_tactics     : "tactics_zhangguolao"
+assistant_monster   : 神将
+
+[何仙姑]
+name              : 何仙姑
+icon              : 20010
+portrait          : 20010
+polar             : 2
+life_effect       : 5000
+speed_effect      : 100
+phy_effect        : 300
+mag_effect        : 250
+tao_effect        : 40
+resist_wood       : 100
+resist_forgotten  : 100
+resist_poison     : 100
+resist_frozen     : 50
+resist_sleep      : 100
+resist_confusion  : 100
+skills            : ({ "C5", "D5" })
+monster_tactics   : "tactics_hexiangu"
+assistant_monster : 神将1
+
+[曹国舅]
+name              : 曹国舅
+icon              : 20011
+portrait          : 20011
+polar             : 4
+life_effect       : 5000
+speed_effect      : 100
+phy_effect        : 300
+mag_effect        : 250
+tao_effect        : 40
+resist_fire       : 100
+resist_forgotten  : 100
+resist_poison     : 100
+resist_frozen     : 100
+resist_sleep      : 50
+resist_confusion  : 100
+skills            : ({ "B4", "B5" })
+monster_tactics   : "tactics_caoguojiu"
+assistant_monster : 神将
+artifact          : ({ "yinyangjing", 18 })
+
+[神将]
+name                : 神将
+icon                : 06223
+portrait            : 06223
+polar               : -1
+life_effect         : 1000
+resist_polar        : 100
+ignore_resist_polar : 0
+phy_effect          : 160
+mag_effect          : 160
+resist_forgotten    : 30
+resist_poison       : 30
+resist_frozen       : 30
+resist_sleep        : 30
+resist_confusion    : 30
+skills              : ({ "B4" })
+monster_tactics     : -1
+
+[神将1]
+name                : 神将
+icon                : 06224
+portrait            : 06224
+polar               : -1
+life_effect         : 1000
+resist_polar        : 100
+ignore_resist_polar : 0
+phy_effect          : 160
+mag_effect          : 160
+resist_forgotten    : 30
+resist_poison       : 30
+resist_frozen       : 30
+resist_sleep        : 30
+resist_confusion    : 30
+skills              : ({ "B4" })
+monster_tactics     : -1

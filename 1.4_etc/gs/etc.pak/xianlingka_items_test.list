@@ -1,0 +1,108 @@
+#FORM2
+# xianlingka_items.list
+# Created by tangy  9/1/2006
+
+[武器店]
+goods$ : 铁枪
+goods$ : 点钢枪
+goods$ : 乌金枪
+goods$ : 火焰枪
+goods$ : 双头枪
+goods$ : 寒风枪
+goods$ : 虎爪
+goods$ : 赤炼爪
+goods$ : 残青爪
+goods$ : 阴风爪
+goods$ : 寒冰刺
+goods$ : 骷髅爪
+goods$ : 青锋剑
+goods$ : 沉香剑
+goods$ : 飞虹剑
+goods$ : 乾元剑
+goods$ : 斩妖剑
+goods$ : 昆吾剑
+goods$ : 精铁扇
+goods$ : 逍遥扇
+goods$ : 玉骨扇
+goods$ : 阴阳扇
+goods$ : 凤羽扇
+goods$ : 百花扇
+goods$ : 流星锤
+goods$ : 八棱锤
+goods$ : 亮银锤
+goods$ : 乌金锤
+goods$ : 混元锤
+goods$ : 霹雳锤
+
+[布店]
+goods$ : 皮帽
+goods$ : 青铜盔
+goods$ : 冲天盔
+goods$ : 虎头盔
+goods$ : 神龙盔
+goods$ : 白玉冠
+goods$ : 飞凤钗
+goods$ : 碧玉钗
+goods$ : 蝴蝶钗
+goods$ : 金钗
+goods$ : 珍珠钗
+goods$ : 凤尾钗
+goods$ : 虎皮衣
+goods$ : 青铜铠
+goods$ : 皂罗袍
+goods$ : 金锁甲
+goods$ : 莽龙袍
+goods$ : 金丝甲
+goods$ : 绛紫裙
+goods$ : 虹羽衣
+goods$ : 凤暖袍
+goods$ : 锦月袄
+goods$ : 凝霜衣
+goods$ : 水合袍
+goods$ : 布鞋
+goods$ : 马靴
+goods$ : 牛皮靴
+goods$ : 长筒靴
+goods$ : 追云履
+goods$ : 亮银靴
+
+[杂货店]
+goods$ : 驱魔香
+goods$ : 清心散
+goods$ : 锄头
+goods$ : 烟花
+goods$ : 爆竹
+goods$ : 凝香幻彩
+goods$ : 风寂云清
+goods$ : 炫影霜星
+goods$ : 枯月流魂
+goods$ : 冰落残阳
+goods$ : 还原丹
+goods$ : 荣誉之星
+goods$ : 藏宝箱
+
+[药店]
+goods$ : 止血草
+goods$ : 兰芝草
+goods$ : 七叶莲
+goods$ : 青花菇
+goods$ : 六月雪
+goods$ : 金创药
+goods$ : 跌打酒
+goods$ : 蟒灵丹
+goods$ : 猴头丝
+goods$ : 蜂王蜜
+goods$ : 血浆果
+goods$ : 人参
+goods$ : 鹿茸
+goods$ : 紫椹
+goods$ : 葫芦枣
+goods$ : 云香精
+goods$ : 静心丹
+goods$ : 回神丹
+goods$ : 舒心丸
+goods$ : 暗香丸
+goods$ : 八珍汤
+goods$ : 紫茸膏
+goods$ : 陈桑酒
+goods$ : 天一丸

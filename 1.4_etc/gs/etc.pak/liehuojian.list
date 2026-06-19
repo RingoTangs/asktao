@@ -1,0 +1,176 @@
+#FORM2
+
+[setting]
+keep_time        : 7200
+timer_inter      : ({ 3600, 1800, 600, 600, 300, 60, 60, 60, 60 })
+call_monster     : 54
+ÉÏ¹ÅÀ×¹Ö$        : ({ 11, 64 })
+ÉÏ¹ÅÀ×¹Ö$        : ({ 11, 75 })
+ÉÏ¹ÅÀ×¹Ö$        : ({ 23, 65 })
+ÉÏ¹ÅÀ×¹Ö$        : ({ 32, 70 })
+ÉÏ¹ÅÀ×¹Ö$        : ({ 37, 77 })
+ÉÏ¹ÅÔÆÊŞ$        : ({ 28, 11 })
+ÉÏ¹ÅÔÆÊŞ$        : ({ 36, 8 })
+ÉÏ¹ÅÔÆÊŞ$        : ({ 46, 8 })
+ÉÏ¹ÅÔÆÊŞ$        : ({ 52, 16})
+ÉÏ¹ÅÔÆÊŞ$        : ({ 30, 25})
+ÉÏ¹ÅÓêÊŞ$        : ({ 136, 14 })
+ÉÏ¹ÅÓêÊŞ$        : ({ 150, 17 })
+ÉÏ¹ÅÓêÊŞ$        : ({ 157, 25 })
+ÉÏ¹ÅÓêÊŞ$        : ({ 131, 17 })
+ÉÏ¹ÅÓêÊŞ$        : ({ 147, 35 })
+ÉÏ¹Å·ç¹Ö$        : ({ 160, 83 })
+ÉÏ¹Å·ç¹Ö$        : ({ 154, 74 })
+ÉÏ¹Å·ç¹Ö$        : ({ 143, 74 })
+ÉÏ¹Å·ç¹Ö$        : ({ 135, 84 })
+ÉÏ¹Å·ç¹Ö$        : ({ 138, 94 })
+³àÑæÊŞ$          : ({ 67, 55 })
+³àÑæÊŞ$          : ({ 76, 47 })
+³àÑæÊŞ$          : ({ 100, 47 })
+³àÑæÊŞ$          : ({ 110, 55 })
+
+[ÉÏ¹ÅÀ×¹Ö]
+icon             : 6171
+portrait         : 6171
+name             : ÉÏ¹ÅÀ×¹Ö
+level            : 100
+polar            : 1
+resist_metal     : 70
+resist_fire      : -10
+life_effect      : 1000
+phy_effect       : 120
+mag_effect       : 120
+speed_effect     : 1000
+resist_forgotten : 30
+resist_poison    : 45
+resist_frozen    : 45
+resist_sleep     : 30
+resist_confusion : 60
+skills           : ({ "B4", "B5" })
+sp_skills        : ({ "ÉñÁúÕÖ", "ÈçÒâÈ¦" })
+tactics_monster  : "tactics_leiguai"
+combat_num       : 10
+monster_menu     : ({ "menu_content_normal", "menu_action" })
+combat_trigger   : "combat_trigger_normal"
+
+[ÉÏ¹ÅÔÆÊŞ]
+icon             : 6174
+portrait         : 6174
+name             : ÉÏ¹ÅÔÆÊŞ
+level            : 100
+polar            : 2
+resist_wood      : 70
+resist_metal     : -10
+life_effect      : 1000
+phy_effect       : 80
+mag_effect       : 80
+tao_effect       : 200
+skills           : ({ "B2", "B4" })
+sp_skills        : ({ "ÓÎËµÖ®Éà" })
+tactics_monster  : "tactics_yunshou"
+combat_num       : 5
+monster_menu     : ({ "menu_content_normal", "menu_action" })
+combat_trigger   : "combat_trigger_normal"
+
+[ÉÏ¹ÅÓêÊŞ]
+icon             : 6170
+portrait         : 6170
+name             : ÉÏ¹ÅÓêÊŞ
+level            : 100
+polar            : 3
+resist_water      : 70
+resist_earth     : -10
+life_effect      : 1500
+phy_effect       : 120
+mag_effect       : 120
+tao_effect       : 200
+skills           : ({ "B4" })
+sp_skills        : ({ "ÂşÌìÑªÎè" })
+tactics_monster  : "tactics_yushou"
+combat_num       : 10
+monster_menu     : ({ "menu_content_normal", "menu_action" })
+combat_trigger   : "combat_trigger_normal"
+
+[ÉÏ¹Å·ç¹Ö]
+icon             : 6169
+portrait         : 6169
+name             : ÉÏ¹Å·ç¹Ö
+level            : 100
+polar            : 5
+resist_earth     : 70
+resist_wood      : -10
+life_effect      : 1000
+phy_effect       : 120
+mag_effect       : 120
+resist_forgotten : 40
+resist_poison    : 20
+resist_frozen    : 40
+resist_sleep     : 20
+resist_confusion : 20
+skills           : ({ "B4" })
+sp_skills        : ({ "ËÀÍö²øÃà" })
+tactics_monster  : "tactics_fengguai"
+combat_num       : 10
+monster_menu     : ({ "menu_content_normal", "menu_action" })
+combat_trigger   : "combat_trigger_normal"
+
+[Ç§ÄêÓñÊ¯ÅıÅÃ¾«]
+icon             : 6204
+portrait         : 6204
+name             : Ç§ÄêÓñÊ¯ÅıÅÃ¾«
+level            : 100
+polar            : 5
+resist_water     : 70
+resist_earth     : -10
+life_effect      : 4500
+phy_effect       : 120
+mag_effect       : 120
+resist_forgotten : 60
+resist_poison    : 20
+resist_frozen    : 20
+resist_sleep     : 20
+resist_confusion : 60
+skills           : ({ "B2", "B4" })
+tactics_monster  : "tactics_pipajing"
+combat_num       : 10
+monster_menu     : ({ "menu_content_pipajing", "menu_action" })
+combat_trigger   : "combat_trigger_pipajing"
+create_combat_team : "create_combat_team_pipajing"
+
+[³àÑæÊŞ]
+icon             : 6260
+portrait         : 6260
+name             : ³àÑæÊŞ
+level            : 100
+polar            : 4
+resist_fire      : 70
+resist_water     : -10
+life_effect      : 6000
+phy_effect       : 400
+mag_effect       : 300
+speed_effect     : 150
+penetrate_rate   : 5
+penetrate        : 50
+resist_forgotten : 100
+resist_poison    : 60
+resist_frozen    : 60
+resist_sleep     : 30
+resist_confusion : 100
+skills           : ({ "B4", "B5", "D5" })
+tactics_monster  : "tactics_chiyanshou"
+combat_num       : 10
+monster_menu     : ({ "menu_content_normal", "menu_action" })
+combat_trigger   : "combat_trigger_chiyanshou"
+create_combat_team : "create_combat_team_chiyanshou"
+
+[³àÑæÊŞĞ¡¹Ö]
+icon             : ({ 6102, 6125, 6168, 6116, 6118, 6130, 6153 })
+name             : ({ "»ğÉß", "³àÄ¿ÓãÈË", "»ğºü", "»ğòğ", "³àÁú", "»ğÄñ", "Á¶Ä§" })
+level            : 100
+polar            : 4
+resist_fire      : 70
+resist_water     : -10
+life_effect      : 700
+phy_effect       : 150
+mag_effect       : 100
+skills           : ({ "B4", "B4" })

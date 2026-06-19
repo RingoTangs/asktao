@@ -1,0 +1,282 @@
+#FORM2
+
+[羊头怪]
+icon        : 6215
+portrait    : 6215
+level       : 20
+life_effect : 4900
+mana_effect : 4900
+tao_effect  : 20
+speed_effect: 150
+mag_absorb  : -25
+phy_absorb  : -35
+phy_effect  : 150
+mag_effect  : 150
+double_hit  : 5
+double_hit_rate : 40
+resist_frozen : 75
+resist_sleep : 75
+resist_forgotten : 100
+resist_confusion : 100
+resist_poison : 75
+penetrate : 50
+accurate : 100
+assist_max_count  : 9
+assist_init_name  : "松鼠"
+assist_init_level : 20
+assist_data : ({ "mag_absorb:-40", "penetrate:50", "phy_absorb:-40", "life_effect:300", "phy_effect:80", "mag_effect:100" })
+bonus_item$ : ({ 1, "baldric & wrist & necklace(level = 20)" })
+bonus_item$ : ({ 5, "helmet & weapon & boot & armor(level = 30 color = GOLDEN)" })
+bonus_item$ : ({ 1, "藏宝图 * 6" })
+bonus_value$: ({ "EXP_RATE", 50})
+
+[牛头怪]
+icon        : 6214
+portrait    : 6214
+level       : 30
+life_effect : 4900
+mana_effect : 4900
+tao_effect  : 20
+speed_effect: 150
+mag_absorb  : -25
+phy_absorb  : -35
+phy_effect  : 200
+mag_effect  : 200
+double_hit  : 5
+double_hit_rate : 40
+resist_frozen : 75
+resist_sleep : 75
+resist_forgotten : 100
+resist_confusion : 100
+resist_poison : 75
+penetrate : 50
+accurate : 100
+assist_max_count  : 9
+assist_init_name  : "蛇"
+assist_init_level : 30
+assist_data : ({ "mag_absorb:-40", "penetrate:50", "phy_absorb:-40", "life_effect:300", "phy_effect:80", "mag_effect:100" })
+bonus_item$ : ({ 1, "baldric & wrist & necklace(level = 20)" })
+bonus_item$ : ({ 5, "helmet & weapon & boot & armor(level = 40 color = GOLDEN)" })
+bonus_item$ : ({ 1, "藏宝图 * 10" })
+bonus_value$: ({ "EXP_RATE", 50})
+
+[百年黑熊精]
+icon        : 6203
+portrait    : 6203
+level       : 40
+life_effect : 5900
+mana_effect : 5900
+tao_effect  : 20
+speed_effect: 150
+mag_absorb  : -20
+phy_absorb  : -30
+phy_effect  : 250
+mag_effect  : 250
+stunt_rate  : 40
+resist_frozen : 75
+resist_sleep : 75
+resist_forgotten : 100
+resist_confusion : 100
+resist_poison : 75
+penetrate : 50
+accurate : 100
+assist_max_count  : 9
+assist_init_name  : "猴子"
+assist_init_level : 40
+assist_data : ({ "mag_absorb:-40", "penetrate:50", "phy_absorb:-40", "life_effect:200", "phy_effect:80", "mag_effect:100" })
+bonus_item$ : ({ 3, "baldric & wrist & necklace(level = 20)" })
+bonus_item$ : ({ 5, "helmet & weapon & boot & armor(level = 50 color = GOLDEN)" })
+bonus_item$ : ({ 1, "藏宝图 * 2" })
+bonus_item$ : ({ 5, "50% 五色灵石", "50% 五色晶石" })
+bonus_value$: ({ "EXP_RATE", 50})
+
+[百年狂狮怪]
+icon        : 6209
+portrait    : 6209
+level       : 50
+life_effect : 5900
+mana_effect : 5900
+tao_effect  : 20
+mag_absorb  : -25
+phy_absorb  : -35
+speed_effect: 150
+phy_effect  : 250
+mag_effect  : 250
+double_hit  : 5
+double_hit_rate : 40
+resist_frozen : 75
+resist_sleep : 75
+resist_forgotten : 100
+resist_confusion : 100
+resist_poison : 75
+penetrate : 50
+accurate : 100
+assist_max_count  : 9
+assist_init_name  : "白猿"
+assist_init_level : 50
+assist_data : ({ "mag_absorb:-40", "penetrate:50", "phy_absorb:-40", "life_effect:300", "phy_effect:80", "mag_effect:100" })
+bonus_item$ : ({ 6,  "baldric & wrist & necklace(level = 20)"  })
+bonus_item$ : ({ 5,  "helmet & weapon & boot & armor(level = 60 color = GOLDEN)" })
+bonus_item$ : ({ 1,  "藏宝图 * 4" })
+bonus_item$ : ({ 10, "50% 五色灵石", "50% 五色晶石" })
+bonus_value$: ({ "EXP_RATE", 50 })
+
+[百年刺猬精]
+icon        : 6210
+portrait    : 6210
+level       : 60
+life_effect : 5900
+mana_effect : 5900
+tao_effect  : 20
+mag_absorb  : -30
+phy_absorb  : -40
+speed_effect: 150
+phy_effect  : 250
+mag_effect  : 250
+double_hit  : 5
+double_hit_rate : 40
+resist_frozen : 75
+resist_sleep : 75
+resist_forgotten : 100
+resist_confusion : 100
+resist_poison : 75
+penetrate : 50
+accurate : 100
+assist_max_count  : 9
+assist_init_name  : "狼"
+assist_init_level : 60
+assist_data : ({ "mag_absorb:-40", "penetrate:50", "phy_absorb:-40", "life_effect:300", "phy_effect:80", "mag_effect:100" })
+bonus_item$ : ({ 10,  "baldric & wrist & necklace(level = 20)" })
+bonus_item$ : ({ 5,  "helmet & weapon & boot & armor(level = 70 color = GOLDEN)" })
+bonus_item$ : ({ 1,  "藏宝图 * 5" })
+bonus_item$ : ({ 15, "50% 五色灵石", "50% 五色晶石" })
+bonus_value$: ({ "EXP_RATE", 50 })
+
+[百年猪妖]
+icon        : 6208
+portrait    : 6208
+level       : 70
+life_effect : 5900
+mana_effect : 5900
+tao_effect  : 20
+mag_absorb  : -30
+phy_absorb  : -40
+speed_effect: 150
+phy_effect  : 250
+mag_effect  : 250
+double_hit  : 5
+double_hit_rate : 40
+resist_frozen : 75
+resist_sleep : 75
+resist_forgotten : 100
+resist_confusion : 100
+resist_poison : 75
+penetrate : 50
+accurate : 100
+assist_max_count  : 9
+assist_init_name  : "老虎"
+assist_init_level : 70
+assist_data : ({ "mag_absorb:-40", "penetrate:50", "phy_absorb:-40", "life_effect:350", "phy_effect:80", "mag_effect:100" })
+bonus_item$ : ({ 15,  "baldric & wrist & necklace(level = 20)" })
+bonus_item$ : ({ 5,  "helmet & weapon & boot & armor(level = 80 color = GOLDEN)" })
+bonus_item$ : ({ 1,  "藏宝图 * 5" })
+bonus_item$ : ({ 20, "50% 五色灵石", "50% 五色晶石" })
+bonus_value$: ({ "EXP_RATE", 50 })
+
+[百年象精]
+icon        : 6207
+portrait    : 6207
+level       : 80
+life_effect : 5900
+mana_effect : 5900
+tao_effect  : 40
+mag_absorb  : -30
+phy_absorb  : -40
+speed_effect: 150
+phy_effect  : 300
+mag_effect  : 400
+double_hit  : 5
+double_hit_rate : 40
+resist_frozen : 75
+resist_sleep : 75
+resist_forgotten : 100
+resist_confusion : 100
+resist_poison : 75
+penetrate : 50
+accurate : 100
+assist_max_count  : 9
+assist_init_name  : "金头陀"
+assist_init_level : 80
+assist_data : ({ "mag_absorb:-40", "penetrate:50", "phy_absorb:-40", "life_effect:500", "phy_effect:150", "mag_effect:150", "speed_effect:20" })
+bonus_item$ : ({ 15,  "baldric & wrist & necklace(level = 20)" })
+bonus_item$ : ({ 5,  "helmet & weapon & boot & armor(level = 80 color = GOLDEN)" })
+bonus_item$ : ({ 5,  "炼妖石(level = 5)" })
+bonus_item$ : ({ 2,  "50% baldric & wrist & necklace(level = 35)" })
+bonus_item$ : ({ 20, "50% 五色灵石", "50% 五色晶石" })
+bonus_value$: ({ "EXP_RATE", 50 })
+
+[百花羞]
+icon        : 6241
+portrait    : 6241
+level       : 90
+life_effect : 5900
+mana_effect : 5900
+tao_effect  : 40
+mag_absorb  : -30
+phy_absorb  : -40
+speed_effect: 150
+phy_effect  : 350
+mag_effect  : 500
+double_hit  : 5
+double_hit_rate : 40
+resist_frozen : 75
+resist_sleep : 75
+resist_forgotten : 100
+resist_confusion : 100
+resist_poison : 75
+penetrate : 50
+accurate : 100
+assist_max_count  : 9
+assist_init_name  : "火鸦"
+assist_init_level : 90
+assist_data : ({ "mag_absorb:-40", "penetrate:50", "phy_absorb:-40", "life_effect:600", "phy_effect:200", "mag_effect:200", "speed_effect:20" })
+bonus_item$ : ({ 15,  "baldric & wrist & necklace(level = 20)" })
+bonus_item$ : ({ 5,  "helmet & weapon & boot & armor(level = 90 color = GOLDEN)" })
+bonus_item$ : ({ 5,  "炼妖石(level = 6)"  })
+bonus_item$ : ({ 2,  "50% baldric & wrist & necklace(level = 35)" })
+bonus_item$ : ({ 20, "50% 五色灵石", "50% 五色晶石" })
+bonus_value$: ({ "EXP_RATE", 50 })
+
+[牛魔王]
+icon        : 6259
+portrait    : 6259
+level       : 100
+life_effect : 6900
+mana_effect : 6900
+tao_effect  : 40
+mag_absorb  : -30
+phy_absorb  : -40
+speed_effect: 290
+phy_effect  : 500
+mag_effect  : 200
+double_hit  : 12
+double_hit_rate : 30
+stunt_rate : 40
+resist_frozen : 75
+resist_sleep : 75
+resist_forgotten : 200
+resist_confusion : 75
+resist_poison : 0
+penetrate : 50
+accurate : 240
+assist_max_count  : 9
+assist_init_name  : "粉衣仙子"
+assist_init_level : 100
+assist_data : ({ "resist_frozen:100", "resist_sleep:75", "resist_forgotten:200", "resist_confusion:200", "resist_poison:75", "accurate:100", "mag_absorb:-100", "penetrate:50", "phy_absorb:0", "life_effect:300", "phy_effect:200", "mag_effect:200", "speed_effect:300" })
+bonus_item$ : ({ 15,  "baldric & wrist & necklace(level = 20)" })
+bonus_item$ : ({ 10,  "helmet & weapon & boot & armor(level = 100 color = GOLDEN)" })
+bonus_item$ : ({ 5,  "20% helmet & weapon & boot & armor(level = 110 color = GOLDEN)" })
+bonus_item$ : ({ 5,  "炼妖石(level = 7)"  })
+bonus_item$ : ({ 1,  "10% baldric & wrist & necklace(level = 70)" })
+bonus_item$ : ({ 20, "50% 五色灵石", "50% 五色晶石" })
+bonus_value$: ({ "EXP_RATE", 50 })

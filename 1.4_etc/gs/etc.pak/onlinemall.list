@@ -1,0 +1,517 @@
+#FORM2
+
+#["124132"]:  括号中为条形码
+#for_sale:    是否出售(1出售,0不出售)
+#show_pos:    显示位置
+#coin:        元宝价格
+#recommend:   是否为推荐道具
+#name:        必须为物品的导入名称（不能是显示名称）
+
+##################道具类型对应表####################
+[道具类型对应表]
+新品推荐: 1
+热销道具: 2
+特色道具: 3
+功能道具: 4
+
+####################新品推荐########################
+["R0000000"]
+name: "超级绿水晶"
+for_sale: 1
+show_pos: 0
+coin: 1000
+recommend: 新品推荐
+
+["R0000001"]
+name: "圣水晶"
+for_sale: 1
+show_pos: 1
+coin: 518
+recommend: 新品推荐
+
+["R00000002"]
+name: "宠风散"
+for_sale: 1
+show_pos: 2
+coin: 216
+recommend: 新品推荐
+
+["R000000003"]
+name: "高级驯兽诀"
+for_sale: 1
+show_pos: 3
+coin: 800
+recommend: 新品推荐
+
+["R00000004"]
+name: "高级血玲珑"
+for_sale: 1
+show_pos: 4
+coin: 800
+recommend: 新品推荐
+
+["R00000005"]
+name: "高级法玲珑"
+for_sale: 1
+show_pos: 5
+coin: 2400
+recommend: 新品推荐
+
+["R000000006"]
+name: "中级血玲珑"
+for_sale: 1
+show_pos: 6
+coin: 418
+recommend: 新品推荐
+
+["R000000007"]
+name: "中级法玲珑"
+for_sale: 1
+show_pos: 7
+coin: 1400
+recommend: 新品推荐
+
+["R000000008"]
+name: "中级血池"
+for_sale: 1
+show_pos: 8
+coin: 418
+recommend: 新品推荐
+
+["R000000009"]
+name: "中级灵池"
+for_sale: 1
+show_pos: 9
+coin: 1400
+recommend: 新品推荐
+
+["R00000010"]
+name: "无量心经"
+for_sale: 1
+show_pos: 10
+coin: 216
+recommend: 新品推荐
+
+["R000000011"]
+name: "天书"
+for_sale: 1
+show_pos: 11
+coin: 318
+recommend: 新品推荐
+
+["R000000012"]
+name: "改头换面卡"
+for_sale: 1
+show_pos: 12
+coin: 8800
+recommend: 新品推荐
+
+["R000000013"]
+name: "高级道具套餐卡"
+for_sale: 1
+show_pos: 13
+coin: 8000
+recommend: 新品推荐
+
+["R000000014"]
+name: "灵物囊"
+for_sale: 1
+show_pos: 14
+coin: 398
+recommend: 新品推荐
+
+["R000000015"]
+name: "御灵粮袋"
+for_sale: 1
+show_pos: 15
+coin: 1000
+recommend: 新品推荐
+
+["R000000016"]
+name: "钥匙串"
+for_sale: 1
+show_pos: 16
+coin: 108
+recommend: 新品推荐
+
+
+["R00000017"]
+name: "鲜花卡"
+for_sale: 1
+show_pos: 17
+coin: 50
+recommend: 新品推荐
+
+["R00000018"]
+name: "水果卡"
+for_sale: 1
+show_pos: 18
+coin: 50
+recommend: 新品推荐
+
+["R00000019"]
+name: "幻境石"
+for_sale: 1
+show_pos: 19
+coin: 328
+recommend: 新品推荐
+
+["R00000020"]
+name: "超级圣水晶"
+for_sale: 1
+show_pos: 20
+coin: 1000
+recommend: 新品推荐
+
+#["R00000021"]
+#name: "工匠宝箱"
+#for_sale: 1
+#show_pos: 21
+#coin: 108
+#recommend: 新品推荐
+
+["R00000022"]
+name: "风灵丸"
+for_sale: 1
+show_pos: 21
+coin: 418
+recommend: 新品推荐
+
+####################热销道具########################
+["H00000000"]
+name: "会员卡"
+for_sale: 1
+show_pos: 0
+coin: 2800
+recommend: 热销道具
+
+["H00000001"]
+name: "飞行符"
+for_sale: 1
+show_pos: 1
+coin: 216
+recommend: 热销道具
+
+["H00000002"]
+name: "引路蜂"
+for_sale: 1
+show_pos: 2
+coin: 328
+recommend: 热销道具
+
+["H00000003"]
+name: "急急如律令"
+for_sale: 1
+show_pos: 3
+coin: 328
+recommend: 热销道具
+
+["H00000004"]
+name: "惊妖铃"
+for_sale: 1
+show_pos: 4
+coin: 328
+recommend: 热销道具
+
+["H00000005"]
+name: "特效仙风散"
+for_sale: 1
+show_pos: 5
+coin: 328
+recommend: 热销道具
+
+["H00000006"]
+name: "超级仙风散"
+for_sale: 1
+show_pos: 6
+coin: 108
+recommend: 热销道具
+
+["H00000007"]
+name: "血池"
+for_sale: 1
+show_pos: 7
+coin: 108
+recommend: 热销道具
+
+["H00000008"]
+name: "灵池"
+for_sale: 1
+show_pos: 8
+coin: 328
+recommend: 热销道具
+
+["H00000009"]
+name: "血玲珑"
+for_sale: 1
+show_pos: 9
+coin: 216
+recommend: 热销道具
+
+["H00000010"]
+name: "法玲珑"
+for_sale: 1
+show_pos: 10
+coin: 618
+recommend: 热销道具
+
+["H00000011"]
+name: "高级血池"
+for_sale: 1
+show_pos: 11
+coin: 800
+recommend: 热销道具
+
+["H00000012"]
+name: "高级灵池"
+for_sale: 1
+show_pos: 12
+coin: 2400
+recommend: 热销道具
+
+["H00000013"]
+name: "老酒"
+for_sale: 1
+show_pos: 13
+coin: 50
+recommend: 热销道具
+
+["H00000014"]
+name: "绿水晶"
+for_sale: 1
+show_pos: 14
+coin: 518
+recommend: 热销道具
+
+["H00000015"]
+name: "粉水晶"
+for_sale: 1
+show_pos: 15
+coin: 328
+recommend: 热销道具
+
+["H00000016"]
+name: "黄水晶"
+for_sale: 1
+show_pos: 16
+coin: 418
+recommend: 热销道具
+
+["H00000017"]
+name: "天换石"
+for_sale: 1
+show_pos: 17
+coin: 328
+recommend: 热销道具
+
+["H00000018"]
+name: "超级黑水晶"
+for_sale: 1
+show_pos: 18
+coin: 328
+recommend: 热销道具
+
+["H00000019"]
+name: "神木鼎"
+for_sale: 1
+show_pos: 19
+coin: 328
+recommend: 热销道具
+
+["H00000020"]
+name: "超级神兽丹"
+for_sale: 1
+show_pos: 20
+coin: 108
+recommend: 热销道具
+
+["H00000021"]
+name: "超级八卦阴阳令"
+for_sale: 1
+show_pos: 21
+coin: 109
+recommend: 热销道具
+
+["H00000022"]
+name: "材料箱"
+for_sale: 1
+show_pos: 22
+coin: 50
+recommend: 热销道具
+
+["H00000023"]
+name: "元气丹"
+for_sale: 1
+show_pos: 23
+coin: 108
+recommend: 热销道具
+
+["H00000024"]
+name: "锦囊"
+for_sale: 1
+show_pos: 24
+coin: 50
+recommend: 热销道具
+
+["H00000025"]
+name: "丹药盒"
+for_sale: 1
+show_pos: 25
+coin: 50
+recommend: 热销道具
+
+["H00000026"]
+name: "灵晶盒"
+for_sale: 1
+show_pos: 26
+coin: 108
+recommend: 热销道具
+
+####################特色道具########################
+["S00000000"]
+name: "天神护佑"
+for_sale: 1
+show_pos: 0
+coin: 518
+recommend: 特色道具
+
+["S00000001"]
+name: "金蝉脱壳"
+for_sale: 1
+show_pos: 1
+coin: 518
+recommend: 特色道具
+
+["S00000002"]
+name: "兽魂散"
+for_sale: 1
+show_pos: 2
+coin: 108
+recommend: 特色道具
+
+["S00000003"]
+name: "兽灵散"
+for_sale: 1
+show_pos: 3
+coin: 108
+recommend: 特色道具
+
+["S00000004"]
+name: "火眼金睛"
+for_sale: 1
+show_pos: 4
+coin: 216
+recommend: 特色道具
+
+["S00000005"]
+name: "情缘盒"
+for_sale: 1
+show_pos: 5
+coin: 108
+recommend: 特色道具
+
+["S00000006"]
+name: "仙灵卡"
+for_sale: 1
+show_pos: 6
+coin: 216
+recommend: 特色道具
+
+["S00000007"]
+name: "强力驱魔香"
+for_sale: 1
+show_pos: 7
+coin: 108
+recommend: 特色道具
+
+["S00000008"]
+name: "经营许可证"
+for_sale: 1
+show_pos: 8
+coin: 518
+recommend: 特色道具
+
+["S00000009"]
+name: "卡套"
+for_sale: 1
+show_pos: 9
+coin: 1000
+recommend: 特色道具
+
+["S00000010"]
+name: "烟花筒"
+for_sale: 1
+show_pos: 10
+coin: 108
+recommend: 特色道具
+
+["S00000011"]
+name: "驯兽诀"
+for_sale: 1
+show_pos: 11
+coin: 108
+recommend: 特色道具
+
+["S00000012"]
+name: "离线摆摊卡"
+for_sale: 1
+show_pos: 12
+coin: 108
+recommend: 特色道具
+
+["S00000013"]
+name: "五行合缘露"
+for_sale: 1
+show_pos: 13
+coin: 328
+recommend: 特色道具
+
+["S00000014"]
+name: "超级藏宝图"
+for_sale: 1
+show_pos: 14
+coin: 108
+recommend: 特色道具
+
+["S00000015"]
+name: "易经洗髓丹"
+for_sale: 1
+show_pos: 15
+coin: 216
+recommend: 特色道具
+
+["S00000016"]
+name: "超级归元露"
+for_sale: 1
+show_pos: 16
+coin: 216
+recommend: 特色道具
+
+####################功能道具########################
+["F00000000"]
+name: "BOSS卡"
+for_sale: 1
+show_pos: 0
+coin: 108
+recommend: 功能道具
+
+["F00000001"]
+name: "杀星卡"
+for_sale: 1
+show_pos: 1
+coin: 108
+recommend: 功能道具
+
+["F00000002"]
+name: "跑环记录卡"
+for_sale: 1
+show_pos: 2
+coin: 108
+recommend: 功能道具
+
+["F00000003"]
+name: "饰物合成卡"
+for_sale: 1
+show_pos: 3
+coin: 50
+recommend: 功能道具

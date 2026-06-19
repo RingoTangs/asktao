@@ -1,0 +1,228 @@
+#FORM2
+
+# zhuren_weile.list
+# created by kesy JAN/13/2009
+# 日领取任务（又名助人为乐）物品奖励配置表
+# level_limit表示该等级以上的玩家不可抽取该项奖励，当值为300时表示该项奖励对等级不做要求
+# 以ZRWLB开头的是奖励信息，而ZRWLM开头的是怪物信息
+
+# 怪物字段assistant_monster为一个array，偶数位下标为怪物名称，奇数位下标为该怪物的数目，
+# -1表示小怪数目为玩家队伍人数减主怪数(主怪数其实就是1，主怪数一定是1，如果策划要求主怪数目大于1，则将剩余怪当成小怪)
+# -2表示小怪数目为玩家队伍人数的两倍减主怪数
+
+# 怪物字段skills为一个array，偶数位下标是技能，奇数位为技能等级，-1代表技能等级为怪物等级的1.6倍
+# special_skills为天生技能
+
+# 怪物字段polar表示怪物相性,-1表示怪物相性随机
+
+[ZRWLB001]
+rate : 10000
+level_limit : 60
+rumor_channel : 1
+system_channel : 0
+bonus$  : ({ 0, 0, 100, "血池#赠品", 1, 1 })
+
+[ZRWLB002]
+rate : 10000
+level_limit : 60
+rumor_channel : 1
+system_channel : 0
+bonus$  : ({ 0, 0, 100, "灵池#赠品", 1, 1 })
+
+[ZRWLB003]
+rate : 10000
+level_limit : 80
+rumor_channel : 1
+system_channel : 0
+bonus$  : ({ 0, 0, 100, "血玲珑#赠品", 1, 1 })
+
+[ZRWLB004]
+rate : 10000
+level_limit : 80
+rumor_channel : 1
+system_channel : 0
+bonus$  : ({ 0, 0, 100, "法玲珑#赠品", 1, 1 })
+
+[ZRWLB005]
+rate : 5000
+level_limit : 100
+rumor_channel : 1
+system_channel : 0
+bonus$  : ({ 0, 0, 100, "惊妖铃#赠品", 1, 1 })
+
+[ZRWLB006]
+rate : 5000
+level_limit : 100
+rumor_channel : 1
+system_channel : 0
+bonus$  : ({ 0, 0, 100, "特效仙风散#赠品", 1, 1 })
+
+[ZRWLB007]
+rate : 2000
+level_limit : 300
+rumor_channel : 1
+system_channel : 0
+bonus$  : ({ 0, 0, 100, "超级黑水晶#赠品", 1, 1 })
+
+[ZRWLB008]
+rate : 1000
+level_limit : 300
+rumor_channel : 1
+system_channel : 0
+bonus$  : ({ 0, 0, 100, "超级绿水晶#赠品", 1, 1 })
+
+[ZRWLB009]
+rate : 500
+level_limit : 300
+rumor_channel : 0
+system_channel : 1
+bonus$  : ({ 0, 0, 100, "女娲石", 1, 1 })
+
+[ZRWLB010]
+rate : 10
+level_limit : 300
+rumor_channel : 0
+system_channel : 1
+bonus$  : ({ 0, 0, 100, "法文手轮", 1, 1 })
+
+[ZRWLB011]
+rate : 1
+level_limit : 300
+rumor_channel : 0
+system_channel : 1
+bonus$  : ({ 0, 0, 100, "灵引咒", 1, 1 })
+
+[ZRWLM001]
+#polar                 : -1
+life_effect           : 1500
+phy_effect            : 100
+phy_absorb            : 100
+resist_forgotten      : 30
+resist_poison         : 30
+resist_frozen         : 30
+resist_sleep          : 30
+resist_confusion      : 30
+double_hit_rate       : 30
+double_hit            : 3
+skills                : ({  })
+name                  : 醉酒暴徒
+icon                  : 6201
+portrait              : 6201
+assistant_monster     : ({ 醉酒暴徒, -1 })
+monster_tactics       : "use_physical_tactics"
+flag                  : "dabao_buping"
+
+[ZRWLM002]
+name                  : 冤魂
+icon                  : 6140
+portrait              : 6140
+polar                 : -1
+life_effect           : 1500
+mag_effect            : 100
+phy_effect            : 50
+mag_absorb            : 100
+resist_forgotten      : 30
+resist_poison         : 30
+resist_frozen         : 30
+resist_sleep          : 30
+resist_confusion      : 30
+assistant_monster     : ({ 冤魂, -1 })
+skills                : ({ "B2", -1, "B4", -1 })
+monster_tactics       : "saochu_yaomo_yuanhun_tactics"
+flag                  : "saochu_yaomo"
+
+[ZRWLM003]
+name                  : 窃贼
+icon                  : 6201
+portrait              : 6201
+life_effect           : 50
+phy_effect            : 50
+phy_absorb            : 50
+speed_effect          : 5000
+special_skills        : ({ "神龙罩", 180, "如意圈", 180 })
+monster_tactics       : "chuandi_xinyi_qiezei_tactics"
+flag                  : "chuandi_xinyi"
+
+[ZRWLM004]
+name                  : 无名剑客
+icon                  : 6231
+portrait              : 6231
+life_effect           : 2000
+phy_effect            : 100
+resist_forgotten      : 30
+resist_poison         : 30
+resist_frozen         : 30
+resist_sleep          : 30
+resist_confusion      : 30
+double_hit            : 3
+double_hit_rate       : 30
+assistant_monster     : ({ 剑客分身, -2 })
+monster_tactics       : "dabao_buping_jianke_tactics"
+flag                  : "dabao_buping"
+
+[ZRWLM005]
+name                  : 剑客分身
+icon                  : 6231
+portrait              : 6231
+life_effect           : 2000
+phy_effect            : 50
+resist_forgotten      : 30
+resist_poison         : 30
+resist_frozen         : 30
+resist_sleep          : 30
+resist_confusion      : 30
+double_hit            : 2
+double_hit_rate       : 30
+monster_tactics       : "dabao_buping_jianke_fenshen_tactics"
+flag                  : "dabao_buping"
+
+[ZRWLM006]
+name                  : 百变飞贼
+icon                  : 6213
+portrait              : 6213
+polar                 : -1
+life_effect           : 1000
+mag_effect            : 150
+phy_effect            : 50
+resist_forgotten      : 30
+resist_poison         : 30
+resist_frozen         : 30
+resist_sleep          : 30
+resist_confusion      : 30
+skills                : ({ "B2", -1, "B4", -1 })
+monster_tactics         : "fuwei_jiukun_feizei_tactics"
+flag                    : "fuwei_jiukun"
+
+[ZRWLM007]
+name                  : 劫匪
+icon                  : 6202
+portrait              : 6202
+polar                 : -1
+life_effect           : 2000
+mag_effect            : 150
+phy_effect            : 50
+resist_forgotten      : 30
+resist_poison         : 30
+resist_frozen         : 30
+resist_sleep          : 30
+resist_confusion      : 30
+skills                : ({ "B2", -1, "B4", -1 })
+monster_tactics       : "fuwei_jiukun_jiefei_tactics"
+flag                  : "fuwei_jiukun"
+
+[ZRWLM008]
+name                  : 愤怒的冤魂
+icon                  : 6140
+portrait              : 6140
+polar                 : -1
+life_effect           : 2500
+mag_effect            : 100
+phy_effect            : 50
+resist_forgotten      : 30
+resist_poison         : 30
+resist_frozen         : 30
+resist_sleep          : 30
+resist_confusion      : 30
+skills                : ({ "B2", -1, "B4", -1 })
+monster_tactics       : "saochu_yaomo_fennu_yuanhun_tactics"
+flag                  : "saochu_yaomo"

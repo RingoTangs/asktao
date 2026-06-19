@@ -1,0 +1,37 @@
+#Ãû³Æ,           file_id                        Ê¹ÓÃĞÔ±ğ
+key_name,   file_id,                     gender
+
+# ÄĞĞÔ
+·½½í,       "helmet/fangjin",            1
+Æ¤Ã±,       "helmet/pimao",              1
+ÇàÍ­¿ø,     "helmet/qingtongkui",        1
+³åÌì¿ø,     "helmet/chongtiankui",       1
+»¢Í·¿ø,     "helmet/hutoukui",           1
+ÉñÁú¿ø,     "helmet/shenlongkui",        1
+°×Óñ¹Ú,     "helmet/baiyuguan",          1
+Ç¬À¤¹Ú,     "helmet/qiankunguan",        1
+Áú¹Ú,       "helmet/longguan",           1
+ó´Áú¹Ú,     "helmet/panlongguan",        1
+ĞÇÒ«¹Ú,     "helmet/xingyaoguan",        1
+ÆßĞÇ±¦¹Ú,   "helmet/qixingbaoguan",      1
+
+# Å®ĞÔ
+ô¢×Ó,       "helmet/zanzi",              2
+·É·ïîÎ,     "helmet/feifengchai",        2
+±ÌÓñîÎ,     "helmet/biyuchai",           2
+ºûµûîÎ,     "helmet/hudiechai",          2
+½ğîÎ,       "helmet/jinchai",            2
+ÕäÖéîÎ,     "helmet/zhenzhuchai",        2
+·ïÎ²îÎ,     "helmet/fengweichai",        2
+ÓãÎ²¹Ú,     "helmet/yuweiguan",          2
+·ï¹Ú,       "helmet/fengguan",           2
+½ğÏ¼¹Ú,     "helmet/jinxiaguan",         2
+Áè²¨Ï¼¹Ú,   "helmet/lingboxiaguan",      2
+ÌìÁé±¦¹Ú,   "helmet/tianlingbaoguan",    2
+
+#¹²ÓÃ
+¾ÅÏöÁÒÑæ¹Ú, "helmet/jiuxiao-lieyanguan", 0
+°×ÓñĞÇ¹Ú,   "helmet/baiyu-xingguan",     1
+¾Å²ÊÁáÖé¹Ú, "helmet/jiucai-lingzhuguan", 2
+
+

@@ -1,0 +1,620 @@
+#FORM2
+
+#   1. 导入表文件格式 :
+#
+#   规则名      房间    坐标    偏差    类型     名称      数量    时间间隔
+#   key_name    room    coor    range   type     name      amount  time
+#
+#   规则名(string)  :   规则的名字
+#   房间(string)    :   /lanxianzheng/lanxianzheng.c
+#   坐标(array)     :   ({ }) 此房间内随机抽取坐标点
+#                       ({ x1, y1, x2, y2, x3, y3 }) 在多个点刷怪
+#   偏差(int)       :   坐标的偏差范围，不指定则为DEFAULT_RANGE(定义在MONSTER_REFRESH_D中)
+#   类型(string)    :   怪物 或者 物品
+#   名称(string)    :   青蛙
+#   数量(int)       :   amount 为int时
+#                       当 sizeof(坐标) > 0 且, sizeof(坐标) < amount 时, 给出提示,并自动将 amount 减少
+#                       当 sizeof(坐标) > 0 且, sizeof(坐标) > amount 时, 随机从坐标中抽取地点
+#   时间间隔(mixed) :   time 多长时间刷一次怪, 可以支持 string 通配
+#                       如果 time 格式为 "100 ± 50" 表示 100 秒刷新一次，误差 50 秒
+[卧龙坡BOSS]
+room    :   "wolongpo/wolongpo"
+coor    :   ({  })
+type    :   怪物
+name    :   羊头怪
+amount  :   1
+range   :   50
+time    :   "28800 ± 3600"
+clone_callback$ : ({ "set", "resist_fire",  75 })
+clone_callback$ : ({ "set_polar", "POLAR_FIRE" })
+clone_callback$ : ({ "set_full_skill", "xinghuo-liaoyuan" })
+clone_callback$ : ({ "set_full_skill", "yantian-huoyu" })
+clone_callback$ : ({ "set_full_skill", "fengchi-dianche" })
+clone_callback$ : ({ "set_full_skill", "hunqian-mengying" })
+
+[官道南BOSS]
+room    :   "guandao/guandaonan"
+coor    :   ({  })
+type    :   怪物
+name    :   牛头怪
+amount  :   1
+range   :   50
+time    :   "28800 ± 3600"
+clone_callback$ : ({ "set", "resist_metal", 75 })
+clone_callback$ : ({ "set_polar", "POLAR_METAL" })
+clone_callback$ : ({ "set_full_skill", "daoguang-jianying" })
+clone_callback$ : ({ "set_full_skill", "jinhong-guanri" })
+clone_callback$ : ({ "set_full_skill", "ruhu-tianyi" })
+clone_callback$ : ({ "set_full_skill", "rumeng-chuxing" })
+
+[乾元山BOSS]
+room    :   "qianyuanshan/qianyuanshan"
+coor    :   ({ })
+type    :   怪物
+name    :   百年黑熊精
+amount  :   1
+range   :   50
+time    :   "28800 ± 3600"
+clone_callback$ : ({ "set", "resist_fire",  75 })
+clone_callback$ : ({ "set_polar", "POLAR_FIRE" })
+clone_callback$ : ({ "set_full_skill", "yantian-huoyu" })
+clone_callback$ : ({ "set_full_skill", "jiaojin-lishi" })
+#clone_callback$ : ({ "set_full_skill", "hunbu-shoushe" })
+clone_callback$ : ({ "set_full_skill", "fengchi-dianche" })
+clone_callback$ : ({ "set_full_skill", "hunqian-mengying" })
+clone_callback$ : ({ "set", "family", FAMILY_JINGUANGDONG })
+
+[凤凰山BOSS]
+room    :   "fenghuangshan/fenghuangshan"
+coor    :   ({ })
+type    :   怪物
+name    :   百年黑熊精
+amount  :   1
+range   :   50
+time    :   "28800 ± 3600"
+clone_callback$ : ({ "set", "resist_water",  75 })
+clone_callback$ : ({ "set_polar", "POLAR_WATER" })
+clone_callback$ : ({ "set_full_skill", "xuanhe-xieshui" })
+clone_callback$ : ({ "set_full_skill", "nubo-kuangtao" })
+#clone_callback$ : ({ "set_full_skill", "bingdong-sanchi" })
+clone_callback$ : ({ "set_full_skill", "tongqiang-tiebi" })
+clone_callback$ : ({ "set_full_skill", "jidi-binghan" })
+clone_callback$ : ({ "set", "family", FAMILY_DOUQUEGONG })
+
+[终南山BOSS]
+room    :   "zhongnanshan/zhongnanshan"
+coor    :   ({ })
+type    :   怪物
+name    :   百年黑熊精
+amount  :   1
+range   :   50
+time    :   "28800 ± 3600"
+clone_callback$ : ({ "set", "resist_wood",   75 })
+clone_callback$ : ({ "set_polar", "POLAR_WOOD" })
+clone_callback$ : ({ "set_full_skill", "pangen-cuojie" })
+clone_callback$ : ({ "set_full_skill", "luoying-binfen" })
+#clone_callback$ : ({ "set_full_skill", "heding-hongfen" })
+clone_callback$ : ({ "set_full_skill", "honghua-lvye" })
+clone_callback$ : ({ "set_full_skill", "xiewei-shexian" })
+clone_callback$ : ({ "set", "family", FAMILY_YUZHUDONG })
+
+[骷髅山BOSS]
+room    :   "kuloushan/kuloushan"
+coor    :   ({ })
+type    :   怪物
+name    :   百年黑熊精
+amount  :   1
+range   :   50
+time    :   "28800 ± 3600"
+clone_callback$ : ({ "set", "resist_earth",     75 })
+clone_callback$ : ({ "set_polar", "POLAR_EARTH" })
+clone_callback$ : ({ "set_full_skill", "shanbeng-dilie" })
+clone_callback$ : ({ "set_full_skill", "tianta-dixian" })
+#clone_callback$ : ({ "set_full_skill", "liushen-wuzhu" })
+clone_callback$ : ({ "set_full_skill", "bishi-jiuxu" })
+clone_callback$ : ({ "set_full_skill", "dishu-qipo" })
+clone_callback$ : ({ "set", "family", FAMILY_BAIGUDONG })
+
+[五龙山BOSS]
+room    :   "wulongshan/wulongshan"
+coor    :   ({ })
+type    :   怪物
+name    :   百年黑熊精
+amount  :   1
+range   :   50
+time    :   "28800 ± 3600"
+clone_callback$ : ({ "set", "resist_metal",  75 })
+clone_callback$ : ({ "set_polar", "POLAR_METAL" })
+clone_callback$ : ({ "set_full_skill", "jinhong-guanri" })
+clone_callback$ : ({ "set_full_skill", "liuguang-yicai" })
+#clone_callback$ : ({ "set_full_skill", "ruchi-ruzui" })
+clone_callback$ : ({ "set_full_skill", "ruhu-tianyi" })
+clone_callback$ : ({ "set_full_skill", "rumeng-chuxing" })
+clone_callback$ : ({ "set", "family", FAMILY_YUNXIAODONG })
+
+[五龙窟五层BOSS]
+room    :   "wulongshan/wulongku-wuceng"
+coor    :   ({ })
+type    :   怪物
+name    :   百年狂狮怪
+amount  :   1
+range   :   50
+time    :   "28800 ± 3600"
+clone_callback$ : ({ "set", "resist_metal",     75 })
+clone_callback$ : ({ "set_polar", "POLAR_METAL" })
+clone_callback$ : ({ "set_full_skill", "jinhong-guanri" })
+clone_callback$ : ({ "set_full_skill", "liuguang-yicai" })
+#clone_callback$ : ({ "set_full_skill", "ruchi-ruzui" })
+clone_callback$ : ({ "set_full_skill", "ruhu-tianyi" })
+clone_callback$ : ({ "set_full_skill", "rumeng-chuxing" })
+
+[蓬莱岛BOSS]
+room    :   "penglaidao/penglaidao"
+coor    :   ({ })
+type    :   怪物
+name    :   百年刺猬精
+amount  :   1
+range   :   50
+time    :   "28800 ± 3600"
+clone_callback$ : ({ "set", "resist_wood",  75 })
+clone_callback$ : ({ "set_polar", "POLAR_WOOD" })
+clone_callback$ : ({ "set_full_skill", "pangen-cuojie" })
+clone_callback$ : ({ "set_full_skill", "luoying-binfen" })
+#clone_callback$ : ({ "set_full_skill", "heding-hongfen" })
+clone_callback$ : ({ "set_full_skill", "honghua-lvye" })
+clone_callback$ : ({ "set_full_skill", "xiewei-shexian" })
+
+[百花谷三BOSS]
+room    :   "penglaidao/baihuagusan"
+coor    :   ({ })
+type    :   怪物
+name    :   百年猪妖
+amount  :   1
+range   :   50
+time    :   "28800 ± 3600"
+clone_callback$ : ({ "set", "resist_earth",     75 })
+clone_callback$ : ({ "set_polar", "POLAR_EARTH" })
+clone_callback$ : ({ "set_full_skill", "shanbeng-dilie" })
+clone_callback$ : ({ "set_full_skill", "tianta-dixian" })
+#clone_callback$ : ({ "set_full_skill", "liushen-wuzhu" })
+clone_callback$ : ({ "set_full_skill", "bishi-jiuxu" })
+clone_callback$ : ({ "set_full_skill", "dishu-qipo" })
+
+[百花谷五BOSS]
+room    :   "penglaidao/baihuaguwu"
+coor    :   ({ })
+type    :   怪物
+name    :   百年象精
+amount  :   1
+range   :   50
+time    :   "28800 ± 3600"
+clone_callback$ : ({ "set", "resist_water",     75 })
+clone_callback$ : ({ "set_polar", "POLAR_WATER" })
+clone_callback$ : ({ "set_full_skill", "xuanhe-xieshui" })
+clone_callback$ : ({ "set_full_skill", "nubo-kuangtao"  })
+#clone_callback$ : ({ "set_full_skill", "bingdong-sanchi"})
+clone_callback$ : ({ "set_full_skill", "tongqiang-tiebi" })
+clone_callback$ : ({ "set_full_skill", "jidi-binghan"   })
+
+[百花谷七BOSS]
+room    :   "penglaidao/baihuaguqi"
+coor    :   ({ })
+type    :   怪物
+name    :   百花羞
+amount  :   1
+range   :   50
+time    :   "28800 ± 3600"
+clone_callback$ : ({ "set", "resist_wood",     75 })
+clone_callback$ : ({ "set_polar", "POLAR_WOOD" })
+clone_callback$ : ({ "set_full_skill", "luoying-binfen" })
+clone_callback$ : ({ "set_full_skill", "pangen-cuojie"  })
+clone_callback$ : ({ "set_full_skill", "honghua-lvye" })
+clone_callback$ : ({ "set_full_skill", "xiewei-shexian"   })
+
+[绝人阵BOSS]
+room    :   "wolongpo/juerenzhen"
+coor    :   ({ })
+type    :   怪物
+name    :   牛魔王
+amount  :   1
+range   :   50
+time    :   "28800 ± 3600"
+clone_callback$ : ({ "set", "resist_fire", 75 })
+clone_callback$ : ({ "set_polar", "POLAR_RANDOM" })
+clone_callback$ : ({ "set_full_skill", "B4" })
+
+[揽仙镇外-天降福星]
+room    :   "lanxianzhenwai/lanxianzhenwai"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[卧龙坡-天降福星]
+room    :   "wolongpo/wolongpo"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[官道北-天降福星]
+room    :   "guandao/guandaobei"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[官道南-天降福星]
+room    :   "guandao/guandaonan"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[桃柳林-天降福星]
+room    :   "taoliulin/taoliulin"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[轩辕庙-天降福星]
+room    :   "xuanyuanmiao/xuanyuanmiao"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[轩辕坟一层-天降福星]
+room    :   "xuanyuanmiao/xuanyuanfen-yiceng"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[轩辕坟二层-天降福星]
+room    :   "xuanyuanmiao/xuanyuanfen-erceng"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[轩辕坟三层-天降福星]
+room    :   "xuanyuanmiao/xuanyuanfen-sanceng"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[北海沙滩-天降福星]
+room    :   "beihai-shatan/beihai-shatan"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[十里坡-天降福星]
+room    :   "shilipo/shilipo"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[绝人阵-天降福星]
+room    :   "wolongpo/juerenzhen"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[绝仙阵-天降福星]
+room    :   "wolongpo/juexianzhen"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[地绝阵-天降福星]
+room    :   "wolongpo/dijuezhen"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[天绝阵-天降福星]
+room    :   "wolongpo/tianjuezhen"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[终南山-天降福星]
+room    :   "zhongnanshan/zhongnanshan"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[凤凰山-天降福星]
+room    :   "fenghuangshan/fenghuangshan"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[幽冥涧-天降福星]
+room    :   "youmingjian/youmingjian"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[骷髅山-天降福星]
+room    :   "kuloushan/kuloushan"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[乾元山-天降福星]
+room    :   "qianyuanshan/qianyuanshan"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[五龙山-天降福星]
+room    :   "wulongshan/wulongshan"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[五龙窟一层-天降福星]
+room    :   "wulongshan/wulongku-yiceng"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[五龙窟二层-天降福星]
+room    :   "wulongshan/wulongku-erceng"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[五龙窟三层-天降福星]
+room    :   "wulongshan/wulongku-sanceng"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[五龙窟四层-天降福星]
+room    :   "wulongshan/wulongku-siceng"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[五龙窟五层-天降福星]
+room    :   "wulongshan/wulongku-wuceng"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[蓬莱岛-天降福星]
+room    :   "penglaidao/penglaidao"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[百花谷一-天降福星]
+room    :   "penglaidao/baihuaguyi"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[百花谷二-天降福星]
+room    :   "penglaidao/baihuaguer"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[百花谷三-天降福星]
+room    :   "penglaidao/baihuagusan"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[百花谷四-天降福星]
+room    :   "penglaidao/baihuagusi"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[百花谷五-天降福星]
+room    :   "penglaidao/baihuaguwu"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[百花谷六-天降福星]
+room    :   "penglaidao/baihuaguliu"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[百花谷七-天降福星]
+room    :   "penglaidao/baihuaguqi"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[海底迷宫-天降福星]
+room    :   "haidi-migong/haidi-migong"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[东昆仑-天降福星]
+room    :   "dongkunlun/dongkunlun"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[昆仑云海-天降福星]
+room    :   "kunlunyunhai/kunlunyunhai"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[绝人阵-天降福星]
+room    :   "wolongpo/juerenzhen"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[绝仙阵-天降福星]
+room    :   "wolongpo/juexianzhen"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[地绝阵-天降福星]
+room    :   "wolongpo/dijuezhen"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[天绝阵-天降福星]
+room    :   "wolongpo/tianjuezhen"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[雪域冰原-天降福星]
+room    :   "xuanzhou/xueyubingyuan"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[雪域冰原-天降福星]
+room    :   "xuanzhou/xueyubingyuan"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
+
+[迷境花树-天降福星]
+room    :   "jukuzhou/mijinghuashu"
+coor    :   ({ })
+type    :   物品
+name    :   ({ "福星光效", "禄星光效", "寿星光效" })
+amount  :   1
+range   :   0
+time    :   "3600 ± 1800"
