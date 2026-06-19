@@ -28,100 +28,100 @@ $G9 = GM_GROUP9
 #                        玩家查询                             #
 ###############################################################
 #本服查询
-admin_request_player_list                               (GA), (GB), (GC), (GA1)
-admin_request_player_list_本地图查询                    (GC), (GD)
+admin_request_player_list                               (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
+admin_request_player_list_本地图查询                    (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #根据指定属性查询玩家
-admin_query_player_名称查询                             (GA), (GB), (GC), (GA1)
-admin_query_player_属性查询                             (GB), (GC)
-admin_query_player_IP查询                               (GB), (GC)
-admin_query_player_禁言查询                             (GA), (GB), (GC), (GA1)
-admin_query_account                                     (GC), (GD)
+admin_query_player_名称查询                             (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
+admin_query_player_属性查询                             (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
+admin_query_player_IP查询                               (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
+admin_query_player_禁言查询                             (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
+admin_query_account                                     (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 ###############################################################
 #                        属性查看                             #
 ###############################################################
 #查看角色属性
-admin_view                                  (GB), (GC)
+admin_view                                  (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #查询角色技能
-admin_query_skill                           (GB), (GC)
+admin_query_skill                           (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #查询角色GID
-admin_query_gid                             (GC)
+admin_query_gid                             (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 ###############################################################
 #                        GM管理                               #
 ###############################################################
 
 #配额管理
-admin_channel_quota                         (GA), (GB), (GC), (GA1)
+admin_channel_quota                         (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #警告玩家
-admin_warn_player                           (GA), (GB), (GC), (GA1)
+admin_warn_player                           (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #角色频道信息
-admin_query_channel_info                    (GB), (GC), (GD), (GA1)
+admin_query_channel_info                    (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #禁言
-admin_shut_channel                          (GB), (GC), (GA1)
+admin_shut_channel                          (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #强踢下线
-admin_kickoff                               (GA), (GB), (GC), (GA1)
+admin_kickoff                               (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #关入监狱
-admin_throw_in_jail                         (GB), (GC), (GA1)
+admin_throw_in_jail                         (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #封闭账号
-admin_block_account                         (GB), (GC), (GA1)
+admin_block_account                         (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #封闭角色
-admin_block_user                            (GB), (GC), (GA1)
+admin_block_user                            (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 ###############################################################
 #                        特殊操作                             #
 ###############################################################
 #监听屏幕
-admin_sniff_at                              (GA), (GB), (GC), (GA1)
+admin_sniff_at                              (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #传近目标
-admin_transport                             (GA), (GB), (GC), (GA1)
+admin_transport                             (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #中止战斗
-admin_halt_combat                           (GA), (GB), (GC), (GA1)
+admin_halt_combat                           (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #抓至身边
-admin_summon                                (GA), (GB), (GC), (GA1)
+admin_summon                                (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 ###############################################################
 #                        NPC查询                              #
 ###############################################################
 
 #查询NPC/怪物
-admin_query_npc_地图查询                    (GC)
-admin_query_npc_名称查询                    (GC)
-admin_query_npc_全部列出                    (GC)
-admin_query_npc_当前查询                   (GC), (GD)
+admin_query_npc_地图查询                    (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
+admin_query_npc_名称查询                    (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
+admin_query_npc_全部列出                    (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
+admin_query_npc_当前查询                   (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 ###############################################################
 #                        地图查询                             #
 ###############################################################
 #列出所有地图
-admin_request_map_list                      (GC)
+admin_request_map_list                      (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 #查询地图
-admin_query_map                             (GC)
+admin_query_map                             (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 ###############################################################
 #                        服务器查询                           #
 ###############################################################
 #列出本区组的所有服务器
-admin_request_server_list                   (GC)
+admin_request_server_list                   (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 ###############################################################
 #                        GM查询                               #
 ###############################################################
 #列出所有在线GM
-admin_request_online_gm_list                (GA), (GB), (GC), (GA1)
+admin_request_online_gm_list                (GA), (GB), (GC), (GD), (G1), (G2), (GA1)
 
 ###############################################################
 #                        系统功能                             #
