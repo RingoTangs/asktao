@@ -27,14 +27,6 @@ docker run -d \
   mysql:5.5.62
 ```
 
-测试环境示例：如果 root 密码使用 `123456`，也就是 `root/123456`，则把上面的环境变量改为：
-
-```sh
--e MYSQL_ROOT_PASSWORD=123456
-```
-
-`123456` 只适合本机或内网测试，正式部署请换成更强的密码。
-
 查看容器是否启动成功：
 
 ```sh
@@ -69,13 +61,6 @@ GRANT ALL PRIVILEGES ON *.* TO 'asktao'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
 
-测试环境示例：如果数据库用户使用 `asktao/123456`，则密码设置语句可以写成：
-
-```sql
-SET PASSWORD FOR 'asktao'@'localhost' = PASSWORD('123456');
-SET PASSWORD FOR 'asktao'@'%' = PASSWORD('123456');
-```
-
 说明：
 
 - `'asktao'@'localhost'` 用于本机连接。
@@ -83,7 +68,87 @@ SET PASSWORD FOR 'asktao'@'%' = PASSWORD('123456');
 - `SET old_passwords = 1` 和 `PASSWORD(...)` 用于生成旧格式密码，兼容 AskTao 1.4 服务端的旧 MySQL 客户端。
 - `GRANT ALL PRIVILEGES ON *.*` 权限较大，适合测试和私有部署；生产环境可按实际库表收窄权限。
 
-## 五、验证连接
+## 五、测试环境完整示例
+
+下面是一套可以直接复制执行的测试环境示例：
+
+- MySQL root 帐号：`root/123456`
+- AskTao 数据库帐号：`asktao/123456`
+- 容器名：`at-1.4-mysql`
+- 数据目录：`/data/at-1.4/mysql`
+
+`123456` 只适合本机或内网测试，正式部署请换成更强的密码。
+
+先准备宿主机目录：
+
+```sh
+mkdir -p /data/at-1.4/mysql/config
+mkdir -p /data/at-1.4/mysql/data
+mkdir -p /data/at-1.4/mysql/logs
+```
+
+启动 MySQL 容器：
+
+```sh
+docker run -d \
+  --name at-1.4-mysql \
+  -p 3306:3306 \
+  -v /data/at-1.4/mysql/config:/etc/mysql/conf.d \
+  -v /data/at-1.4/mysql/data:/var/lib/mysql \
+  -v /data/at-1.4/mysql/logs:/var/log/mysql \
+  -e MYSQL_ROOT_PASSWORD=123456 \
+  mysql:5.5.62
+```
+
+查看容器状态：
+
+```sh
+docker ps -a --filter "name=at-1.4-mysql"
+docker logs -f at-1.4-mysql
+```
+
+登录 MySQL。提示输入密码时，输入 `123456`：
+
+```sh
+docker exec -it at-1.4-mysql mysql -uroot -p
+```
+
+进入 MySQL 命令行后执行下面 SQL，创建 AskTao 服务端使用的数据库用户，并设置旧格式密码：
+
+```sql
+SET old_passwords = 1;
+
+CREATE USER 'asktao'@'localhost' IDENTIFIED WITH 'mysql_old_password';
+CREATE USER 'asktao'@'%' IDENTIFIED WITH 'mysql_old_password';
+
+SET PASSWORD FOR 'asktao'@'localhost' = PASSWORD('123456');
+SET PASSWORD FOR 'asktao'@'%' = PASSWORD('123456');
+
+GRANT ALL PRIVILEGES ON *.* TO 'asktao'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'asktao'@'%' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+```
+
+执行完成后可以退出 MySQL：
+
+```sql
+exit;
+```
+
+验证 `asktao/123456` 是否能登录：
+
+```sh
+docker exec -it at-1.4-mysql mysql -uasktao -p
+```
+
+提示输入密码时，输入 `123456`。登录成功后可以查看当前用户：
+
+```sql
+SELECT USER();
+```
+
+## 六、验证连接
 
 在宿主机或能访问数据库的机器上测试：
 
@@ -103,7 +168,7 @@ docker exec -it at-1.4-mysql mysql -uasktao -p
 SELECT User, Host FROM mysql.user WHERE User = 'asktao';
 ```
 
-## 六、常用管理命令
+## 七、常用管理命令
 
 停止、启动和删除容器：
 
@@ -125,7 +190,7 @@ docker logs -f at-1.4-mysql
 docker exec -it at-1.4-mysql bash
 ```
 
-## 七、常见问题
+## 八、常见问题
 
 如果 `3306` 端口被占用，可以改宿主机端口，例如：
 
